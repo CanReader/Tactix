@@ -1,0 +1,48 @@
+# UE build artifacts
+Binaries/
+Intermediate/
+Saved/
+DerivedDataCache/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.VC.opendb
+
+# CMake test build
+Tests/build/
+
+# Compiled shared libraries
+*.so
+*.so.*
+*.dylib
+*.dll
+
+# Debug symbols
+*.sym
+*.debug
+*.pdb
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+*.user
+nbproject/
+
+# Clangd
+.cache/
+compile_commands.json
+
+# Logs
+*.log
+
+# Claude
+CLAUDE.md
+.claude/

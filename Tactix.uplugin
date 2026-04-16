@@ -1,0 +1,39 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "0.1.0",
+	"FriendlyName": "Tactix",
+	"Description": "Production-grade modular Game AI for Unreal Engine 5.",
+	"Category": "Artificial Intelligence",
+	"CreatedBy": "Sleak Software",
+	"CreatedByURL": "http://canberkpitirli.com",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "TactixCore",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "TactixSystems",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		},
+		{
+			"Name": "TactixUE",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "TactixDebug",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	]
+}
