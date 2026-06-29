@@ -1,5 +1,10 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file TactixSystemsModule.cpp
+ * @brief Implements the TactixSystems module lifecycle (logging only).
+ */
+
 #include "TactixSystems.h"
 #include "TactixCore.h"
 

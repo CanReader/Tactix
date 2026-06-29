@@ -1,9 +1,15 @@
 // Copyright Sleak Software. All Rights Reserved.
-//
-// BT leaf task: evaluates all actions in a UTactixUtilityAsset against the
-// current agent context, picks the highest scorer, writes its name to a
-// Blackboard key, and fires a Blueprint event for project code to respond.
-// Returns Succeeded (task is a snapshot — it doesn't run the action itself).
+
+/**
+ * @file UTactixBTTask_RunUtility.h
+ * @brief BT leaf that runs one utility-selection pass and reports the winner.
+ *
+ * The task scores every action in its @ref UTactixUtilityAsset against the
+ * agent's current context, picks the highest scorer, writes the winner to the
+ * blackboard, and fires @ref UTactixBTTask_RunUtility::OnActionSelected "OnActionSelected" for Blueprint/subclass code to act
+ * on. It is a decision step, not an execution step: it never runs the action
+ * itself, and always returns Succeeded.
+ */
 
 #pragma once
 
@@ -14,6 +20,7 @@
 
 class UTactixUtilityAsset;
 
+/** @brief Behavior Tree task: select the best action from a utility asset. */
 UCLASS()
 class TACTIXUE_API UTactixBTTask_RunUtility : public UBTTaskNode
 {
@@ -22,26 +29,34 @@ class TACTIXUE_API UTactixBTTask_RunUtility : public UBTTaskNode
 public:
 	UTactixBTTask_RunUtility();
 
+	/**
+	 * @brief Scores the asset's actions, writes the winner, fires the event.
+	 * @return Succeeded always (Failed only on a missing agent/asset).
+	 */
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp,
 	                                        uint8* NodeMemory) override;
 
+	/** @brief Editor-facing one-line summary of the node. */
 	virtual FString GetStaticDescription() const override;
 
-	// Asset holding the action + consideration definitions to evaluate.
+	/** @brief The actions and considerations to evaluate. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Utility")
 	TObjectPtr<UTactixUtilityAsset> UtilityAsset;
 
-	// Name of the BB key (FName) where the winning action name is written.
+	/** @brief Blackboard Name key that receives the winning action's name. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Utility")
 	FBlackboardKeySelector WinnerNameKey;
 
-	// Optional BB key (float) for the winning action's score.
+	/** @brief Optional blackboard Float key that receives the winning score. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Utility")
 	FBlackboardKeySelector WinnerScoreKey;
 
 protected:
-	// Override in Blueprint or subclass to act on the selected action.
-	// ActionName is FName::None if no action scored above zero.
+	/**
+	 * @brief Hook fired with the chosen action; implement in Blueprint or a subclass.
+	 * @param ActionName Winning action, or @c FName::None if nothing scored above zero.
+	 * @param Score      The winning score (0 when there's no winner).
+	 */
 	UFUNCTION(BlueprintImplementableEvent, Category = "Tactix|Utility")
 	void OnActionSelected(FName ActionName, float Score);
 };

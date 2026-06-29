@@ -1,5 +1,14 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixInfluenceRenderer.cpp
+ * @brief Implements the influence heat renderer with debug boxes.
+ *
+ * The heat ramp runs the full cold-to-hot spectrum (blue, cyan, green, yellow,
+ * red) rather than a flat blue-to-red lerp, which reads more clearly at a glance.
+ * The whole file collapses to empty stubs when @c ENABLE_DRAW_DEBUG is off.
+ */
+
 #include "FTactixInfluenceRenderer.h"
 #include "DrawDebugHelpers.h"
 

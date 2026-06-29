@@ -1,21 +1,30 @@
 // Copyright Sleak Software. All Rights Reserved.
-//
-// FTactixBlackboard — typed key-value store with compile-time key hashing.
-//
-// The blackboard is the shared working memory for AI systems. Unlike UE's
-// UBlackboardComponent, this store is not a UObject and has no reflection
-// dependency — making it usable in TactixCore with zero engine overhead.
-//
-// Keys are FNV-1a hashes of string literals, created with the `_bb` UDL:
-//
-//     using namespace Tactix::Literals;
-//     Blackboard.Set("TargetLocation"_bb, FTactixVec3{1, 2, 3});
-//     FTactixVec3 Loc;
-//     if (Blackboard.Get("TargetLocation"_bb, Loc)) { ... }
-//
-// Collisions between distinct keys are astronomically unlikely at 32-bit
-// resolution, but the open-addressed table walks to the next empty slot if
-// two keys happen to hash to the same bucket. Hash == 0 is reserved as "empty".
+
+/**
+ * @file FTactixBlackboard.h
+ * @brief Typed key-value store with compile-time key hashing: the AI systems'
+ *        shared working memory.
+ *
+ * This plays the same role as UE's @c UBlackboardComponent but is deliberately
+ * not a @c UObject and carries no reflection, so it lives in TactixCore with no
+ * engine cost. Keys are 32-bit FNV-1a hashes of string literals, minted at
+ * compile time by hashing the name (see @ref Tactix::HashFNV1a "HashFNV1a")
+ * through the @c _bb user-defined literal:
+ *
+ * @code
+ * using namespace Tactix::Literals;
+ *
+ * Blackboard.Set("TargetLocation"_bb, FTactixVec3{1, 2, 3});
+ *
+ * FTactixVec3 Loc;
+ * if (Blackboard.Get("TargetLocation"_bb, Loc)) { ... }
+ * @endcode
+ *
+ * Storage is an open-addressed table with linear probing. Distinct keys colliding
+ * at 32 bits is vanishingly unlikely, and if two keys ever land in the same
+ * bucket the probe walks forward to the next free slot. A hash of 0 is reserved
+ * to mean "empty slot", so @ref Tactix::HashFNV1a "HashFNV1a" never returns it.
+ */
 
 #pragma once
 
@@ -28,8 +37,12 @@
 
 namespace Tactix
 {
-	// ---- Compile-time FNV-1a string hash -----------------------------------
-
+	/**
+	 * @brief Compile-time FNV-1a hash of a C string.
+	 * @param Text Null-terminated string to hash.
+	 * @return The 32-bit hash, nudged from 0 to 1 so the result can never collide
+	 *         with the reserved "empty" marker.
+	 */
 	constexpr uint32_t HashFNV1a(const char* Text) noexcept
 	{
 		uint32_t H = 0x811c9dc5u;
@@ -39,89 +52,143 @@ namespace Tactix
 			H *= 0x01000193u;
 			++Text;
 		}
-		// We reserve 0 as "empty"; nudge colliding hashes to 1 so no real key
-		// is ever indistinguishable from an empty slot.
 		return H == 0u ? 1u : H;
 	}
 
+	/** @brief A blackboard key: just the hash of its name, comparable and copyable. */
 	struct FTactixBBKey
 	{
-		uint32_t Hash{0};
+		uint32_t Hash{0};  ///< Key hash; 0 means "no key".
 
+		/** @brief Constructs an invalid (empty) key. */
 		constexpr FTactixBBKey() = default;
+		/** @brief Wraps a precomputed hash. */
 		constexpr explicit FTactixBBKey(uint32_t InHash) : Hash(InHash) {}
+		/** @brief Hashes @p Text into a key. */
 		constexpr explicit FTactixBBKey(const char* Text) : Hash(HashFNV1a(Text)) {}
 
+		/** @brief Whether this names a real key (hash != 0). */
 		constexpr bool IsValid() const { return Hash != 0; }
 		constexpr bool operator==(FTactixBBKey R) const { return Hash == R.Hash; }
 		constexpr bool operator!=(FTactixBBKey R) const { return Hash != R.Hash; }
 	};
 
+	/** @brief Holds the @c _bb literal so callers can opt in with a using-directive. */
 	namespace Literals
 	{
+		/** @brief Turns `"Name"_bb` into an @ref FTactixBBKey at compile time. */
 		constexpr FTactixBBKey operator""_bb(const char* Text, std::size_t) noexcept
 		{
 			return FTactixBBKey(Text);
 		}
 	}
 
-	// ---- Tagged-union value ------------------------------------------------
-
+	/** @brief Discriminator for the value union; also the stored value's type tag. */
 	enum class ETactixBBType : uint8_t
 	{
-		Empty = 0,
-		Bool,
-		Int,
-		Float,
-		Vec3,
-		Handle,
-		Ptr,
+		Empty = 0,  ///< No value stored.
+		Bool,       ///< @c bool.
+		Int,        ///< @c int32_t.
+		Float,      ///< @c float.
+		Vec3,       ///< @ref FTactixVec3.
+		Handle,     ///< A packed handle value (@c uint32_t).
+		Ptr,        ///< An opaque @c void*.
 	};
 
+	/**
+	 * @brief A tagged union holding one blackboard value.
+	 *
+	 * @c Type says which union member is live. Reads must check the tag (the
+	 * accessors do this for you) before touching a member.
+	 */
 	struct FTactixBBValue
 	{
-		ETactixBBType Type{ETactixBBType::Empty};
+		ETactixBBType Type{ETactixBBType::Empty};  ///< Which member of the union is valid.
 		union
 		{
-			bool         AsBool;
-			int32_t      AsInt;
-			float        AsFloat;
-			FTactixVec3  AsVec3;
-			uint32_t     AsHandlePacked;
-			void*        AsPtr;
+			bool         AsBool;         ///< Valid when @c Type == Bool.
+			int32_t      AsInt;          ///< Valid when @c Type == Int.
+			float        AsFloat;        ///< Valid when @c Type == Float.
+			FTactixVec3  AsVec3;         ///< Valid when @c Type == Vec3.
+			uint32_t     AsHandlePacked; ///< Valid when @c Type == Handle (packed handle).
+			void*        AsPtr;          ///< Valid when @c Type == Ptr.
 		};
 
+		/** @brief Constructs an empty value. */
 		constexpr FTactixBBValue() : Type(ETactixBBType::Empty), AsPtr(nullptr) {}
 	};
 
-	// ---- Capacity-independent abstract base --------------------------------
-
+	/**
+	 * @brief Capacity-independent interface to a blackboard.
+	 *
+	 * @ref FTactixBlackboard is templated on capacity, which would otherwise leak
+	 * into every signature that wants to touch one. This abstract base hides that:
+	 * an @ref FTactixAgentContext, a BT service, anything, can hold a
+	 * @c FTactixBlackboardRef* without caring how big the concrete table is.
+	 *
+	 * The typed @ref Get / @ref Set templates dispatch to the per-type virtuals via
+	 * `if constexpr`, so callers write `bb.Set(key, value)` and the right virtual
+	 * is chosen at compile time.
+	 */
 	class TACTIXCORE_API FTactixBlackboardRef
 	{
 	public:
 		virtual ~FTactixBlackboardRef() = default;
 
+		/**
+		 * @name Typed getters
+		 * @brief Read a key only if it exists @e and currently holds this exact type.
+		 * @param Key Key to look up.
+		 * @param Out Receives the value on success; untouched on failure.
+		 * @return True if the key was present with the matching type, false otherwise
+		 *         (missing key or type mismatch). A type mismatch is treated as a
+		 *         miss, not an error.
+		 * @{
+		 */
 		virtual bool GetBool  (FTactixBBKey Key, bool&          Out) const = 0;
 		virtual bool GetInt   (FTactixBBKey Key, int32_t&       Out) const = 0;
 		virtual bool GetFloat (FTactixBBKey Key, float&         Out) const = 0;
 		virtual bool GetVec3  (FTactixBBKey Key, FTactixVec3&   Out) const = 0;
 		virtual bool GetHandle(FTactixBBKey Key, uint32_t&      Out) const = 0;
 		virtual bool GetPtr   (FTactixBBKey Key, void*&         Out) const = 0;
+		/** @} */
 
+		/**
+		 * @name Typed setters
+		 * @brief Insert or overwrite a key with a value of this type.
+		 * @param Key Key to write.
+		 * @param V   Value to store; this also sets the stored type tag.
+		 * @note If the table is full and the key is new, the write is silently
+		 *       dropped. That is the documented policy; size the blackboard for the
+		 *       expected key count.
+		 * @{
+		 */
 		virtual void SetBool  (FTactixBBKey Key, bool               V) = 0;
 		virtual void SetInt   (FTactixBBKey Key, int32_t            V) = 0;
 		virtual void SetFloat (FTactixBBKey Key, float              V) = 0;
 		virtual void SetVec3  (FTactixBBKey Key, const FTactixVec3& V) = 0;
 		virtual void SetHandle(FTactixBBKey Key, uint32_t           V) = 0;
 		virtual void SetPtr   (FTactixBBKey Key, void*              V) = 0;
+		/** @} */
 
+		/** @brief Whether @p Key currently has any value (of any type). */
 		virtual bool        Has   (FTactixBBKey Key) const = 0;
+		/** @brief Removes @p Key. Returns true if it was present. */
 		virtual bool        Remove(FTactixBBKey Key)       = 0;
+		/** @brief Removes every entry. */
 		virtual void        Clear()                        = 0;
+		/** @brief Number of entries currently stored. */
 		virtual std::size_t Num()                    const = 0;
 
-		// ---- Templated convenience (non-virtual, dispatches via `if constexpr`) --
-
+		/**
+		 * @brief Type-dispatched read; the typed front-end to the @c Get* virtuals.
+		 * @tparam T   One of: @c bool, @c int32_t, @c float, @ref FTactixVec3,
+		 *             @c uint32_t (packed handle), @c void*. Anything else is a
+		 *             compile error.
+		 * @param  Key Key to read.
+		 * @param  Out Receives the value on success.
+		 * @return True on a matching-type hit, false otherwise.
+		 */
 		template <typename T>
 		bool Get(FTactixBBKey Key, T& Out) const
 		{
@@ -134,6 +201,12 @@ namespace Tactix
 			else if constexpr (std::is_same_v<T, void*>)         return GetPtr  (Key, Out);
 		}
 
+		/**
+		 * @brief Type-dispatched write; the typed front-end to the @c Set* virtuals.
+		 * @tparam T   Same supported set as @ref Get.
+		 * @param  Key Key to write.
+		 * @param  V   Value to store.
+		 */
 		template <typename T>
 		void Set(FTactixBBKey Key, const T& V)
 		{
@@ -147,6 +220,7 @@ namespace Tactix
 		}
 
 	private:
+		/** @brief Compile-time predicate: is @p T a type the blackboard can store? */
 		template <typename T>
 		static constexpr bool SupportsType()
 		{
@@ -159,8 +233,16 @@ namespace Tactix
 		}
 	};
 
-	// ---- Concrete open-addressed implementation ----------------------------
-
+	/**
+	 * @brief Concrete fixed-capacity blackboard backed by an open-addressed table.
+	 *
+	 * Linear probing with backshift deletion, no heap allocation, no UObject. The
+	 * table never resizes; pick @p Capacity comfortably above the number of keys
+	 * you expect, since a full table silently drops new inserts.
+	 *
+	 * @tparam Capacity Slot count. Must be a power of two so the probe wrap is a
+	 *         bitmask. Default 64.
+	 */
 	template <std::size_t Capacity = 64>
 	class FTactixBlackboard final : public FTactixBlackboardRef
 	{
@@ -168,11 +250,10 @@ namespace Tactix
 		static_assert((Capacity & (Capacity - 1)) == 0,      "FTactixBlackboard capacity must be a power of 2.");
 
 	public:
+		/** @brief Compile-time slot count. */
 		static constexpr std::size_t kCapacity = Capacity;
 
 		FTactixBlackboard() = default;
-
-		// ---- Virtual overrides -----------------------------------------------
 
 		bool GetBool  (FTactixBBKey Key, bool&        Out) const override { return DoGet(Key, ETactixBBType::Bool,   [&](const FTactixBBValue& V){ Out = V.AsBool;  }); }
 		bool GetInt   (FTactixBBKey Key, int32_t&     Out) const override { return DoGet(Key, ETactixBBType::Int,    [&](const FTactixBBValue& V){ Out = V.AsInt;   }); }
@@ -190,6 +271,13 @@ namespace Tactix
 
 		bool Has(FTactixBBKey Key) const override { return Find(Key) != Capacity; }
 
+		/**
+		 * @brief Removes a key and repairs the probe chain behind it.
+		 *
+		 * After clearing the slot, this does a Robin-Hood-style backshift: it walks
+		 * forward and drags back any entry that probed past the now-empty slot, so
+		 * later @ref Find calls don't terminate early at the hole and miss a key.
+		 */
 		bool Remove(FTactixBBKey Key) override
 		{
 			std::size_t Hole = Find(Key);
@@ -229,12 +317,15 @@ namespace Tactix
 		std::size_t Num() const override { return Size; }
 
 	private:
-		static constexpr std::size_t Mask = Capacity - 1;
-		FTactixBBKey   Keys  [Capacity]{};
-		FTactixBBValue Values[Capacity]{};
-		std::size_t    Size{0};
+		static constexpr std::size_t Mask = Capacity - 1;  ///< Probe wrap mask (capacity is a power of two).
+		FTactixBBKey   Keys  [Capacity]{};                 ///< Parallel key array; an invalid key marks an empty slot.
+		FTactixBBValue Values[Capacity]{};                 ///< Parallel value array, indexed alongside @c Keys.
+		std::size_t    Size{0};                            ///< Live entry count.
 
-		// Open-addressed find. Returns index or Capacity if absent.
+		/**
+		 * @brief Locates an existing key by linear probing.
+		 * @return Its slot index, or @c Capacity if the key isn't present.
+		 */
 		std::size_t Find(FTactixBBKey Key) const
 		{
 			if (!Key.IsValid()) return Capacity;
@@ -248,7 +339,11 @@ namespace Tactix
 			return Capacity;
 		}
 
-		// Find an existing slot or the first empty slot for insertion.
+		/**
+		 * @brief Finds @p Key, or claims the first free slot in its probe chain.
+		 * @return The slot to write, or @c Capacity if the table is full and the key
+		 *         is new. Claiming a fresh slot also bumps @c Size.
+		 */
 		std::size_t FindOrInsert(FTactixBBKey Key)
 		{
 			if (!Key.IsValid()) return Capacity;
@@ -267,6 +362,14 @@ namespace Tactix
 			return Capacity; // table full
 		}
 
+		/**
+		 * @brief Shared read body: look up @p Key, verify its type, extract via @p Fn.
+		 * @tparam GetFn   Callable `void(const FTactixBBValue&)` that copies out the value.
+		 * @param Key      Key to read.
+		 * @param Expected Required stored type; a mismatch is reported as a miss.
+		 * @param Fn       Extractor invoked with the stored value on a hit.
+		 * @return True if the key existed with the expected type and @p Fn ran.
+		 */
 		template <typename GetFn>
 		bool DoGet(FTactixBBKey Key, ETactixBBType Expected, GetFn&& Fn) const
 		{
@@ -277,6 +380,11 @@ namespace Tactix
 			return true;
 		}
 
+		/**
+		 * @brief Shared write body: find/insert @p Key, then populate via @p Fn.
+		 * @tparam SetFn Callable `void(FTactixBBValue&)` that sets the tag and member.
+		 * @note Silently does nothing when the table is full and the key is new.
+		 */
 		template <typename SetFn>
 		void DoSet(FTactixBBKey Key, SetFn&& Fn)
 		{

@@ -1,5 +1,17 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixFormation.h
+ * @brief Movement formations: per-slot local offsets and the transform that
+ *        places them in the world relative to a leader.
+ *
+ * A formation is a set of slot offsets in formation-local space (+X forward,
+ * +Y right, +Z up). The named kinds (line, column, wedge, box, diamond) are
+ * generated from a slot count and a spacing; Custom lets you author offsets by
+ * hand. @ref Tactix::FTactixFormation::GetSlotWorldPosition "GetSlotWorldPosition" turns a slot into a world
+ * position behind/around the leader.
+ */
+
 #pragma once
 
 #include "TactixApi.h"
@@ -10,37 +22,57 @@
 
 namespace Tactix
 {
+	/** @brief The shape a formation lays its slots out in. */
 	enum class ETactixFormationKind : uint8_t
 	{
-		Line,
-		Column,
-		Wedge,
-		Box,
-		Diamond,
-		Custom,
+		Line,     ///< Side by side, abreast of the leader.
+		Column,   ///< Single file behind the leader.
+		Wedge,    ///< V shape trailing back to either side.
+		Box,      ///< Rectangular block, four per tier.
+		Diamond,  ///< Points around the leader, cycling every four slots.
+		Custom,   ///< Offsets authored via @ref FTactixFormation::SetCustomSlot.
 	};
 
-	// Local offset is expressed in formation-local space: +X = forward,
-	// +Y = right, +Z = up. World transforms in GetSlotWorldPosition assume
-	// leader forward is planar (Z ignored).
+	/**
+	 * @brief One formation slot, stored as an offset in formation-local space.
+	 *
+	 * Local axes: +X forward, +Y right, +Z up. The world transform treats the
+	 * leader's forward as planar (its Z is dropped), so the Z offset rides on top
+	 * of the leader's own height, which keeps formations sane on slopes and stairs.
+	 */
 	struct FTactixFormationSlot
 	{
-		FTactixVec3 LocalOffset{};
+		FTactixVec3 LocalOffset{};  ///< Offset from the leader in formation-local space.
 	};
 
+	/**
+	 * @brief A formation of up to @p MaxSlots positions.
+	 * @tparam MaxSlots Compile-time slot ceiling.
+	 */
 	template <std::size_t MaxSlots>
 	class FTactixFormation
 	{
 		static_assert(MaxSlots > 0, "FTactixFormation needs at least one slot.");
 
 	public:
+		/** @brief Constructs an empty Custom formation with no slots. */
 		FTactixFormation() = default;
 
+		/**
+		 * @brief Constructs and immediately builds a named formation.
+		 * @see Build
+		 */
 		FTactixFormation(ETactixFormationKind Kind, uint32_t SlotCount, float Spacing)
 		{
 			Build(Kind, SlotCount, Spacing);
 		}
 
+		/**
+		 * @brief (Re)generates slot offsets for a named formation kind.
+		 * @param Kind    Shape to generate. @c Custom leaves existing slots untouched.
+		 * @param Count   Desired slot count; clamped to @p MaxSlots.
+		 * @param Spacing Gap between slots in world units; non-positive falls back to 100.
+		 */
 		void Build(ETactixFormationKind Kind, uint32_t Count, float Spacing)
 		{
 			this->Kind = Kind;
@@ -58,6 +90,12 @@ namespace Tactix
 			}
 		}
 
+		/**
+		 * @brief Sets one slot's offset by hand and switches the kind to Custom.
+		 * @param Index       Slot to write; ignored if it's at or beyond @p MaxSlots.
+		 * @param LocalOffset Formation-local offset for the slot.
+		 * @note If @p Index is beyond the current count, the count grows to include it.
+		 */
 		void SetCustomSlot(uint32_t Index, FTactixVec3 LocalOffset)
 		{
 			if (Index >= MaxSlots) return;
@@ -66,14 +104,29 @@ namespace Tactix
 			Kind = ETactixFormationKind::Custom;
 		}
 
+		/** @brief Number of active slots. */
 		uint32_t              GetSlotCount() const { return Count; }
+		/** @brief Current formation kind. */
 		ETactixFormationKind  GetKind()      const { return Kind; }
+		/** @brief Current spacing in world units. */
 		float                 GetSpacing()   const { return Spacing; }
 
+		/** @brief Slot by index. No bounds check; @p Index must be < @ref GetSlotCount. */
 		const FTactixFormationSlot& GetSlot(uint32_t Index) const { return Slots[Index]; }
 
-		// Leader forward is projected to the XY plane; Z stays as the leader's Z
-		// plus any per-slot Z offset, so this works on flat terrain and stairs.
+		/**
+		 * @brief World position for a slot, given where the leader is and faces.
+		 *
+		 * The leader's forward is flattened onto the XY plane and normalised to build
+		 * the local frame (forward / right / up), so the formation rotates with the
+		 * leader's heading but stays level. The slot's Z offset is added on top of
+		 * the leader's Z, which is what keeps it working across height changes.
+		 *
+		 * @param SlotIdx       Slot to place; out-of-range returns @p LeaderPos.
+		 * @param LeaderPos     Leader world position.
+		 * @param LeaderForward Leader facing; a near-zero vector defaults to +X.
+		 * @return The slot's world position.
+		 */
 		FTactixVec3 GetSlotWorldPosition(uint32_t SlotIdx,
 		                                 FTactixVec3 LeaderPos,
 		                                 FTactixVec3 LeaderForward) const
@@ -93,11 +146,12 @@ namespace Tactix
 		}
 
 	private:
-		FTactixFormationSlot Slots[MaxSlots]{};
-		uint32_t             Count{0};
-		ETactixFormationKind Kind{ETactixFormationKind::Custom};
-		float                Spacing{100.0f};
+		FTactixFormationSlot Slots[MaxSlots]{};                    ///< Per-slot local offsets.
+		uint32_t             Count{0};                            ///< Active slot count.
+		ETactixFormationKind Kind{ETactixFormationKind::Custom};  ///< Current shape.
+		float                Spacing{100.0f};                     ///< Current spacing in world units.
 
+		/** @brief Slot 0 on the leader, the rest fanning out left/right abreast. */
 		void BuildLine()
 		{
 			Slots[0].LocalOffset = {};
@@ -109,6 +163,7 @@ namespace Tactix
 			}
 		}
 
+		/** @brief Single file trailing straight back from the leader. */
 		void BuildColumn()
 		{
 			for (uint32_t i = 0; i < Count; ++i)
@@ -117,6 +172,7 @@ namespace Tactix
 			}
 		}
 
+		/** @brief Leader at the point, slots trailing back to alternating sides (a V). */
 		void BuildWedge()
 		{
 			Slots[0].LocalOffset = {};
@@ -132,6 +188,7 @@ namespace Tactix
 			}
 		}
 
+		/** @brief Rectangular block; slots fill in groups of four, each tier further back. */
 		void BuildBox()
 		{
 			const FTactixVec3 Pattern[4] = {
@@ -150,6 +207,7 @@ namespace Tactix
 			}
 		}
 
+		/** @brief Front/right/back/left points around the leader, repeating every four slots. */
 		void BuildDiamond()
 		{
 			const FTactixVec3 Pattern[4] = {

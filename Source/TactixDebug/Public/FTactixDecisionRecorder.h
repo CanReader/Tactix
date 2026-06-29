@@ -1,18 +1,26 @@
 // Copyright Sleak Software. All Rights Reserved.
-//
-// FTactixDecisionRecorder — ring buffer of AI decisions for replay scrubbing
-// and post-mortem debugging. BT tasks call Record() whenever they select or
-// execute an action; the editor UI or log dump shows the full recent history.
-//
-// Usage (from UTactixBTTask_RunUtility or similar):
-//   FTactixDecisionRecord R;
-//   R.AgentHandle = Ctx.AgentHandle;
-//   R.ActionName  = WinnerName;
-//   R.Score       = WinnerScore;
-//   R.Source      = ETactixDecisionSource::Utility;
-//   R.HealthRatio = Ctx.HealthRatio;
-//   ...
-//   FTactixDecisionRecorder::Get().Record(R);
+
+/**
+ * @file FTactixDecisionRecorder.h
+ * @brief Ring buffer of recent AI decisions for replay scrubbing and
+ *        post-mortems ("why did it do that?").
+ *
+ * Whenever an agent selects or executes an action, the deciding code records a
+ * snapshot: the action, its score, the source system, and a little agent state.
+ * Later you can pull one agent's history, dump everything to the log, or feed an
+ * editor timeline. Decisions are fed in from BT tasks like
+ * @ref UTactixBTTask_RunUtility "UTactixBTTask_RunUtility":
+ *
+ * @code
+ * FTactixDecisionRecord R;
+ * R.AgentHandle = Ctx.AgentHandle;
+ * R.ActionName  = WinnerName;
+ * R.Score       = WinnerScore;
+ * R.Source      = ETactixDecisionSource::Utility;
+ * R.HealthRatio = Ctx.HealthRatio;
+ * FTactixDecisionRecorder::Get().Record(R);
+ * @endcode
+ */
 
 #pragma once
 
@@ -20,56 +28,74 @@
 #include "Foundation/TactixHandle.h"
 #include "Agent/ITactixAgent.h"
 
+/** @brief Which subsystem produced a recorded decision. */
 UENUM()
 enum class ETactixDecisionSource : uint8
 {
-	Utility  UMETA(DisplayName = "Utility AI"),
-	GOAPPlan UMETA(DisplayName = "GOAP Plan"),
-	HTNPlan  UMETA(DisplayName = "HTN Plan"),
+	Utility  UMETA(DisplayName = "Utility AI"), ///< From the utility selector.
+	GOAPPlan UMETA(DisplayName = "GOAP Plan"),  ///< A GOAP plan step.
+	HTNPlan  UMETA(DisplayName = "HTN Plan"),   ///< An HTN plan step.
 };
 
+/** @brief One decision plus a snapshot of the state that produced it. */
 struct TACTIXDEBUG_API FTactixDecisionRecord
 {
-	double       WallTimeSeconds{0.0};
-	Tactix::FTactixHandle<Tactix::ITactixAgent> AgentHandle{};
-	FName        ActionName{};
-	float        Score{0.0f};
-	ETactixDecisionSource Source{ETactixDecisionSource::Utility};
+	double       WallTimeSeconds{0.0};   ///< Game time the decision was made.
+	Tactix::FTactixHandle<Tactix::ITactixAgent> AgentHandle{}; ///< Deciding agent.
+	FName        ActionName{};           ///< Chosen action.
+	float        Score{0.0f};            ///< Its score, where applicable.
+	ETactixDecisionSource Source{ETactixDecisionSource::Utility}; ///< Producing system.
 
-	// Agent state snapshot at decision time.
-	float HealthRatio{1.0f};
-	float AmmoRatio{1.0f};
-	bool  bInCover{false};
-	bool  bHasThreat{false};
+	float HealthRatio{1.0f};  ///< Health at decision time.
+	float AmmoRatio{1.0f};    ///< Ammo at decision time.
+	bool  bInCover{false};    ///< Whether the agent was in cover.
+	bool  bHasThreat{false};  ///< Whether the agent had a threat.
 };
 
+/** @brief Fixed-size ring of decision records with per-agent and bulk queries. */
 class TACTIXDEBUG_API FTactixDecisionRecorder
 {
 public:
+	/** @brief Records retained before the oldest is overwritten. */
 	static constexpr int32 kRingSize = 512;
 
-	// Append a decision record. Overwrites the oldest entry when full.
+	/**
+	 * @brief Appends a decision, overwriting the oldest when the ring is full.
+	 * @param Entry The record to store.
+	 */
 	void Record(const FTactixDecisionRecord& Entry);
 
-	// Return the last MaxEntries decisions for the specified agent (newest first).
+	/**
+	 * @brief Returns one agent's recent decisions, newest first.
+	 * @param Agent      Agent to filter on.
+	 * @param MaxEntries Cap on how many to return.
+	 */
 	TArray<FTactixDecisionRecord> GetHistory(
 	    Tactix::FTactixHandle<Tactix::ITactixAgent> Agent,
 	    int32 MaxEntries = 32) const;
 
-	// All entries in chronological order (oldest first).
+	/** @brief All retained records in chronological order (oldest first). */
 	TArray<FTactixDecisionRecord> GetAll() const;
 
-	// Print the most recent MaxEntries to UE_LOG.
+	/**
+	 * @brief Logs the most recent decisions.
+	 * @param MaxEntries How many to print.
+	 */
 	void DumpToLog(int32 MaxEntries = 20) const;
 
+	/** @brief Clears all records. */
 	void Reset() { Ring.Reset(); Head = 0; Count = 0; }
+	/** @brief Number of records currently held. */
 	int32 Num() const { return Count; }
 
-	// Module-lifetime singleton.
+	/**
+	 * @brief The module-lifetime singleton.
+	 * @return The shared recorder. Valid while the TactixDebug module is loaded.
+	 */
 	static FTactixDecisionRecorder& Get();
 
 private:
-	TArray<FTactixDecisionRecord> Ring;
-	int32 Head{0};
-	int32 Count{0};
+	TArray<FTactixDecisionRecord> Ring; ///< Record storage, used as a ring of @ref kRingSize.
+	int32 Head{0};                      ///< Write cursor.
+	int32 Count{0};                     ///< Live record count, capped at @ref kRingSize.
 };

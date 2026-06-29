@@ -1,5 +1,11 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixAgentComponent.cpp
+ * @brief Implements the pawn-to-agent adapter: snapshotting UE state into a
+ *        @ref Tactix::FTactixAgentContext.
+ */
+
 #include "Components/UTactixAgentComponent.h"
 #include "GameFramework/Actor.h"
 #include "Components/PrimitiveComponent.h"

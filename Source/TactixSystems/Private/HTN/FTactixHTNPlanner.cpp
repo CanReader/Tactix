@@ -1,5 +1,10 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixHTNPlanner.cpp
+ * @brief Recursive decomposition for @ref Tactix::FTactixHTNPlanner.
+ */
+
 #include "HTN/FTactixHTNPlanner.h"
 #include "HTN/ITactixHTNTask.h"
 #include "Foundation/TactixArena.h"
@@ -8,17 +13,31 @@ namespace Tactix
 {
 	namespace
 	{
+		/** @brief Mutable state threaded through the recursive @ref Decompose. */
 		struct FDecomposeCtx
 		{
-			FTactixWorldState*         State;
-			ITactixHTNPrimitive**      Plan;
-			uint32_t*                  PlanCount;
-			uint32_t                   MaxPlan;
-			const FTactixAgentContext* AgentCtx;
-			uint32_t                   MaxDepth;
-			uint32_t                   MaxSubs;
+			FTactixWorldState*         State;     ///< Evolving planning state (effects applied as primitives are accepted).
+			ITactixHTNPrimitive**      Plan;      ///< Output plan buffer being filled.
+			uint32_t*                  PlanCount; ///< Number of primitives written so far.
+			uint32_t                   MaxPlan;   ///< Capacity of @c Plan.
+			const FTactixAgentContext* AgentCtx;  ///< Agent context for task queries.
+			uint32_t                   MaxDepth;  ///< Recursion depth ceiling.
+			uint32_t                   MaxSubs;   ///< Per-method subtask ceiling.
 		};
 
+		/**
+		 * @brief Decomposes one task into the plan, recursing through compounds.
+		 *
+		 * Primitives that are applicable append themselves and apply their effects.
+		 * Compounds try each applicable method in order; before a method's subtasks
+		 * are expanded the state and plan length are snapshotted, and if any subtask
+		 * fails both are restored so the next method starts clean.
+		 *
+		 * @param Task  Task to decompose. Null fails.
+		 * @param C     Shared decomposition context.
+		 * @param Depth Current recursion depth; failure once it reaches @c MaxDepth.
+		 * @return True if @p Task (and its whole subtree) decomposed successfully.
+		 */
 		bool Decompose(ITactixHTNTask* Task, FDecomposeCtx& C, uint32_t Depth)
 		{
 			if (Task == nullptr)         return false;

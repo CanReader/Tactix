@@ -1,5 +1,15 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixGOAPPlanner.cpp
+ * @brief A* implementation for @ref Tactix::FTactixGOAPPlanner.
+ *
+ * The pieces are a node pool, a binary min-heap as the open set, and a
+ * linear-probing hash table as the closed set, all living in the caller's arena.
+ * The contract is documented on the header; here we only flag the non-obvious
+ * search mechanics (lazy deletion, the closed-set-as-best-known-G trick).
+ */
+
 #include "GOAP/FTactixGOAPPlanner.h"
 #include "GOAP/ITactixGOAPAction.h"
 #include "Foundation/TactixArena.h"
@@ -8,22 +18,30 @@ namespace Tactix
 {
 	namespace
 	{
+		/** @brief One A* search node: a state plus its back-link and scores. */
 		struct FNode
 		{
-			FTactixWorldState State;
-			int32_t           Parent;
-			int32_t           ActionIdx;
-			float             G;
-			float             F;
+			FTactixWorldState State;     ///< World state at this node.
+			int32_t           Parent;    ///< Index of the node we came from, or -1 at the start.
+			int32_t           ActionIdx; ///< Action taken to reach here, or -1 at the start.
+			float             G;         ///< Cost so far from the start.
+			float             F;         ///< G + heuristic estimate to the goal.
 		};
 
+		/**
+		 * @brief Binary min-heap over node indices, ordered by each node's F score.
+		 *
+		 * Stores indices, not nodes, so reordering is cheap and the nodes stay put
+		 * in the pool (where parents are referenced by index).
+		 */
 		struct FOpenSet
 		{
-			int32_t*     Heap;
-			uint32_t     Size;
-			uint32_t     Capacity;
-			const FNode* Nodes;
+			int32_t*     Heap;     ///< Heap array of node indices.
+			uint32_t     Size;     ///< Current element count.
+			uint32_t     Capacity; ///< Allocated capacity.
+			const FNode* Nodes;    ///< Node pool the indices refer to, for F lookups.
 
+			/** @brief Pushes a node index, sifting up by F. Returns false if full. */
 			bool Push(int32_t Idx)
 			{
 				if (Size >= Capacity) return false;
@@ -39,6 +57,7 @@ namespace Tactix
 				return true;
 			}
 
+			/** @brief Pops the lowest-F node index, sifting down. Returns -1 if empty. */
 			int32_t Pop()
 			{
 				if (Size == 0) return -1;
@@ -60,14 +79,22 @@ namespace Tactix
 			}
 		};
 
-		// Linear-probing table: each slot stores a node index, -1 means empty.
-		// Keyed on state value+mask; same state overwrites when we find a cheaper G.
+		/**
+		 * @brief Maps a world state to the best-known node index for it.
+		 *
+		 * Linear-probing table keyed on a state's hash; a slot of -1 is empty. It
+		 * doubles as the "best G seen for this state" record: when a cheaper path to
+		 * a state turns up, @ref InsertOrUpdate overwrites the slot, and the stale
+		 * heap entry for the old node is dropped lazily in the main loop (a popped
+		 * node whose state no longer maps back to it is skipped).
+		 */
 		struct FClosedSet
 		{
-			int32_t*     Slots;
-			uint32_t     Capacity;
-			const FNode* Nodes;
+			int32_t*     Slots;    ///< Slot array of node indices; -1 means empty.
+			uint32_t     Capacity; ///< Power-of-two capacity for masked probing.
+			const FNode* Nodes;    ///< Node pool the indices refer to.
 
+			/** @brief Returns the node index stored for state @p S, or -1 if absent. */
 			int32_t Find(const FTactixWorldState& S) const
 			{
 				const uint64_t H    = S.Hash();
@@ -82,6 +109,7 @@ namespace Tactix
 				return -1;
 			}
 
+			/** @brief Records @p Idx as the node for its state, replacing any prior one. */
 			void InsertOrUpdate(int32_t Idx)
 			{
 				const FTactixWorldState& S = Nodes[Idx].State;
@@ -100,6 +128,7 @@ namespace Tactix
 			}
 		};
 
+		/** @brief Smallest power of two >= @p V (so the closed set can mask-probe). */
 		constexpr uint32_t NextPow2(uint32_t V)
 		{
 			if (V <= 1) return 1;
@@ -185,6 +214,8 @@ namespace Tactix
 
 		if (GoalIdx < 0) return Result;
 
+		// Reconstruct by walking parent links from the goal back to the start,
+		// counting first to size the step array, then filling it back-to-front.
 		uint32_t Len = 0;
 		for (int32_t i = GoalIdx; i >= 0 && Nodes[i].ActionIdx >= 0; i = Nodes[i].Parent) ++Len;
 		if (Len == 0 || Len > Config.MaxPlanLength) return Result;

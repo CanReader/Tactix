@@ -1,5 +1,10 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixBTDecorator_PlanActive.cpp
+ * @brief Implements the plan-active decorator condition (valid plan with steps left).
+ */
+
 #include "BehaviorTree/UTactixBTDecorator_PlanActive.h"
 #include "AIController.h"
 #include "Controller/ATactixAIController.h"

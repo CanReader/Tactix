@@ -7,6 +7,16 @@
 
 namespace Tactix
 {
+	/**
+	 * @brief Dispatches on @c Type and clamps the result into [0, 1].
+	 *
+	 * @details The clamp via @ref Saturate is applied to every branch, including
+	 * Logistic which already lives in (0, 1), because extreme @c Slope values can
+	 * push a float a hair past 1.0 through rounding. Quadratic needs special care:
+	 * `std::pow` of a negative base with a fractional exponent is NaN, so we power
+	 * the magnitude and copy the sign back, which keeps the curve sensible for
+	 * inputs below @c Shift.
+	 */
 	float FTactixCurve::Evaluate(float X) const noexcept
 	{
 		switch (Type)

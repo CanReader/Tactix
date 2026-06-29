@@ -1,17 +1,22 @@
 // Copyright Sleak Software. All Rights Reserved.
-//
-// UE-facing enum and struct mirrors for Tactix types that cannot carry
-// UPROPERTY/UENUM in TactixCore or TactixSystems (no UE headers allowed
-// in those modules). Converting between the BP and Tactix variants happens
-// inside TactixUE — the engine-agnostic layers never see this file.
+
+/**
+ * @file TactixUETypes.h
+ * @brief Blueprint-exposed mirrors of Tactix enums and config structs.
+ *
+ * The engine-agnostic modules can't carry @c UENUM / @c UPROPERTY metadata,
+ * because they're forbidden from including UE headers. So the designer-facing
+ * variants live here, in TactixUE, with a "BP" suffix where they shadow a core
+ * enum. Conversion between these and the real Tactix types happens inside this
+ * module (for example in @ref UTactixUtilityAsset); the core never sees this file.
+ */
 
 #pragma once
 
 #include "CoreMinimal.h"
 #include "TactixUETypes.generated.h"
 
-// ---- Response curve selection ----------------------------------------------
-
+/** @brief Blueprint mirror of @ref Tactix::ETactixCurveType (minus Custom, which needs a function pointer). */
 UENUM(BlueprintType)
 enum class ETactixCurveTypeBP : uint8
 {
@@ -21,23 +26,25 @@ enum class ETactixCurveTypeBP : uint8
 	Exponential UMETA(DisplayName = "Exponential"),
 };
 
-// ---- Utility consideration input signals -----------------------------------
-// Each value maps to one field on FTactixAgentContext. Add entries as the
-// context grows; keep the mapping in UTactixUtilityAsset::GetRawInput().
-
+/**
+ * @brief Which agent-context field a consideration reads as its raw input.
+ *
+ * Each value names one field of @ref Tactix::FTactixAgentContext. When the
+ * context grows, add an entry here and extend the mapping in
+ * @c UTactixUtilityAsset::GetRawInput so the two stay in sync.
+ */
 UENUM(BlueprintType)
 enum class ETactixInputType : uint8
 {
-	HealthRatio    UMETA(DisplayName = "Health Ratio"),
-	AmmoRatio      UMETA(DisplayName = "Ammo Ratio"),
-	StaminaRatio   UMETA(DisplayName = "Stamina Ratio"),
-	ThreatDistance UMETA(DisplayName = "Threat Distance (normalized)"),
-	Speed          UMETA(DisplayName = "Speed (normalized, 600 uu/s cap)"),
-	InCover        UMETA(DisplayName = "In Cover (0 or 1)"),
+	HealthRatio    UMETA(DisplayName = "Health Ratio"),                   ///< Context HealthRatio, already [0, 1].
+	AmmoRatio      UMETA(DisplayName = "Ammo Ratio"),                     ///< Context AmmoRatio, already [0, 1].
+	StaminaRatio   UMETA(DisplayName = "Stamina Ratio"),                  ///< Context StaminaRatio, already [0, 1].
+	ThreatDistance UMETA(DisplayName = "Threat Distance (normalized)"),   ///< Threat distance normalised by @ref FTactixConsiderationConfig::ThreatDistanceCap.
+	Speed          UMETA(DisplayName = "Speed (normalized, 600 uu/s cap)"),///< Velocity magnitude normalised against a 600 uu/s cap.
+	InCover        UMETA(DisplayName = "In Cover (0 or 1)"),              ///< 1 when in cover, else 0.
 };
 
-// ---- Formation / squad mirrors ---------------------------------------------
-
+/** @brief Blueprint mirror of @ref Tactix::ETactixFormationKind (named shapes only). */
 UENUM(BlueprintType)
 enum class ETactixFormationKindBP : uint8
 {
@@ -48,6 +55,7 @@ enum class ETactixFormationKindBP : uint8
 	Diamond UMETA(DisplayName = "Diamond"),
 };
 
+/** @brief Blueprint mirror of @ref Tactix::ETactixSquadTactic. */
 UENUM(BlueprintType)
 enum class ETactixSquadTacticBP : uint8
 {
@@ -59,6 +67,7 @@ enum class ETactixSquadTacticBP : uint8
 	Suppress UMETA(DisplayName = "Suppress"),
 };
 
+/** @brief Blueprint mirror of @ref Tactix::ETactixSquadRole (named roles only). */
 UENUM(BlueprintType)
 enum class ETactixSquadRoleBP : uint8
 {
@@ -71,62 +80,78 @@ enum class ETactixSquadRoleBP : uint8
 	Assault    UMETA(DisplayName = "Assault"),
 };
 
-// ---- Consideration config (stored in UTactixUtilityAsset per action) ------
-
+/**
+ * @brief One consideration's designer-tunable settings.
+ *
+ * Maps to a @ref Tactix::FTactixConsideration "FTactixConsideration": @c InputType picks the raw signal,
+ * the remaining fields describe the response curve applied to it.
+ */
 USTRUCT(BlueprintType)
 struct TACTIXUE_API FTactixConsiderationConfig
 {
 	GENERATED_BODY()
 
+	/** @brief Which context field to read. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility")
 	ETactixInputType InputType = ETactixInputType::HealthRatio;
 
+	/** @brief Response curve shape. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility")
 	ETactixCurveTypeBP CurveType = ETactixCurveTypeBP::Linear;
 
+	/** @brief Curve gain (steepness for Logistic). */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility")
 	float Slope = 1.0f;
 
+	/** @brief Curve exponent (Quadratic/Exponential only). */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility")
 	float Exponent = 2.0f;
 
+	/** @brief Curve input offset (midpoint for Logistic). */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility")
 	float Shift = 0.0f;
 
-	// Only used when InputType == ThreatDistance. Raw UU distance mapped to [0,1].
+	/**
+	 * @brief Distance (UU) that maps to 1.0 for the ThreatDistance input.
+	 *
+	 * Only meaningful when @c InputType is ThreatDistance; the editor hides it
+	 * otherwise. Raw distance is divided by this before the curve runs.
+	 */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility",
 	          meta = (EditCondition = "InputType==ETactixInputType::ThreatDistance", ClampMin = "1.0"))
 	float ThreatDistanceCap = 2000.0f;
 };
 
-// ---- Action config (one entry per scored action in UTactixUtilityAsset) ---
-
+/** @brief One scored action: a name plus the considerations that score it. */
 USTRUCT(BlueprintType)
 struct TACTIXUE_API FTactixActionConfig
 {
 	GENERATED_BODY()
 
+	/** @brief Identifier written to the blackboard when this action wins. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility")
 	FName ActionName;
 
+	/** @brief Considerations multiplied together (with Lewis compensation) for the score. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Utility")
 	TArray<FTactixConsiderationConfig> Considerations;
 };
 
-// ---- Role slot config (one entry per role in UTactixSquadConfigAsset) -----
-
+/** @brief One squad role slot definition: which role, how many, and a label. */
 USTRUCT(BlueprintType)
 struct TACTIXUE_API FTactixRoleConfig
 {
 	GENERATED_BODY()
 
+	/** @brief The role this entry configures. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Squad")
 	ETactixSquadRoleBP Role = ETactixSquadRoleBP::None;
 
-	// How many agents with this role the squad allows at once.
+	/** @brief How many agents may hold this role in the squad at once. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Squad", meta = (ClampMin = "0"))
 	int32 MaxCount = 1;
 
+	/** @brief Friendly name for UI. */
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = "Tactix|Squad")
 	FText DisplayName;
 };

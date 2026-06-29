@@ -1,5 +1,11 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file TactixDebugModule.cpp
+ * @brief Implements the TactixDebug module: registering and removing the Gameplay
+ *        Debugger category.
+ */
+
 #include "TactixDebug.h"
 #include "TactixCore.h"
 #include "FTactixGameplayDebuggerCategory.h"

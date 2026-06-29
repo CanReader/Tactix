@@ -1,9 +1,15 @@
 // Copyright Sleak Software. All Rights Reserved.
-//
-// BT task: queries the world cover system for the best available cover point
-// relative to the agent and a threat position, claims it, sets the agent's
-// bInCover flag, and writes the cover world position to an optional BB key.
-// Returns Failed if no suitable point is found.
+
+/**
+ * @file UTactixBTTask_ClaimCover.h
+ * @brief BT task that finds, claims and records the best cover for the agent.
+ *
+ * Queries @ref UTactixWorldSubsystem's cover system for the best point given the
+ * agent's position and a threat location read from the blackboard, claims it for
+ * the agent, sets the agent's @c bInCover flag, and optionally writes the cover
+ * position back to the blackboard for a subsequent move. Returns Failed when no
+ * point qualifies.
+ */
 
 #pragma once
 
@@ -12,6 +18,7 @@
 #include "BehaviorTree/BehaviorTreeTypes.h"
 #include "UTactixBTTask_ClaimCover.generated.h"
 
+/** @brief Behavior Tree task: query and claim the best cover point. */
 UCLASS()
 class TACTIXUE_API UTactixBTTask_ClaimCover : public UBTTaskNode
 {
@@ -20,29 +27,34 @@ class TACTIXUE_API UTactixBTTask_ClaimCover : public UBTTaskNode
 public:
 	UTactixBTTask_ClaimCover();
 
+	/**
+	 * @brief Runs the cover query and claims the winner.
+	 * @return Succeeded if a point was claimed, Failed otherwise.
+	 */
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp,
 	                                        uint8* NodeMemory) override;
 
+	/** @brief Editor-facing one-line summary of the node. */
 	virtual FString GetStaticDescription() const override;
 
-	// BB vector key holding the threat/enemy world position.
+	/** @brief Blackboard Vector key holding the threat/enemy world position. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Cover")
 	FBlackboardKeySelector ThreatLocationKey;
 
-	// Optional BB vector key that receives the claimed cover point's position.
+	/** @brief Optional blackboard Vector key that receives the claimed point's position. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Cover")
 	FBlackboardKeySelector CoverPositionKey;
 
-	// Search radius around the agent for candidate cover points.
+	/** @brief Search radius around the agent for candidate cover. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Cover", meta = (ClampMin = "0.0"))
 	float MaxRange = 2000.0f;
 
-	// Minimum blocking dot: 0 = any direction, 0.5 = must block within 60 deg.
+	/** @brief Minimum blocking quality; 0 accepts any blocking angle, 0.5 is a ~60 degree wedge. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Cover",
 	          meta = (ClampMin = "0.0", ClampMax = "1.0"))
 	float MinBlockDot = 0.3f;
 
-	// If true, skip points already claimed by other agents.
+	/** @brief When true, skip points already claimed by other agents. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Cover")
 	bool bExcludeClaimed = true;
 };

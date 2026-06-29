@@ -1,11 +1,20 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixUtilityAsset.cpp
+ * @brief Implements utility scoring: input extraction, curve building, and the
+ *        Lewis-compensated action score.
+ *
+ * @c ScoreAction inlines the same compensation as
+ * @ref Tactix::FTactixUtilitySelector::ScoreConsiderations rather than calling it,
+ * because the considerations here are config structs, not @c ITactixConsideration
+ * objects, so there's nothing to point an array of interface pointers at.
+ */
+
 #include "DataAssets/UTactixUtilityAsset.h"
 #include "Foundation/TactixMath.h"
 
 using namespace Tactix;
-
-// ---- Input value extraction ------------------------------------------------
 
 float UTactixUtilityAsset::GetRawInput(const FTactixConsiderationConfig& Cfg,
                                        const FTactixAgentContext& Ctx)

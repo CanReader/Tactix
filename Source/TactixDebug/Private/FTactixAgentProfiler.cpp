@@ -1,5 +1,15 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixAgentProfiler.cpp
+ * @brief Implements the timing profiler: cycle-counter sampling, ring storage,
+ *        and the aggregate queries.
+ *
+ * Durations come from @c FPlatformTime cycle counts converted to microseconds.
+ * The singleton is a file-static, so it lives for the whole process; the header's
+ * "module-lifetime" note is the safe usage window, not a hard bound.
+ */
+
 #include "FTactixAgentProfiler.h"
 #include "HAL/PlatformTime.h"
 #include "Logging/LogMacros.h"

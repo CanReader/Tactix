@@ -1,5 +1,15 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixBTTask_ExecutePlan.cpp
+ * @brief Implements step-by-step plan execution for the BT task.
+ *
+ * @ref UTactixBTTask_ExecutePlan::StepPlan "StepPlan" is shared between the initial @c ExecuteTask and each
+ * @c TickTask: it runs the next step of the chosen plan and reports whether the
+ * plan is finished. Note @c AbortTask deliberately leaves the plan state alone so
+ * a decorator higher up can decide whether to re-plan or resume.
+ */
+
 #include "BehaviorTree/UTactixBTTask_ExecutePlan.h"
 #include "AIController.h"
 #include "Controller/ATactixAIController.h"

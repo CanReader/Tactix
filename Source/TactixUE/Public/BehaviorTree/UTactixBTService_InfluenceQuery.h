@@ -1,9 +1,15 @@
 // Copyright Sleak Software. All Rights Reserved.
-//
-// BT service: samples a channel of the world influence map at the agent's
-// current XY position each tick and writes the value to a Blackboard key
-// (float). Useful for consideration inputs — wire the BB key into a
-// FTactixConsiderationConfig with InputType==Custom, or read it from Blueprint.
+
+/**
+ * @file UTactixBTService_InfluenceQuery.h
+ * @brief BT service that samples the world influence map under the agent each
+ *        tick into a blackboard float.
+ *
+ * Every service tick it reads the agent's XY position, samples one channel of the
+ * @ref UTactixWorldSubsystem influence map there, and writes the value to a
+ * blackboard key. That key can feed a consideration input or be read directly in
+ * Blueprint, e.g. to bias decisions away from danger.
+ */
 
 #pragma once
 
@@ -12,6 +18,7 @@
 #include "BehaviorTree/BehaviorTreeTypes.h"
 #include "UTactixBTService_InfluenceQuery.generated.h"
 
+/** @brief Behavior Tree service: push an influence sample to the blackboard. */
 UCLASS()
 class TACTIXUE_API UTactixBTService_InfluenceQuery : public UBTService
 {
@@ -20,21 +27,23 @@ class TACTIXUE_API UTactixBTService_InfluenceQuery : public UBTService
 public:
 	UTactixBTService_InfluenceQuery();
 
+	/** @brief Samples the influence map and writes the result each tick. */
 	virtual void TickNode(UBehaviorTreeComponent& OwnerComp,
 	                      uint8* NodeMemory, float DeltaSeconds) override;
 
+	/** @brief Editor-facing one-line summary of the node. */
 	virtual FString GetStaticDescription() const override;
 
-	// Which influence map channel to sample (0=Danger, 1=Control, 2=Resource, 3=Custom).
+	/** @brief Channel to sample: 0 Danger, 1 Control, 2 Resource, 3 Custom. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Influence",
 	          meta = (ClampMin = "0", ClampMax = "3"))
 	int32 ChannelIndex = 0;
 
-	// BB float key where the sampled value is written.
+	/** @brief Blackboard Float key that receives the sampled value. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Influence")
 	FBlackboardKeySelector InfluenceValueKey;
 
-	// When true, use bilinear interpolation (slightly more expensive, smoother).
+	/** @brief Use bilinear sampling (smoother, slightly costlier) instead of nearest. */
 	UPROPERTY(EditAnywhere, Category = "Tactix|Influence")
 	bool bBilinear = true;
 };

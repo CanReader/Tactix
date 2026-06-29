@@ -1,5 +1,15 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixDecisionRecorder.cpp
+ * @brief Implements the decision ring buffer: recording, history/all queries,
+ *        and the log dump.
+ *
+ * @ref FTactixDecisionRecorder::Record "Record" stamps each entry with wall time. The query helpers do the ring
+ * index arithmetic to read newest-first (history, dump) or oldest-first (getAll),
+ * with the extra `+ kRingSize` terms keeping the modulo positive.
+ */
+
 #include "FTactixDecisionRecorder.h"
 #include "HAL/PlatformTime.h"
 #include "Logging/LogMacros.h"

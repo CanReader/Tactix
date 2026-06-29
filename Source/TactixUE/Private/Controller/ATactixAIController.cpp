@@ -1,11 +1,23 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file ATactixAIController.cpp
+ * @brief Implements the Tactix AIController: scratch arena ownership, handle
+ *        assignment on possess, and plan teardown on unpossess.
+ *
+ * The controller swaps in a @c UCrowdFollowingComponent for path following so
+ * squads avoid each other through the crowd manager.
+ */
+
 #include "Controller/ATactixAIController.h"
 #include "Components/UTactixAgentComponent.h"
 #include "GameFramework/Pawn.h"
+#include "Navigation/CrowdFollowingComponent.h"
 
-ATactixAIController::ATactixAIController()
-	: ScratchArena(MakeUnique<Tactix::FTactixArena>(kArenaSizeBytes))
+ATactixAIController::ATactixAIController(const FObjectInitializer& ObjectInitializer)
+	: Super(ObjectInitializer.SetDefaultSubobjectClass<UCrowdFollowingComponent>(
+		TEXT("PathFollowingComponent")))
+	, ScratchArena(MakeUnique<Tactix::FTactixArena>(kArenaSizeBytes))
 {
 }
 

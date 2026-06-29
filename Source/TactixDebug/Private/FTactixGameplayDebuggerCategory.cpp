@@ -1,5 +1,13 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixGameplayDebuggerCategory.cpp
+ * @brief Implements the Gameplay Debugger category: collect agent state, then
+ *        render it as text lines.
+ *
+ * Entirely behind @c WITH_GAMEPLAY_DEBUGGER.
+ */
+
 #include "FTactixGameplayDebuggerCategory.h"
 
 #if WITH_GAMEPLAY_DEBUGGER

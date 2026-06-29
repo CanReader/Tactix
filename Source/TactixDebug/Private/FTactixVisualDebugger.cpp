@@ -1,5 +1,14 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixVisualDebugger.cpp
+ * @brief Implements the agent debug overlays with debug-draw primitives.
+ *
+ * Compiled out entirely when @c ENABLE_DRAW_DEBUG is off.
+ * @ref FTactixVisualDebugger::RatioColor "RatioColor" drives the red/yellow/green
+ * tint used by the vital bars.
+ */
+
 #include "FTactixVisualDebugger.h"
 #include "DrawDebugHelpers.h"
 #include "Controller/ATactixAIController.h"

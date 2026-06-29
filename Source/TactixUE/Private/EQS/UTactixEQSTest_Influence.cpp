@@ -1,5 +1,10 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixEQSTest_Influence.cpp
+ * @brief Implements the influence EQS test: sample the map per item and score it.
+ */
+
 #include "EQS/UTactixEQSTest_Influence.h"
 #include "EnvironmentQuery/EnvQueryTypes.h"
 #include "Subsystem/UTactixWorldSubsystem.h"

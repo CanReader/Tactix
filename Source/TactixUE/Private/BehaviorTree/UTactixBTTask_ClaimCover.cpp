@@ -1,5 +1,11 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixBTTask_ClaimCover.cpp
+ * @brief Implements the cover query/claim BT task: build the query from agent and
+ *        blackboard state, claim the winner, write it back.
+ */
+
 #include "BehaviorTree/UTactixBTTask_ClaimCover.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "AIController.h"

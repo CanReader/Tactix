@@ -1,11 +1,19 @@
 // Copyright Sleak Software. All Rights Reserved.
-//
-// FTactixAgentContext — read-only, side-effect-free snapshot of an agent's
-// current state. Every evaluator (Utility consideration, GOAP heuristic, HTN
-// condition, cover scorer, etc.) takes this struct by `const &` and is
-// FORBIDDEN from mutating the agent during scoring. Separating "read" from
-// "act" is what lets us run evaluators in any order, memoise scores, or
-// execute them off the game thread in the future.
+
+/**
+ * @file FTactixAgentContext.h
+ * @brief Read-only, side-effect-free snapshot of one agent for a single decision.
+ *
+ * This is the input every Tactix evaluator reads and none of them are allowed to
+ * write. Utility considerations, GOAP heuristics, HTN conditions and cover
+ * scorers all take it by const reference. Keeping "read the world" cleanly
+ * separate from "act on the world" is what makes it safe to run evaluators in any
+ * order, cache their scores, or eventually push them off the game thread, none of
+ * which would hold if scoring could mutate the agent.
+ *
+ * @note The producer (@ref Tactix::ITactixAgent::BuildContext "ITactixAgent::BuildContext") is responsible for
+ *       filling the normalised fields in range. The struct itself doesn't clamp.
+ */
 
 #pragma once
 
@@ -19,42 +27,48 @@
 namespace Tactix
 {
 	// Concrete blackboards are templated on capacity but derive from a
-	// capacity-independent abstract base (`FTactixBlackboardRef`) so we can
-	// point at them from contexts without forwarding a template parameter.
+	// capacity-independent abstract base (FTactixBlackboardRef), which is what
+	// lets a context hold one without dragging in the capacity template param.
 	class FTactixBlackboardRef;
 
+	/**
+	 * @brief Everything an evaluator needs to know about an agent this frame.
+	 *
+	 * Plain copyable data, cheap to build and pass around. Vitals are normalised
+	 * ratios; spatial fields are in world space.
+	 */
 	struct FTactixAgentContext
 	{
-		// ---- Identity -------------------------------------------------------
+		/** @brief Identity of the agent this snapshot describes. */
 		FTactixHandle<ITactixAgent> AgentHandle{};
 
-		// ---- Spatial state --------------------------------------------------
-		FTactixVec3 Position{};
-		FTactixVec3 Velocity{};
-		FTactixVec3 Forward{0.0f, 1.0f, 0.0f};
+		FTactixVec3 Position{};                 ///< World position.
+		FTactixVec3 Velocity{};                 ///< World velocity.
+		FTactixVec3 Forward{0.0f, 1.0f, 0.0f};  ///< Unit facing direction.
 
-		// ---- Normalised vitals (use Saturate on input to guarantee range) ---
-		float HealthRatio{1.0f};
-		float AmmoRatio{1.0f};
-		float StaminaRatio{1.0f};
+		float HealthRatio{1.0f};   ///< Health in [0, 1]; 1 is full.
+		float AmmoRatio{1.0f};     ///< Ammo in [0, 1]; 1 is full.
+		float StaminaRatio{1.0f};  ///< Stamina in [0, 1]; 1 is full.
 
-		// ---- Threat awareness ----------------------------------------------
-		FTactixHandle<ITactixAgent> PrimaryThreat{};
-		FTactixVec3                 ThreatLocation{};
-		float                       ThreatDistance{-1.0f}; // negative = no threat
+		FTactixHandle<ITactixAgent> PrimaryThreat{};   ///< Current main threat, if any.
+		FTactixVec3                 ThreatLocation{};  ///< Last known threat position.
+		float                       ThreatDistance{-1.0f}; ///< Distance to the threat; negative means "no threat".
 
-		// ---- Social / tactical ---------------------------------------------
-		ETactixSquadRole SquadRole{ETactixSquadRole::None};
-		bool             bInCover{false};
-		bool             bReloading{false};
+		ETactixSquadRole SquadRole{ETactixSquadRole::None}; ///< Role within the squad.
+		bool             bInCover{false};                   ///< Whether the agent currently holds cover.
+		bool             bReloading{false};                 ///< Whether a reload is in progress.
 
-		// ---- Shared working memory (optional) -------------------------------
+		/** @brief Optional shared working memory. May be null. */
 		FTactixBlackboardRef* Blackboard{nullptr};
 
-		// ---- Frame context --------------------------------------------------
+		/** @brief Game time, in seconds, the snapshot was taken at. */
 		double TimeSeconds{0.0};
 
-		// ---- Convenience queries --------------------------------------------
+		/**
+		 * @brief Whether the agent has a usable threat right now.
+		 * @return True when both @ref ThreatDistance is non-negative and
+		 *         @ref PrimaryThreat is a valid handle.
+		 */
 		TACTIX_NODISCARD bool HasThreat() const { return ThreatDistance >= 0.0f && PrimaryThreat.IsValid(); }
 	};
 }

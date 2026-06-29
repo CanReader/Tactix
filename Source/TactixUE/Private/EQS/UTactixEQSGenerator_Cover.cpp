@@ -1,5 +1,11 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixEQSGenerator_Cover.cpp
+ * @brief Implements the cover EQS generator: emit each registered cover point as
+ *        a point item.
+ */
+
 #include "EQS/UTactixEQSGenerator_Cover.h"
 #include "EnvironmentQuery/EnvQueryTypes.h"
 #include "EnvironmentQuery/Items/EnvQueryItemType_Point.h"

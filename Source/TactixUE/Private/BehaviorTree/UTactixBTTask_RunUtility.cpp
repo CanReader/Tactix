@@ -1,5 +1,11 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixBTTask_RunUtility.cpp
+ * @brief Implements the utility-selection BT task: snapshot the agent, pick the
+ *        best action, publish it.
+ */
+
 #include "BehaviorTree/UTactixBTTask_RunUtility.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "AIController.h"

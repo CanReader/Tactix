@@ -1,5 +1,10 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixBTDecorator_InCover.cpp
+ * @brief Implements the in-cover decorator condition.
+ */
+
 #include "BehaviorTree/UTactixBTDecorator_InCover.h"
 #include "AIController.h"
 #include "Controller/ATactixAIController.h"

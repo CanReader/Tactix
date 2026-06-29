@@ -1,5 +1,12 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file FTactixAgentScheduler.cpp
+ * @brief Implements the min-heap scheduler. Contracts live in the header; this
+ *        file documents the few spots where the implementation has a subtlety
+ *        worth flagging.
+ */
+
 #include "Agent/FTactixAgentScheduler.h"
 
 #include <cstring>  // std::memcpy
@@ -34,6 +41,9 @@ namespace Tactix
 		Cap  = NewCapacity;
 	}
 
+	// Linear scan, not a side index. Register/Unregister/ReportTickCost are rare
+	// next to Collect, so an O(n) lookup keeps the hot path's memory footprint
+	// small rather than maintaining a handle->index map.
 	std::size_t FTactixAgentScheduler::FindIndex(FTactixHandle<ITactixAgent> Agent) const
 	{
 		for (std::size_t i = 0; i < Count; ++i)

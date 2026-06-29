@@ -1,5 +1,14 @@
 // Copyright Sleak Software. All Rights Reserved.
 
+/**
+ * @file UTactixBTService_InfluenceQuery.cpp
+ * @brief Implements the influence-sampling BT service.
+ *
+ * The default tick interval is a quarter second (with a little jitter) rather
+ * than every frame: spatial awareness doesn't need per-frame resolution and the
+ * jitter spreads the cost of many agents across frames.
+ */
+
 #include "BehaviorTree/UTactixBTService_InfluenceQuery.h"
 #include "BehaviorTree/BlackboardComponent.h"
 #include "AIController.h"
