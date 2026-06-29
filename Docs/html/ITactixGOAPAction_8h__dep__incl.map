@@ -1,0 +1,7 @@
+<map id="Source/TactixSystems/Public/GOAP/ITactixGOAPAction.h" name="Source/TactixSystems/Public/GOAP/ITactixGOAPAction.h">
+<area shape="rect" id="Node000001" title="Interface for a GOAP action: a graph edge with preconditions, effects and a cost." alt="" coords="154,5,394,50"/>
+<area shape="rect" id="Node000002" href="$FTactixGOAPPlanner_8cpp.html" title="A* implementation for Tactix::FTactixGOAPPlanner." alt="" coords="5,106,279,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,58,172,108,169,104,231,60"/>
+<area shape="rect" id="Node000003" href="$UTactixBTTask__ExecutePlan_8cpp.html" title="Implements step&#45;by&#45;step plan execution for the BT task." alt="" coords="303,98,512,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,57,369,98,364,97,314,62"/>
+</map>

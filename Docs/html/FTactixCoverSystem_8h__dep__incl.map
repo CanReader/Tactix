@@ -1,0 +1,15 @@
+<map id="Source/TactixSystems/Public/Cover/FTactixCoverSystem.h" name="Source/TactixSystems/Public/Cover/FTactixCoverSystem.h">
+<area shape="rect" id="Node000001" title="Registry of cover points with claim/release ownership and a &quot;best cover &#160;&#160;&#160;&#160;&#160;&#160;for this situation&quot; que..." alt="" coords="458,5,713,50"/>
+<area shape="rect" id="Node000002" href="$UTactixWorldSubsystem_8h.html" title="Per&#45;world owner of the cover system and influence map shared by every agent in the level." alt="" coords="450,98,721,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="587,64,588,99,583,96,584,68"/>
+<area shape="rect" id="Node000003" href="$UTactixBTService__InfluenceQuery_8cpp.html" title="Implements the influence&#45;sampling BT service." alt="" coords="5,191,233,252"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="457,147,245,193,234,196,232,191,244,188,462,145"/>
+<area shape="rect" id="Node000004" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="256,191,464,252"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="525,149,430,193,428,187,520,150"/>
+<area shape="rect" id="Node000005" href="$UTactixEQSGenerator__Cover_8cpp.html" title="Implements the cover EQS generator: emit each registered cover point as a point item." alt="" coords="488,191,683,252"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="588,156,588,192,584,189,584,160"/>
+<area shape="rect" id="Node000006" href="$UTactixEQSTest__Influence_8cpp.html" title="Implements the influence EQS test: sample the map per item and score it." alt="" coords="707,199,955,244"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="654,146,780,199,775,198,653,151"/>
+<area shape="rect" id="Node000007" href="$UTactixWorldSubsystem_8cpp.html" title="Implements the world subsystem: the soft cover&#45;reservation layer." alt="" coords="979,199,1264,244"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="722,143,967,188,1012,199,1006,198,967,193,721,149"/>
+</map>

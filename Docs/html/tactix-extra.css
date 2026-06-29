@@ -1,0 +1,41 @@
+/*
+ * Tactix: light refinements on top of Doxygen's native theme.
+ * Typography and spacing only, so it can't knock the layout out of place.
+ * The accent color comes from HTML_COLORSTYLE_HUE in the Doxyfile.
+ */
+
+body, table, div, p, dl {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+/* A little more breathing room in body text. */
+div.contents p,
+div.contents dl,
+div.textblock {
+    line-height: 1.6;
+}
+
+/* Code stays monospaced and readable. */
+code, .fragment, pre.fragment, div.line, .mlabel {
+    font-family: "JetBrains Mono", "SF Mono", "Cascadia Code", Consolas,
+                 "Liberation Mono", monospace;
+    font-size: 13px;
+}
+
+/* Roomier main-page intro. */
+div.contents h1 {
+    margin-top: 0.4em;
+    letter-spacing: -0.01em;
+}
+
+div.contents h2 {
+    margin-top: 1.4em;
+}
+
+/* Slightly softer tables in the intro. */
+div.textblock table.markdownTable td,
+div.textblock table.markdownTable th {
+    padding: 6px 12px;
+}

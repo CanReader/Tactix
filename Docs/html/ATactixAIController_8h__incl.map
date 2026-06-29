@@ -1,0 +1,34 @@
+<map id="Source/TactixUE/Public/Controller/ATactixAIController.h" name="Source/TactixUE/Public/Controller/ATactixAIController.h">
+<area shape="rect" id="Node000001" title="Base AIController for Tactix&#45;aware pawns." alt="" coords="378,5,605,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,122,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="377,53,138,99,136,94,379,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="146,98,256,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="412,52,263,96,261,91,417,49"/>
+<area shape="rect" id="Node000004" href="$TactixArena_8h.html" title="Bump (linear) allocator for short&#45;lived scratch memory." alt="" coords="654,174,839,201"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="606,44,661,64,686,78,709,96,731,126,743,160,738,158,726,128,706,100,683,83,658,69,606,49"/>
+<area shape="rect" id="Node000010" href="$FTactixGOAPPlanner_8h.html" title="A* planner over the GOAP world&#45;state graph." alt="" coords="280,98,484,126"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="465,49,413,90,411,86,460,52"/>
+<area shape="rect" id="Node000012" href="$FTactixHTNPlanner_8h.html" title="Depth&#45;first HTN planner with method&#45;order fallback and backtracking." alt="" coords="509,98,695,126"/>
+<area shape="poly" id="edge15_Node000001_Node000012" title=" " alt="" coords="521,48,575,89,570,88,520,53"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="771,98,996,126"/>
+<area shape="poly" id="edge19_Node000001_Node000013" title=" " alt="" coords="596,48,809,94,803,95,595,53"/>
+<area shape="rect" id="Node000005" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="379,249,471,277"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="691,202,487,251,486,245,686,202"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="629,249,698,277"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="734,201,691,241,688,237,729,203"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="510,249,575,277"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="712,201,590,248,589,242,707,202"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="722,249,770,277"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="748,200,748,235,744,232,744,204"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="794,249,853,277"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="761,199,801,239,796,238,759,204"/>
+<area shape="poly" id="edge10_Node000010_Node000005" title=" " alt="" coords="345,125,314,142,288,159,274,179,273,189,278,200,295,219,316,233,366,254,361,253,314,238,291,223,273,203,268,190,269,177,284,155,312,137,340,127"/>
+<area shape="poly" id="edge14_Node000010_Node000007" title=" " alt="" coords="415,124,453,144,491,172,515,203,533,237,528,234,511,206,487,176,451,148,414,129"/>
+<area shape="rect" id="Node000011" href="$FTactixWorldState_8h.html" title="Symbolic world state for the GOAP planner: 64 boolean facts plus a &quot;defined&quot; mask." alt="" coords="287,174,477,201"/>
+<area shape="poly" id="edge11_Node000010_Node000011" title=" " alt="" coords="384,124,384,159,380,157,381,128"/>
+<area shape="poly" id="edge12_Node000011_Node000005" title=" " alt="" coords="391,200,412,237,407,235,388,204"/>
+<area shape="poly" id="edge13_Node000011_Node000007" title=" " alt="" coords="411,199,503,243,497,242,410,204"/>
+<area shape="poly" id="edge16_Node000012_Node000005" title=" " alt="" coords="590,125,453,241,451,237,584,126"/>
+<area shape="poly" id="edge18_Node000012_Node000007" title=" " alt="" coords="603,124,598,161,586,202,564,239,561,235,581,200,593,160,599,128"/>
+<area shape="poly" id="edge17_Node000012_Node000011" title=" " alt="" coords="565,126,437,171,435,166,560,127"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="Source/TactixUE/Public/BehaviorTree/UTactixBTTask_ClaimCover.h" name="Source/TactixUE/Public/BehaviorTree/UTactixBTTask_ClaimCover.h">
+<area shape="rect" id="Node000001" title="BT task that finds, claims and records the best cover for the agent." alt="" coords="5,5,214,67"/>
+<area shape="rect" id="Node000002" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="5,115,214,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,80,112,115,107,114,108,85"/>
+</map>

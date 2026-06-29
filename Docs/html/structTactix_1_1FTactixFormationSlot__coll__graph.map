@@ -1,0 +1,5 @@
+<map id="Tactix::FTactixFormationSlot" name="Tactix::FTactixFormationSlot">
+<area shape="rect" id="Node000001" title="One formation slot, stored as an offset in formation&#45;local space." alt="" coords="5,106,209,134"/>
+<area shape="rect" id="Node000002" href="$structTactix_1_1FTactixVec3.html" title="Three&#45;component float vector. Plain data, constexpr&#45;friendly." alt="" coords="35,5,179,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="109,47,110,106,104,105,105,50"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Tactix::FTactixAgentContext" name="Tactix::FTactixAgentContext">
+<area shape="rect" id="Node000001" title="Everything an evaluator needs to know about an agent this frame." alt="" coords="366,157,567,185"/>
+<area shape="rect" id="Node000002" href="$structTactix_1_1FTactixHandle.html" title=" " alt="" coords="20,26,198,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="213,48,278,57,343,75,376,93,407,114,454,157,449,157,404,118,374,97,341,80,277,62,214,53"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixVec3.html" title="Three&#45;component float vector. Plain data, constexpr&#45;friendly." alt="" coords="37,157,181,185"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="196,169,367,170,363,173,197,174"/>
+<area shape="rect" id="Node000004" href="$classTactix_1_1FTactixBlackboardRef.html" title="Capacity&#45;independent interface to a blackboard." alt="" coords="5,213,213,241"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="228,215,341,199,410,186,416,185,342,204,228,220"/>
+</map>

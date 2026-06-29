@@ -1,0 +1,21 @@
+<map id="Source/TactixUE/Public/Controller/ATactixAIController.h" name="Source/TactixUE/Public/Controller/ATactixAIController.h">
+<area shape="rect" id="Node000001" title="Base AIController for Tactix&#45;aware pawns." alt="" coords="1089,5,1316,50"/>
+<area shape="rect" id="Node000002" href="$FTactixGameplayDebuggerCategory_8cpp.html" title="Implements the Gameplay Debugger category: collect agent state, then render it as text lines." alt="" coords="5,98,256,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1071,33,710,55,488,74,267,101,256,102,255,97,266,95,488,69,709,50,1076,32"/>
+<area shape="rect" id="Node000003" href="$FTactixVisualDebugger_8cpp.html" title="Implements the agent debug overlays with debug&#45;draw primitives." alt="" coords="279,106,528,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="1071,39,826,64,683,80,542,101,499,108,498,103,541,95,683,75,826,59,1076,38"/>
+<area shape="rect" id="Node000004" href="$UTactixBTDecorator__InCover_8cpp.html" title="Implements the in&#45;cover decorator condition." alt="" coords="553,98,796,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1076,50,810,101,797,103,796,98,809,95,1071,51"/>
+<area shape="rect" id="Node000005" href="$UTactixBTDecorator__PlanActive_8cpp.html" title="Implements the plan&#45;active decorator condition (valid plan with steps left)." alt="" coords="821,98,1064,160"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="1134,55,1023,100,1021,95,1129,56"/>
+<area shape="rect" id="Node000006" href="$UTactixBTService__InfluenceQuery_8cpp.html" title="Implements the influence&#45;sampling BT service." alt="" coords="1089,98,1316,160"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="1204,64,1204,99,1201,96,1201,67"/>
+<area shape="rect" id="Node000007" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="1340,98,1548,160"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="1270,54,1373,98,1367,97,1269,59"/>
+<area shape="rect" id="Node000008" href="$UTactixBTTask__ExecutePlan_8cpp.html" title="Implements step&#45;by&#45;step plan execution for the BT task." alt="" coords="1572,98,1780,160"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="1332,49,1560,95,1574,101,1569,100,1559,101,1331,55"/>
+<area shape="rect" id="Node000009" href="$UTactixBTTask__RunUtility_8cpp.html" title="Implements the utility&#45;selection BT task: snapshot the agent, pick the best action,..." alt="" coords="1804,98,2012,160"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="1332,37,1548,59,1671,75,1792,95,1806,100,1800,100,1791,101,1670,81,1548,64,1332,42"/>
+<area shape="rect" id="Node000010" href="$ATactixAIController_8cpp.html" title="Implements the Tactix AIController: scratch arena ownership, handle assignment on possess,..." alt="" coords="2036,106,2278,151"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="1332,32,1648,53,1836,71,2024,95,2070,106,2064,106,2023,101,1836,76,1647,58,1332,37"/>
+</map>

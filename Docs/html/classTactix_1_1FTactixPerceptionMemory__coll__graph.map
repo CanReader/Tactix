@@ -1,0 +1,9 @@
+<map id="Tactix::FTactixPerceptionMemory&lt; Capacity &gt;" name="Tactix::FTactixPerceptionMemory&lt; Capacity &gt;">
+<area shape="rect" id="Node000001" title=" " alt="" coords="78,224,260,268"/>
+<area shape="rect" id="Node000002" href="$structTactix_1_1FTactixStimulus.html" title="A single timestamped sensory event." alt="" coords="84,123,254,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,165,171,224,167,222,167,168"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixVec3.html" title="Three&#45;component float vector. Plain data, constexpr&#45;friendly." alt="" coords="5,14,149,42"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="99,51,160,122,155,123,97,56"/>
+<area shape="rect" id="Node000004" href="$structTactix_1_1FTactixHandle.html" title=" " alt="" coords="172,5,350,50"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="234,60,182,125,178,121,231,64"/>
+</map>

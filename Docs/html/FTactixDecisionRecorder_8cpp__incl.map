@@ -1,0 +1,29 @@
+<map id="Source/TactixDebug/Private/FTactixDecisionRecorder.cpp" name="Source/TactixDebug/Private/FTactixDecisionRecorder.cpp">
+<area shape="rect" id="Node000001" title="Implements the decision ring buffer: recording, history/all queries, and the log dump." alt="" coords="346,5,606,50"/>
+<area shape="rect" id="Node000002" href="$FTactixDecisionRecorder_8h.html" title="Ring buffer of recent AI decisions for replay scrubbing and post&#45;mortems (&quot;why did it do that?..." alt="" coords="155,98,347,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="414,52,303,95,300,90,419,49"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="558,98,710,126"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="518,48,598,90,592,91,518,53"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="648,174,806,201"/>
+<area shape="poly" id="edge11_Node000001_Node000009" title=" " alt="" coords="487,48,513,87,529,107,547,124,593,149,643,169,638,169,590,154,544,128,525,110,508,90,486,53"/>
+<area shape="rect" id="Node000010" href="$TactixCore_8h.html" title="Unreal&#45;facing entry point for the TactixCore module: the shared log category and the module lifecycle..." alt="" coords="382,98,483,126"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="467,49,449,86,445,82,463,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="236,174,352,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="259,124,281,161,276,160,258,129"/>
+<area shape="rect" id="Node000004" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="121,249,314,277"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="245,124,235,149,226,174,221,205,219,235,214,233,215,204,220,173,230,147,242,128"/>
+<area shape="rect" id="Node000007" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="5,174,161,201"/>
+<area shape="poly" id="edge6_Node000002_Node000007" title=" " alt="" coords="219,128,128,170,125,165,223,124"/>
+<area shape="rect" id="Node000005" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="172,325,264,353"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="220,276,220,311,215,308,216,279"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="41,325,106,353"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="195,277,114,320,112,315,189,278"/>
+<area shape="poly" id="edge8_Node000007_Node000004" title=" " alt="" coords="107,199,183,241,178,243,107,205"/>
+<area shape="poly" id="edge7_Node000007_Node000005" title=" " alt="" coords="85,199,92,237,100,257,110,275,136,299,167,318,162,319,133,303,106,279,95,259,87,239,83,204"/>
+<area shape="poly" id="edge9_Node000007_Node000006" title=" " alt="" coords="79,199,67,250,66,281,70,311,65,310,61,281,62,249,77,204"/>
+<area shape="poly" id="edge13_Node000010_Node000003" title=" " alt="" coords="405,128,333,169,330,164,410,125"/>
+<area shape="poly" id="edge16_Node000010_Node000005" title=" " alt="" coords="429,125,393,197,364,240,329,279,298,302,265,321,263,316,295,298,325,275,360,236,388,194,425,128"/>
+<area shape="poly" id="edge14_Node000010_Node000009" title=" " alt="" coords="484,123,662,169,657,170,484,129"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="428,174,624,201"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="450,124,500,164,495,164,449,129"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="Tactix::FTactixCoverPoint" name="Tactix::FTactixCoverPoint">
+<area shape="rect" id="Node000001" title="One cover position registered with FTactixCoverSystem." alt="" coords="77,145,261,173"/>
+<area shape="rect" id="Node000002" href="$structTactix_1_1FTactixVec3.html" title="Three&#45;component float vector. Plain data, constexpr&#45;friendly." alt="" coords="5,14,149,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="96,52,162,144,157,145,93,56"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixHandle.html" title=" " alt="" coords="172,5,350,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="246,63,210,123,186,147,183,143,206,120,242,65"/>
+</map>

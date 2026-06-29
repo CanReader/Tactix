@@ -1,0 +1,5 @@
+<map id="Tactix::FTactixUtilityResult" name="Tactix::FTactixUtilityResult">
+<area shape="rect" id="Node000001" title="Outcome of a FTactixUtilitySelector::Pick call." alt="" coords="5,106,199,134"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1ITactixAction.html" title="One candidate behaviour the utility selector can pick." alt="" coords="27,5,177,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="104,47,105,106,99,105,100,50"/>
+</map>

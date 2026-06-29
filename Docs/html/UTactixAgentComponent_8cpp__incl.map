@@ -1,0 +1,37 @@
+<map id="Source/TactixUE/Private/Components/UTactixAgentComponent.cpp" name="Source/TactixUE/Private/Components/UTactixAgentComponent.cpp">
+<area shape="rect" id="Node000001" title="Implements the pawn&#45;to&#45;agent adapter: snapshotting UE state into a Tactix::FTactixAgentContext." alt="" coords="608,5,908,50"/>
+<area shape="rect" id="Node000002" href="$UTactixAgentComponent_8h.html" title="The component that makes a pawn a Tactix agent." alt="" coords="362,98,642,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="688,52,558,95,556,90,693,49"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="667,98,849,126"/>
+<area shape="poly" id="edge20_Node000001_Node000013" title=" " alt="" coords="760,48,760,84,756,81,757,53"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="873,98,1126,126"/>
+<area shape="poly" id="edge21_Node000001_Node000014" title=" " alt="" coords="822,48,949,92,944,93,822,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,122,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="419,129,138,176,136,170,421,124"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="145,174,374,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="457,128,319,171,317,166,461,125"/>
+<area shape="rect" id="Node000005" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="559,249,714,277"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="549,124,588,143,606,156,622,172,635,202,640,235,635,232,630,204,617,175,603,160,586,147,549,129"/>
+<area shape="rect" id="Node000009" href="$FTactixAgentContext_8h.html" title="Read&#45;only, side&#45;effect&#45;free snapshot of one agent for a single decision." alt="" coords="398,174,607,201"/>
+<area shape="poly" id="edge10_Node000002_Node000009" title=" " alt="" coords="504,124,505,159,500,157,501,128"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="682,174,946,201"/>
+<area shape="poly" id="edge19_Node000002_Node000012" title=" " alt="" coords="558,124,746,169,741,170,558,129"/>
+<area shape="rect" id="Node000006" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="657,401,750,428"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="683,275,719,294,736,307,749,324,753,341,750,359,729,392,726,387,745,357,748,342,744,326,732,311,717,298,682,280"/>
+<area shape="rect" id="Node000007" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="540,325,734,353"/>
+<area shape="poly" id="edge6_Node000005_Node000007" title=" " alt="" coords="639,276,639,311,635,308,635,280"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="450,401,515,428"/>
+<area shape="poly" id="edge9_Node000005_Node000008" title=" " alt="" coords="605,277,566,299,531,327,509,356,493,388,490,384,504,354,527,323,564,295,600,278"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="650,351,684,390,679,388,648,356"/>
+<area shape="poly" id="edge8_Node000007_Node000008" title=" " alt="" coords="612,353,524,396,523,391,607,354"/>
+<area shape="poly" id="edge17_Node000009_Node000005" title=" " alt="" coords="527,199,603,242,597,242,526,205"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="607,197,670,215,700,229,728,247,754,270,771,294,777,322,770,354,756,375,738,394,735,389,752,372,765,352,772,322,766,297,750,274,725,251,698,234,668,220,607,202"/>
+<area shape="poly" id="edge12_Node000009_Node000007" title=" " alt="" coords="507,199,524,236,550,275,573,297,600,317,595,317,570,301,545,279,519,239,505,204"/>
+<area shape="poly" id="edge18_Node000009_Node000008" title=" " alt="" coords="450,203,408,222,357,247,310,282,290,303,274,326,269,339,274,351,294,362,335,375,437,402,432,403,334,380,292,367,269,354,264,339,269,324,286,299,307,278,355,242,406,217,455,201"/>
+<area shape="rect" id="Node000010" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="284,325,464,353"/>
+<area shape="poly" id="edge13_Node000009_Node000010" title=" " alt="" coords="494,200,397,315,394,311,489,203"/>
+<area shape="poly" id="edge14_Node000010_Node000006" title=" " alt="" coords="434,351,645,399,639,400,433,356"/>
+<area shape="poly" id="edge16_Node000010_Node000008" title=" " alt="" coords="394,351,453,392,448,391,393,356"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="343,401,405,428"/>
+<area shape="poly" id="edge15_Node000010_Node000011" title=" " alt="" coords="376,351,376,387,372,383,372,355"/>
+</map>

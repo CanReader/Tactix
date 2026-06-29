@@ -1,0 +1,11 @@
+<map id="Source/TactixCore/Public/Agent/ITactixAgent.h" name="Source/TactixCore/Public/Agent/ITactixAgent.h">
+<area shape="rect" id="Node000001" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="29,5,209,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="13,174,105,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="61,53,35,72,12,99,8,115,12,131,34,162,29,164,7,133,3,115,7,97,31,68,64,48"/>
+<area shape="rect" id="Node000003" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="22,98,216,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="120,48,121,83,116,82,118,53"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="145,174,210,201"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="175,48,207,68,231,97,235,115,230,133,207,165,204,161,226,131,230,115,226,99,203,72,175,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="111,125,81,163,77,160,106,127"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="131,124,160,161,155,161,128,129"/>
+</map>

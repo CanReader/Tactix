@@ -1,0 +1,31 @@
+<map id="Source/TactixUE/Public/Components/UTactixAgentComponent.h" name="Source/TactixUE/Public/Components/UTactixAgentComponent.h">
+<area shape="rect" id="Node000001" title="The component that makes a pawn a Tactix agent." alt="" coords="360,5,644,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,122,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="385,53,138,99,136,94,387,48"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="145,98,374,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="436,52,314,95,312,90,440,49"/>
+<area shape="rect" id="Node000004" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="559,174,714,201"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="560,48,594,69,622,96,635,127,639,160,635,157,630,129,617,100,591,73,559,53"/>
+<area shape="rect" id="Node000008" href="$FTactixAgentContext_8h.html" title="Read&#45;only, side&#45;effect&#45;free snapshot of one agent for a single decision." alt="" coords="398,98,607,126"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="504,48,505,84,500,81,501,53"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="682,98,946,126"/>
+<area shape="poly" id="edge18_Node000001_Node000011" title=" " alt="" coords="585,48,752,93,747,94,585,53"/>
+<area shape="rect" id="Node000005" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="657,325,750,353"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="683,199,719,218,736,231,749,248,753,266,750,284,729,316,726,312,745,282,748,266,744,251,732,235,717,222,682,204"/>
+<area shape="rect" id="Node000006" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="540,249,734,277"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="639,200,639,235,635,232,635,204"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="450,325,515,353"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="605,201,566,224,531,251,509,281,493,313,490,308,504,278,527,247,564,219,600,203"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="650,275,684,314,679,313,648,280"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="612,277,524,321,523,316,607,278"/>
+<area shape="poly" id="edge16_Node000008_Node000004" title=" " alt="" coords="527,124,603,166,597,166,526,129"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="607,121,670,139,700,153,728,172,754,195,771,219,777,246,770,278,756,300,738,318,735,313,752,296,765,276,772,246,766,221,750,198,725,176,698,158,668,144,607,126"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="507,123,524,160,550,200,573,221,600,242,595,241,570,226,545,203,519,163,505,128"/>
+<area shape="poly" id="edge17_Node000008_Node000007" title=" " alt="" coords="450,127,408,146,357,171,310,206,290,227,274,251,269,263,274,275,294,286,335,299,437,327,432,327,334,304,292,291,269,279,264,264,269,248,286,224,307,202,355,167,406,141,455,125"/>
+<area shape="rect" id="Node000009" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="284,249,464,277"/>
+<area shape="poly" id="edge12_Node000008_Node000009" title=" " alt="" coords="494,125,397,239,394,235,489,127"/>
+<area shape="poly" id="edge13_Node000009_Node000005" title=" " alt="" coords="434,275,645,324,639,324,433,280"/>
+<area shape="poly" id="edge15_Node000009_Node000007" title=" " alt="" coords="394,275,453,316,448,316,393,280"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="343,325,405,353"/>
+<area shape="poly" id="edge14_Node000009_Node000010" title=" " alt="" coords="376,276,376,311,372,308,372,279"/>
+</map>

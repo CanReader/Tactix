@@ -1,0 +1,10 @@
+<map id="Source/TactixSystems/Public/GOAP/ITactixGOAPAction.h" name="Source/TactixSystems/Public/GOAP/ITactixGOAPAction.h">
+<area shape="rect" id="Node000001" title="Interface for a GOAP action: a graph edge with preconditions, effects and a cost." alt="" coords="5,5,246,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="29,174,121,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,48,99,74,88,99,81,129,78,159,73,157,76,128,83,97,94,71,109,53"/>
+<area shape="rect" id="Node000003" href="$FTactixWorldState_8h.html" title="Symbolic world state for the GOAP planner: 64 boolean facts plus a &quot;defined&quot; mask." alt="" coords="97,98,287,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="144,48,175,85,169,86,142,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="174,126,109,168,107,163,169,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="160,174,225,201"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="194,124,194,159,190,157,190,128"/>
+</map>

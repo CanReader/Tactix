@@ -1,0 +1,5 @@
+<map id="Tactix::FTactixSquadMember" name="Tactix::FTactixSquadMember">
+<area shape="rect" id="Node000001" title="One squad slot: which agent, its role, and its formation slot index." alt="" coords="5,123,212,151"/>
+<area shape="rect" id="Node000002" href="$structTactix_1_1FTactixHandle.html" title=" " alt="" coords="20,5,197,50"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,64,111,123,106,122,106,67"/>
+</map>

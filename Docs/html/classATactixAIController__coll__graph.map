@@ -1,0 +1,15 @@
+<map id="ATactixAIController" name="ATactixAIController">
+<area shape="rect" id="Node000001" title=" " alt="" coords="154,284,298,311"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,183,113,211"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="95,216,206,282,201,285,93,221"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixGOAPPlan.html" title="A computed plan: the ordered actions that get from start to goal." alt="" coords="137,183,314,211"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="228,225,228,284,223,282,224,228"/>
+<area shape="rect" id="Node000004" href="$classTactix_1_1ITactixGOAPAction.html" title="One operator the GOAP planner can chain to reach a goal." alt="" coords="130,82,316,110"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="225,123,228,183,223,181,222,128"/>
+<area shape="rect" id="Node000005" href="$structTactix_1_1FTactixHTNPlan.html" title="A fully decomposed HTN plan: a flat, ordered list of primitives." alt="" coords="348,183,516,211"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="408,220,379,243,347,262,283,286,281,280,345,257,376,239,403,222"/>
+<area shape="rect" id="Node000006" href="$classTactix_1_1ITactixHTNPrimitive.html" title="A leaf task: directly executable, with planner&#45;visible effects." alt="" coords="341,82,537,110"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="439,123,435,184,431,181,435,127"/>
+<area shape="rect" id="Node000007" href="$classTactix_1_1ITactixHTNTask.html" title="Base for every HTN task; only distinguishes primitive from compound." alt="" coords="356,5,522,33"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="440,46,441,83,437,81,438,51"/>
+</map>

@@ -1,0 +1,16 @@
+<map id="Source/TactixSystems/Public/Spatial/FTactixInfluenceMap.h" name="Source/TactixSystems/Public/Spatial/FTactixInfluenceMap.h">
+<area shape="rect" id="Node000001" title="Multi&#45;channel 2D scalar field for spatial reasoning (danger, control, resource, ....." alt="" coords="81,5,302,67"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="5,191,98,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="131,70,106,91,82,117,67,146,58,176,53,174,62,144,77,113,103,87,135,66"/>
+<area shape="rect" id="Node000003" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="101,115,282,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="193,65,194,100,189,98,190,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="140,191,203,218"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="131,70,110,90,91,116,88,134,96,151,112,167,133,183,127,183,109,171,92,154,83,135,86,114,106,87,135,66"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="256,191,322,218"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="250,65,277,87,297,114,303,145,299,177,295,174,298,146,292,116,273,90,249,70"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="357,115,426,143"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="258,65,351,108,346,109,258,70"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="169,143,91,186,89,181,164,143"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="190,142,181,177,177,174,186,145"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="210,141,262,181,257,181,208,146"/>
+</map>

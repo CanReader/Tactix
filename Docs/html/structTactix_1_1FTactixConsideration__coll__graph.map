@@ -1,0 +1,15 @@
+<map id="Tactix::FTactixConsideration" name="Tactix::FTactixConsideration">
+<area shape="rect" id="Node000001" title="Concrete consideration = input selector + response curve." alt="" coords="661,167,863,195"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1ITactixConsideration.html" title="One scoring factor evaluated against an agent&#39;s current state." alt="" coords="367,118,566,145"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="581,140,637,149,709,166,704,166,637,154,581,146"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixAgentContext.html" title="Everything an evaluator needs to know about an agent this frame." alt="" coords="366,170,567,197"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="582,180,663,181,658,182,582,185"/>
+<area shape="rect" id="Node000004" href="$structTactix_1_1FTactixHandle.html" title=" " alt="" coords="20,38,198,83"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="212,49,247,51,281,58,314,70,344,88,355,105,357,122,358,139,368,155,387,169,381,169,364,159,353,141,352,123,350,107,340,92,312,74,280,63,246,56,214,54"/>
+<area shape="rect" id="Node000005" href="$structTactix_1_1FTactixVec3.html" title="Three&#45;component float vector. Plain data, constexpr&#45;friendly." alt="" coords="37,170,181,197"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="196,181,367,182,363,185,197,186"/>
+<area shape="rect" id="Node000006" href="$classTactix_1_1FTactixBlackboardRef.html" title="Capacity&#45;independent interface to a blackboard." alt="" coords="5,226,213,253"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="228,227,341,211,410,198,416,197,342,216,228,232"/>
+<area shape="rect" id="Node000007" href="$structTactix_1_1FTactixCurve.html" title="A plain&#45;data response curve: a shape plus its tuning parameters." alt="" coords="391,223,542,251"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="557,223,636,210,707,195,713,195,638,215,557,228"/>
+</map>

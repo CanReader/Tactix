@@ -1,0 +1,14 @@
+<map id="Source/TactixUE/Public/DataAssets/UTactixSquadConfigAsset.h" name="Source/TactixUE/Public/DataAssets/UTactixSquadConfigAsset.h">
+<area shape="rect" id="Node000001" title="Designer&#45;facing asset describing a squad&#39;s roles, formation and tactic." alt="" coords="93,5,325,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,191,122,218"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,70,69,90,44,116,39,130,39,146,50,177,44,177,34,146,34,129,40,114,65,86,100,65"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="55,115,203,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="184,66,152,105,149,101,180,69"/>
+<area shape="rect" id="Node000004" href="$TactixUETypes_8h.html" title="Blueprint&#45;exposed mirrors of Tactix enums and config structs." alt="" coords="227,115,353,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="237,65,271,103,265,103,235,70"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="377,115,646,143"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="310,65,456,109,451,111,310,70"/>
+<area shape="poly" id="edge4_Node000004_Node000002" title=" " alt="" coords="251,146,119,188,117,183,249,141"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="192,191,388,218"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="292,141,292,176,288,173,288,145"/>
+</map>

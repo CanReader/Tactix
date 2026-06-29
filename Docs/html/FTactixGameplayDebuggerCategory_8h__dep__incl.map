@@ -1,0 +1,7 @@
+<map id="Source/TactixDebug/Public/FTactixGameplayDebuggerCategory.h" name="Source/TactixDebug/Public/FTactixGameplayDebuggerCategory.h">
+<area shape="rect" id="Node000001" title="Tactix category for Unreal&#39;s built&#45;in Gameplay Debugger." alt="" coords="141,5,384,67"/>
+<area shape="rect" id="Node000002" href="$FTactixGameplayDebuggerCategory_8cpp.html" title="Implements the Gameplay Debugger category: collect agent state, then render it as text lines." alt="" coords="5,115,256,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="216,76,169,117,166,112,211,78"/>
+<area shape="rect" id="Node000003" href="$TactixDebugModule_8cpp.html" title="Implements the TactixDebug module: registering and removing the Gameplay Debugger category." alt="" coords="279,124,510,168"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="312,75,371,123,365,123,310,80"/>
+</map>

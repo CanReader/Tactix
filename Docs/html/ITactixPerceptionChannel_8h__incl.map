@@ -1,0 +1,22 @@
+<map id="Source/TactixCore/Public/Perception/ITactixPerceptionChannel.h" name="Source/TactixCore/Public/Perception/ITactixPerceptionChannel.h">
+<area shape="rect" id="Node000001" title="Stimulus record and channel interface for the perception memory." alt="" coords="118,5,392,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="136,249,228,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,52,137,72,90,98,47,133,29,153,14,175,8,190,11,204,20,215,35,225,75,241,123,253,118,255,74,246,32,230,16,219,6,206,3,190,9,172,24,149,43,129,87,94,134,67,183,49"/>
+<area shape="rect" id="Node000003" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="24,174,217,201"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="218,52,194,74,168,100,148,130,133,161,128,158,143,127,164,96,190,70,222,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="293,249,359,277"/>
+<area shape="poly" id="edge13_Node000001_Node000004" title=" " alt="" coords="351,48,403,67,454,93,501,128,522,149,539,172,544,188,539,203,516,215,474,229,374,254,373,249,473,224,514,210,535,200,539,188,534,175,518,152,498,132,452,97,401,72,351,53"/>
+<area shape="rect" id="Node000005" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="344,174,524,201"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="285,48,346,96,414,162,409,162,343,100,284,53"/>
+<area shape="rect" id="Node000007" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="178,98,333,126"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="256,48,258,83,253,81,254,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="133,199,164,237,159,237,130,204"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="158,199,281,244,276,246,157,205"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="391,202,242,247,241,242,386,202"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="417,201,359,243,356,238,412,203"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="403,249,465,277"/>
+<area shape="poly" id="edge7_Node000005_Node000006" title=" " alt="" coords="436,200,436,235,432,232,432,204"/>
+<area shape="poly" id="edge10_Node000007_Node000002" title=" " alt="" coords="255,124,248,162,232,203,206,240,203,236,227,200,242,160,251,128"/>
+<area shape="poly" id="edge11_Node000007_Node000003" title=" " alt="" coords="229,128,159,168,156,164,233,125"/>
+<area shape="poly" id="edge12_Node000007_Node000004" title=" " alt="" coords="263,124,316,235,311,235,260,128"/>
+</map>

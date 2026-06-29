@@ -1,0 +1,10 @@
+<map id="Source/TactixCore/Public/Perception" name="Source/TactixCore/Public/Perception">
+<area shape="rect" id="node1" href="dir_516845b59cefc71c6c6af265af17a9b3.html" title="Foundation" alt="" coords="27,130,120,158"/>
+<area shape="rect" id="node2" href="dir_ff91ff076b52f9497faab33155f5b2d0.html" title="Agent" alt="" coords="144,130,203,158"/>
+<area shape="rect" id="node3" href="dir_23dbc8ac8735ea71bb2268f5dd834fa4.html" title="Perception" alt="" coords="70,54,160,82"/>
+<area shape="poly" id="edge1" href="dir_000021_000016.html" alt="" coords="109,81,90,118,86,115,105,84"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000021_000016.html" title="2" alt="" coords="93,109,101,126"/>
+<area shape="poly" id="edge2" href="dir_000021_000001.html" alt="" coords="126,80,156,118,151,118,124,85"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000021_000001.html" title="1" alt="" coords="154,102,162,119"/>
+<area shape="rect" id="clust1" href="dir_af79bd82e21e7c162d56ec0efee40066.html" title="Public" alt="" coords="16,16,213,168"/>
+</map>

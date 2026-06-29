@@ -1,0 +1,73 @@
+<map id="Source/TactixDebug/Private/FTactixVisualDebugger.cpp" name="Source/TactixDebug/Private/FTactixVisualDebugger.cpp">
+<area shape="rect" id="Node000001" title="Implements the agent debug overlays with debug&#45;draw primitives." alt="" coords="969,5,1219,50"/>
+<area shape="rect" id="Node000002" href="$FTactixVisualDebugger_8h.html" title="Static helpers that draw per&#45;agent debug overlays in the world." alt="" coords="749,98,930,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1024,52,895,95,893,90,1029,50"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1258,98,1418,126"/>
+<area shape="poly" id="edge27_Node000001_Node000014" title=" " alt="" coords="1159,48,1287,93,1282,93,1159,53"/>
+<area shape="rect" id="Node000015" href="$ATactixAIController_8h.html" title="Base AIController for Tactix&#45;aware pawns." alt="" coords="430,174,654,201"/>
+<area shape="poly" id="edge28_Node000001_Node000015" title=" " alt="" coords="966,47,856,70,737,101,652,134,581,168,578,164,650,129,736,95,855,64,972,45"/>
+<area shape="rect" id="Node000022" href="$UTactixAgentComponent_8h.html" title="The component that makes a pawn a Tactix agent." alt="" coords="954,98,1234,126"/>
+<area shape="poly" id="edge40_Node000001_Node000022" title=" " alt="" coords="1096,48,1096,84,1092,81,1092,53"/>
+<area shape="rect" id="Node000025" title=" " alt="" coords="1442,98,1626,126"/>
+<area shape="poly" id="edge46_Node000001_Node000025" title=" " alt="" coords="1211,48,1451,94,1446,95,1211,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="880,249,996,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="849,123,923,237,918,235,847,128"/>
+<area shape="rect" id="Node000004" href="$FTactixGOAPPlanner_8h.html" title="A* planner over the GOAP world&#45;state graph." alt="" coords="440,249,644,277"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="817,125,667,204,584,245,582,240,665,199,812,127"/>
+<area shape="rect" id="Node000008" href="$FTactixHTNPlanner_8h.html" title="Depth&#45;first HTN planner with method&#45;order fallback and backtracking." alt="" coords="669,249,855,277"/>
+<area shape="poly" id="edge9_Node000002_Node000008" title=" " alt="" coords="835,124,778,237,774,233,831,127"/>
+<area shape="rect" id="Node000009" href="$FTactixAgentContext_8h.html" title="Read&#45;only, side&#45;effect&#45;free snapshot of one agent for a single decision." alt="" coords="976,174,1185,201"/>
+<area shape="poly" id="edge13_Node000002_Node000009" title=" " alt="" coords="883,124,1026,169,1020,169,882,129"/>
+<area shape="rect" id="Node000005" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="962,401,1055,428"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="548,275,568,314,583,334,602,350,735,372,950,405,944,405,734,377,600,355,579,338,564,317,545,280"/>
+<area shape="rect" id="Node000006" href="$FTactixWorldState_8h.html" title="Symbolic world state for the GOAP planner: 64 boolean facts plus a &quot;defined&quot; mask." alt="" coords="612,325,802,353"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="572,275,667,318,661,318,571,280"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="840,401,905,428"/>
+<area shape="poly" id="edge8_Node000004_Node000007" title=" " alt="" coords="542,275,543,314,548,334,559,351,577,363,604,374,675,391,754,402,827,411,822,410,754,407,674,396,602,379,574,368,555,355,543,336,537,315,538,279"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="762,351,950,398,945,398,761,356"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="737,351,832,394,827,394,736,356"/>
+<area shape="poly" id="edge10_Node000008_Node000005" title=" " alt="" coords="784,275,977,393,972,392,783,280"/>
+<area shape="poly" id="edge11_Node000008_Node000006" title=" " alt="" coords="755,276,728,315,725,310,750,279"/>
+<area shape="poly" id="edge12_Node000008_Node000007" title=" " alt="" coords="775,275,816,323,859,388,854,386,812,327,773,280"/>
+<area shape="poly" id="edge14_Node000009_Node000005" title=" " alt="" coords="1186,193,1310,208,1373,221,1431,237,1476,258,1494,270,1506,284,1513,300,1514,317,1507,335,1493,355,1471,366,1432,376,1317,393,1070,413,1070,407,1317,388,1431,371,1469,361,1490,351,1502,333,1508,316,1508,301,1502,287,1490,274,1474,263,1429,242,1372,226,1309,214,1186,198"/>
+<area shape="poly" id="edge26_Node000009_Node000007" title=" " alt="" coords="1073,200,1011,279,899,392,896,387,1007,275,1068,203"/>
+<area shape="rect" id="Node000010" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="979,325,1172,353"/>
+<area shape="poly" id="edge15_Node000009_Node000010" title=" " alt="" coords="1082,200,1078,311,1074,307,1078,203"/>
+<area shape="rect" id="Node000011" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="1298,325,1479,353"/>
+<area shape="poly" id="edge18_Node000009_Node000011" title=" " alt="" coords="1166,199,1234,218,1301,247,1341,278,1372,314,1367,312,1337,282,1298,252,1232,223,1166,205"/>
+<area shape="rect" id="Node000013" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="1132,249,1288,277"/>
+<area shape="poly" id="edge22_Node000009_Node000013" title=" " alt="" coords="1104,199,1177,242,1171,241,1103,204"/>
+<area shape="poly" id="edge16_Node000010_Node000005" title=" " alt="" coords="1066,352,1032,392,1029,387,1061,354"/>
+<area shape="poly" id="edge17_Node000010_Node000007" title=" " alt="" coords="1042,353,921,399,920,393,1036,354"/>
+<area shape="poly" id="edge19_Node000011_Node000005" title=" " alt="" coords="1323,353,1070,404,1069,399,1318,354"/>
+<area shape="poly" id="edge21_Node000011_Node000007" title=" " alt="" coords="1301,352,950,403,921,408,921,403,950,398,1295,352"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="1358,401,1420,428"/>
+<area shape="poly" id="edge20_Node000011_Node000012" title=" " alt="" coords="1391,351,1391,387,1387,383,1387,355"/>
+<area shape="poly" id="edge23_Node000013_Node000005" title=" " alt="" coords="1220,275,1237,313,1238,334,1231,354,1205,372,1165,387,1071,407,1070,402,1163,382,1203,368,1227,351,1233,334,1232,314,1217,280"/>
+<area shape="poly" id="edge25_Node000013_Node000007" title=" " alt="" coords="1212,276,1208,316,1200,337,1186,355,1152,365,1081,380,921,408,920,403,1080,374,1151,360,1183,350,1195,334,1203,314,1208,279"/>
+<area shape="poly" id="edge24_Node000013_Node000010" title=" " alt="" coords="1188,277,1113,320,1111,315,1183,278"/>
+<area shape="poly" id="edge29_Node000015_Node000003" title=" " alt="" coords="613,199,867,248,862,249,613,205"/>
+<area shape="poly" id="edge37_Node000015_Node000004" title=" " alt="" coords="544,200,544,235,540,232,540,204"/>
+<area shape="poly" id="edge38_Node000015_Node000008" title=" " alt="" coords="582,199,711,244,706,244,581,205"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="306,249,415,277"/>
+<area shape="poly" id="edge30_Node000015_Node000016" title=" " alt="" coords="507,203,408,246,406,241,512,201"/>
+<area shape="rect" id="Node000017" href="$TactixArena_8h.html" title="Bump (linear) allocator for short&#45;lived scratch memory." alt="" coords="301,325,487,353"/>
+<area shape="poly" id="edge31_Node000015_Node000017" title=" " alt="" coords="431,203,349,223,316,236,296,251,291,260,291,269,300,286,321,302,348,318,342,318,318,307,296,290,285,270,286,259,292,248,314,231,348,218,436,201"/>
+<area shape="rect" id="Node000021" title=" " alt="" coords="5,249,231,277"/>
+<area shape="poly" id="edge39_Node000015_Node000021" title=" " alt="" coords="464,204,210,249,209,244,467,200"/>
+<area shape="poly" id="edge32_Node000017_Node000005" title=" " alt="" coords="487,348,918,398,950,405,944,404,918,403,487,353"/>
+<area shape="poly" id="edge34_Node000017_Node000007" title=" " alt="" coords="480,351,827,405,822,407,480,356"/>
+<area shape="rect" id="Node000018" title=" " alt="" coords="277,401,346,428"/>
+<area shape="poly" id="edge33_Node000017_Node000018" title=" " alt="" coords="382,352,339,393,336,388,377,354"/>
+<area shape="rect" id="Node000019" title=" " alt="" coords="370,401,418,428"/>
+<area shape="poly" id="edge35_Node000017_Node000019" title=" " alt="" coords="396,351,396,387,392,383,392,355"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="442,401,501,428"/>
+<area shape="poly" id="edge36_Node000017_Node000020" title=" " alt="" coords="409,351,449,391,444,389,407,356"/>
+<area shape="poly" id="edge41_Node000022_Node000003" title=" " alt="" coords="1045,125,1002,147,983,160,967,175,951,204,942,236,939,232,946,202,963,172,980,156,1000,142,1040,127"/>
+<area shape="poly" id="edge44_Node000022_Node000009" title=" " alt="" coords="1093,124,1088,160,1084,157,1090,128"/>
+<area shape="poly" id="edge43_Node000022_Node000013" title=" " alt="" coords="1134,124,1170,143,1187,156,1200,172,1212,203,1214,236,1210,233,1207,204,1196,175,1183,160,1167,147,1133,129"/>
+<area shape="rect" id="Node000023" title=" " alt="" coords="1261,174,1490,201"/>
+<area shape="poly" id="edge42_Node000022_Node000023" title=" " alt="" coords="1144,124,1313,169,1308,169,1144,129"/>
+<area shape="rect" id="Node000024" title=" " alt="" coords="1514,174,1778,201"/>
+<area shape="poly" id="edge45_Node000022_Node000024" title=" " alt="" coords="1193,124,1534,171,1529,171,1193,129"/>
+</map>

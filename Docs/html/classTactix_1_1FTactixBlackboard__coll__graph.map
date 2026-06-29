@@ -1,0 +1,11 @@
+<map id="Tactix::FTactixBlackboard&lt; Capacity &gt;" name="Tactix::FTactixBlackboard&lt; Capacity &gt;">
+<area shape="rect" id="Node000001" title="Concrete fixed&#45;capacity blackboard backed by an open&#45;addressed table." alt="" coords="222,207,407,251"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1FTactixBlackboardRef.html" title="Capacity&#45;independent interface to a blackboard." alt="" coords="5,106,213,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,138,275,205,270,207,147,144"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixBBKey.html" title="A blackboard key: just the hash of its name, comparable and copyable." alt="" coords="237,106,392,134"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="316,148,317,207,312,205,312,151"/>
+<area shape="rect" id="Node000004" href="$structTactix_1_1FTactixBBValue.html" title="A tagged union holding one blackboard value." alt="" coords="415,106,582,134"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="465,141,353,208,351,204,460,142"/>
+<area shape="rect" id="Node000005" href="$structTactix_1_1FTactixVec3.html" title="Three&#45;component float vector. Plain data, constexpr&#45;friendly." alt="" coords="427,5,570,33"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="500,47,501,107,496,104,497,51"/>
+</map>

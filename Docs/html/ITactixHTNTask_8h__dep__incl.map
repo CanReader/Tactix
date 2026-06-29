@@ -1,0 +1,7 @@
+<map id="Source/TactixSystems/Public/HTN/ITactixHTNTask.h" name="Source/TactixSystems/Public/HTN/ITactixHTNTask.h">
+<area shape="rect" id="Node000001" title="Task hierarchy for the HTN planner: the common base, primitive (leaf) tasks, and compound tasks that ..." alt="" coords="155,5,367,50"/>
+<area shape="rect" id="Node000002" href="$FTactixHTNPlanner_8cpp.html" title="Recursive decomposition for Tactix::FTactixHTNPlanner." alt="" coords="5,106,261,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,58,162,108,159,104,219,60"/>
+<area shape="rect" id="Node000003" href="$UTactixBTTask__ExecutePlan_8cpp.html" title="Implements step&#45;by&#45;step plan execution for the BT task." alt="" coords="285,98,493,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="302,57,353,98,347,97,300,62"/>
+</map>

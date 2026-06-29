@@ -1,0 +1,7 @@
+<map id="Tactix::FTactixStimulus" name="Tactix::FTactixStimulus">
+<area shape="rect" id="Node000001" title="A single timestamped sensory event." alt="" coords="84,123,254,151"/>
+<area shape="rect" id="Node000002" href="$structTactix_1_1FTactixVec3.html" title="Three&#45;component float vector. Plain data, constexpr&#45;friendly." alt="" coords="5,14,149,42"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="99,51,160,122,155,123,97,56"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixHandle.html" title=" " alt="" coords="172,5,350,50"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="235,61,182,125,178,121,230,63"/>
+</map>

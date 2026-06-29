@@ -1,0 +1,28 @@
+<map id="Source/TactixSystems/Public/GOAP/FTactixGOAPPlanner.h" name="Source/TactixSystems/Public/GOAP/FTactixGOAPPlanner.h">
+<area shape="rect" id="Node000001" title="A* planner over the GOAP world&#45;state graph." alt="" coords="606,5,857,50"/>
+<area shape="rect" id="Node000002" href="$FTactixVisualDebugger_8h.html" title="Static helpers that draw per&#45;agent debug overlays in the world." alt="" coords="212,98,440,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="617,55,424,100,423,95,622,53"/>
+<area shape="rect" id="Node000004" href="$FTactixGOAPPlanner_8cpp.html" title="A* implementation for Tactix::FTactixGOAPPlanner." alt="" coords="595,98,868,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="733,64,733,99,729,96,730,68"/>
+<area shape="rect" id="Node000005" href="$ATactixAIController_8h.html" title="Base AIController for Tactix&#45;aware pawns." alt="" coords="958,98,1185,143"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="828,52,993,97,987,98,827,57"/>
+<area shape="rect" id="Node000003" href="$FTactixVisualDebugger_8cpp.html" title="Implements the agent debug overlays with debug&#45;draw primitives." alt="" coords="5,199,255,244"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="272,149,174,201,172,196,267,151"/>
+<area shape="poly" id="edge6_Node000005_Node000003" title=" " alt="" coords="940,137,881,145,708,158,573,164,438,173,266,193,222,201,221,196,266,188,438,167,573,159,708,153,880,140,945,136"/>
+<area shape="rect" id="Node000006" href="$FTactixGameplayDebuggerCategory_8cpp.html" title="Implements the Gameplay Debugger category: collect agent state, then render it as text lines." alt="" coords="278,191,528,252"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="945,137,720,168,541,193,529,195,529,190,540,188,720,163,940,138"/>
+<area shape="rect" id="Node000007" href="$UTactixBTDecorator__InCover_8cpp.html" title="Implements the in&#45;cover decorator condition." alt="" coords="552,191,796,252"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="972,147,796,193,795,187,967,147"/>
+<area shape="rect" id="Node000008" href="$UTactixBTDecorator__PlanActive_8cpp.html" title="Implements the plan&#45;active decorator condition (valid plan with steps left)." alt="" coords="820,191,1064,252"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="1034,151,982,193,980,188,1029,153"/>
+<area shape="rect" id="Node000009" href="$UTactixBTService__InfluenceQuery_8cpp.html" title="Implements the influence&#45;sampling BT service." alt="" coords="1088,191,1316,252"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="1112,149,1165,191,1160,190,1111,154"/>
+<area shape="rect" id="Node000010" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="1339,191,1548,252"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="1168,145,1341,193,1336,192,1167,150"/>
+<area shape="rect" id="Node000011" href="$UTactixBTTask__ExecutePlan_8cpp.html" title="Implements step&#45;by&#45;step plan execution for the BT task." alt="" coords="1571,191,1780,252"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="1200,133,1372,156,1560,188,1574,193,1568,193,1559,193,1371,162,1200,139"/>
+<area shape="rect" id="Node000012" href="$UTactixBTTask__RunUtility_8cpp.html" title="Implements the utility&#45;selection BT task: snapshot the agent, pick the best action,..." alt="" coords="1803,191,2012,252"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="1201,125,1474,147,1633,164,1792,188,1805,193,1800,193,1791,193,1633,170,1473,152,1200,131"/>
+<area shape="rect" id="Node000013" href="$ATactixAIController_8cpp.html" title="Implements the Tactix AIController: scratch arena ownership, handle assignment on possess,..." alt="" coords="2036,199,2278,244"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="1201,122,1366,129,1571,142,1798,161,2024,188,2070,199,2065,198,2023,193,1797,166,1571,147,1365,135,1201,128"/>
+</map>

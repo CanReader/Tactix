@@ -1,0 +1,5 @@
+<map id="UTactixBTTask_ExecutePlan" name="UTactixBTTask_ExecutePlan">
+<area shape="rect" id="Node000001" title="Behavior Tree task: execute the active plan step by step." alt="" coords="5,81,207,109"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="50,5,162,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,47,108,82,104,79,104,51"/>
+</map>

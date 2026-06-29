@@ -1,0 +1,13 @@
+<map id="Source/TactixUE/Public/TactixUETypes.h" name="Source/TactixUE/Public/TactixUETypes.h">
+<area shape="rect" id="Node000001" title="Blueprint&#45;exposed mirrors of Tactix enums and config structs." alt="" coords="167,5,335,50"/>
+<area shape="rect" id="Node000002" href="$UTactixSquadConfigAsset_8h.html" title="Designer&#45;facing asset describing a squad&#39;s roles, formation and tactic." alt="" coords="5,98,238,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="209,61,163,100,159,96,213,58"/>
+<area shape="rect" id="Node000004" href="$UTactixUtilityAsset_8h.html" title="Designer&#45;facing asset: a named set of scored actions for one decision context." alt="" coords="262,106,501,151"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="292,57,356,106,351,106,291,62"/>
+<area shape="rect" id="Node000003" href="$UTactixSquadConfigAsset_8cpp.html" title="Translation unit for the squad config asset. It&#39;s pure data, so there&#39;s no behaviour to implement her..." alt="" coords="5,208,238,269"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="123,173,124,208,119,206,120,177"/>
+<area shape="rect" id="Node000005" href="$UTactixBTTask__RunUtility_8cpp.html" title="Implements the utility&#45;selection BT task: snapshot the agent, pick the best action,..." alt="" coords="269,208,478,269"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="381,165,378,209,374,205,377,169"/>
+<area shape="rect" id="Node000006" href="$UTactixUtilityAsset_8cpp.html" title="Implements utility scoring: input extraction, curve building, and the Lewis&#45;compensated action score." alt="" coords="502,216,757,261"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="446,155,582,215,577,216,445,160"/>
+</map>

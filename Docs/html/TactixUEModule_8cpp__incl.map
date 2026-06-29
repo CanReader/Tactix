@@ -1,0 +1,17 @@
+<map id="Source/TactixUE/Private/TactixUEModule.cpp" name="Source/TactixUE/Private/TactixUEModule.cpp">
+<area shape="rect" id="Node000001" title="Implements the TactixUE module lifecycle (logging only)." alt="" coords="156,5,331,50"/>
+<area shape="rect" id="Node000002" href="$TactixUE_8h.html" title="Module object for TactixUE, the engine&#45;integration layer." alt="" coords="139,98,228,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="230,49,204,87,200,83,226,52"/>
+<area shape="rect" id="Node000005" href="$TactixCore_8h.html" title="Unreal&#45;facing entry point for the TactixCore module: the shared log category and the module lifecycle..." alt="" coords="253,98,354,126"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="260,48,288,86,282,85,258,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,122,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="165,126,99,168,96,163,159,127"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="145,174,342,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="195,124,226,162,221,161,193,129"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="261,129,122,171,120,166,260,124"/>
+<area shape="poly" id="edge7_Node000005_Node000004" title=" " alt="" coords="295,125,265,164,262,159,290,127"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="366,174,524,201"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="329,124,409,166,403,166,328,129"/>
+<area shape="rect" id="Node000007" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="548,174,640,201"/>
+<area shape="poly" id="edge8_Node000005_Node000007" title=" " alt="" coords="355,123,536,170,530,171,354,129"/>
+</map>

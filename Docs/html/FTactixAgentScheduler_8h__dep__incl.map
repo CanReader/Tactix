@@ -1,0 +1,5 @@
+<map id="Source/TactixCore/Public/Agent/FTactixAgentScheduler.h" name="Source/TactixCore/Public/Agent/FTactixAgentScheduler.h">
+<area shape="rect" id="Node000001" title="Min&#45;heap tick distributor that spreads agent work across frames under a per&#45;frame CPU budget." alt="" coords="13,5,238,50"/>
+<area shape="rect" id="Node000002" href="$FTactixAgentScheduler_8cpp.html" title="Implements the min&#45;heap scheduler. Contracts live in the header; this file documents the few spots wh..." alt="" coords="5,98,246,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="127,64,128,99,123,97,124,68"/>
+</map>

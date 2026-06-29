@@ -1,0 +1,5 @@
+<map id="Source/TactixSystems/Public/Utility/ITactixAction.h" name="Source/TactixSystems/Public/Utility/ITactixAction.h">
+<area shape="rect" id="Node000001" title="Interface for a Utility AI action: a thing the agent can choose to do, with a score and an execution ..." alt="" coords="5,5,213,50"/>
+<area shape="rect" id="Node000002" href="$FTactixUtilitySelector_8h.html" title="Picks the highest&#45;scoring action, and computes a combined consideration score with compensation for t..." alt="" coords="10,98,208,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,63,112,98,106,97,107,68"/>
+</map>

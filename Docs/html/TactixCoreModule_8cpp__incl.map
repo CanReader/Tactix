@@ -1,0 +1,13 @@
+<map id="Source/TactixCore/Private/TactixCoreModule.cpp" name="Source/TactixCore/Private/TactixCoreModule.cpp">
+<area shape="rect" id="Node000001" title="Implements the TactixCore module object and defines the shared log category for the whole plugin." alt="" coords="231,5,418,50"/>
+<area shape="rect" id="Node000002" href="$TactixCore_8h.html" title="Unreal&#45;facing entry point for the TactixCore module: the shared log category and the module lifecycle..." alt="" coords="274,98,376,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="326,48,327,84,323,81,323,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,174,122,201"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="279,129,126,172,124,166,277,124"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="146,174,304,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="309,125,256,167,253,162,304,127"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="328,174,524,201"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="344,124,399,165,393,164,342,129"/>
+<area shape="rect" id="Node000006" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="548,174,640,201"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="373,124,536,169,530,170,373,129"/>
+</map>

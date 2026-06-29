@@ -1,0 +1,9 @@
+<map id="Source/TactixUE/Public/BehaviorTree/UTactixBTTask_ExecutePlan.h" name="Source/TactixUE/Public/BehaviorTree/UTactixBTTask_ExecutePlan.h">
+<area shape="rect" id="Node000001" title="BT task that walks the controller&#39;s active GOAP or HTN plan, one step per tick." alt="" coords="129,5,338,67"/>
+<area shape="rect" id="Node000002" href="$UTactixBTTask__ExecutePlan_8cpp.html" title="Implements step&#45;by&#45;step plan execution for the BT task." alt="" coords="5,115,214,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,79,146,116,142,113,189,75"/>
+<area shape="rect" id="Node000003" href="$UTactixBTDecorator__PlanActive_8h.html" title="BT decorator that passes while a plan of the chosen type is running." alt="" coords="237,115,480,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="281,75,327,114,321,115,280,80"/>
+<area shape="rect" id="Node000004" href="$UTactixBTDecorator__PlanActive_8cpp.html" title="Implements the plan&#45;active decorator condition (valid plan with steps left)." alt="" coords="237,225,480,286"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="361,190,361,226,357,223,357,194"/>
+</map>

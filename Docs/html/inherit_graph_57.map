@@ -1,0 +1,9 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,57,117,85"/>
+<area shape="rect" id="Node000001" href="$classUTactixBTTask__ClaimCover.html" title="Behavior Tree task: query and claim the best cover point." alt="" coords="166,5,364,33"/>
+<area shape="poly" id="edge16_Node000000_Node000001" title=" " alt="" coords="131,51,210,32,206,35,132,56"/>
+<area shape="rect" id="Node000002" href="$classUTactixBTTask__ExecutePlan.html" title="Behavior Tree task: execute the active plan step by step." alt="" coords="165,57,366,85"/>
+<area shape="poly" id="edge17_Node000000_Node000002" title=" " alt="" coords="132,69,167,70,162,72,133,74"/>
+<area shape="rect" id="Node000003" href="$classUTactixBTTask__RunUtility.html" title="Behavior Tree task: select the best action from a utility asset." alt="" coords="172,109,359,137"/>
+<area shape="poly" id="edge18_Node000000_Node000003" title=" " alt="" coords="132,86,210,108,205,110,131,92"/>
+</map>

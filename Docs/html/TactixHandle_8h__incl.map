@@ -1,0 +1,7 @@
+<map id="Source/TactixCore/Public/Foundation/TactixHandle.h" name="Source/TactixCore/Public/Foundation/TactixHandle.h">
+<area shape="rect" id="Node000001" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="5,5,203,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="7,98,100,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="93,49,72,86,67,83,88,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="123,98,189,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="119,48,142,85,137,84,116,53"/>
+</map>

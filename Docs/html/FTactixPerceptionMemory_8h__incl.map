@@ -1,0 +1,29 @@
+<map id="Source/TactixCore/Public/Perception/FTactixPerceptionMemory.h" name="Source/TactixCore/Public/Perception/FTactixPerceptionMemory.h">
+<area shape="rect" id="Node000001" title="Per&#45;agent ring buffer of timestamped stimuli with on&#45;demand decay." alt="" coords="426,5,703,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="12,342,104,370"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="423,47,314,69,198,101,96,129,76,138,58,150,40,168,23,192,11,218,9,240,22,293,40,329,35,330,17,295,3,241,6,216,18,189,36,164,54,146,74,133,94,124,197,95,312,63,428,44"/>
+<area shape="rect" id="Node000003" href="$ITactixPerceptionChannel_8h.html" title="Stimulus record and channel interface for the perception memory." alt="" coords="210,98,415,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="502,52,388,95,386,90,506,49"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="396,342,461,370"/>
+<area shape="poly" id="edge18_Node000001_Node000005" title=" " alt="" coords="572,48,584,98,592,161,591,196,587,231,577,264,561,295,544,315,523,330,477,348,476,343,520,325,541,311,557,293,572,262,581,230,586,196,586,161,579,98,570,53"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="465,266,528,294"/>
+<area shape="poly" id="edge16_Node000001_Node000007" title=" " alt="" coords="561,49,506,253,502,250,556,52"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="652,106,722,134"/>
+<area shape="poly" id="edge17_Node000001_Node000009" title=" " alt="" coords="594,48,660,97,654,97,593,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="208,137,107,159,66,174,41,192,32,208,27,224,27,260,35,296,47,327,41,328,30,298,21,261,22,223,27,205,37,189,64,170,106,154,211,132"/>
+<area shape="rect" id="Node000004" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="146,266,340,294"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="303,141,282,192,256,254,251,250,277,190,300,145"/>
+<area shape="poly" id="edge15_Node000003_Node000005" title=" " alt="" coords="392,141,441,161,486,189,521,222,532,240,542,266,546,281,541,295,529,312,512,325,476,344,475,339,510,321,525,308,537,293,540,281,537,267,527,243,517,225,483,193,439,165,392,146"/>
+<area shape="rect" id="Node000006" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="292,191,472,218"/>
+<area shape="poly" id="edge7_Node000003_Node000006" title=" " alt="" coords="331,140,363,179,358,178,330,146"/>
+<area shape="rect" id="Node000008" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="51,191,206,218"/>
+<area shape="poly" id="edge11_Node000003_Node000008" title=" " alt="" coords="262,145,173,186,171,182,266,141"/>
+<area shape="poly" id="edge5_Node000004_Node000002" title=" " alt="" coords="212,297,105,339,103,334,208,292"/>
+<area shape="poly" id="edge6_Node000004_Node000005" title=" " alt="" coords="277,292,384,336,379,336,276,297"/>
+<area shape="poly" id="edge8_Node000006_Node000002" title=" " alt="" coords="383,217,377,257,368,278,354,296,337,307,313,317,252,332,120,352,119,346,251,327,312,312,335,302,351,292,364,275,372,256,379,221"/>
+<area shape="poly" id="edge10_Node000006_Node000005" title=" " alt="" coords="387,216,422,328,417,326,384,221"/>
+<area shape="poly" id="edge9_Node000006_Node000007" title=" " alt="" coords="403,216,466,258,461,258,402,221"/>
+<area shape="poly" id="edge12_Node000008_Node000002" title=" " alt="" coords="121,217,92,268,68,328,64,326,87,265,117,221"/>
+<area shape="poly" id="edge13_Node000008_Node000004" title=" " alt="" coords="149,216,213,257,207,259,149,222"/>
+<area shape="poly" id="edge14_Node000008_Node000005" title=" " alt="" coords="126,216,124,255,128,275,137,292,153,304,177,315,242,331,315,342,383,351,378,351,315,348,241,337,175,320,150,309,133,296,123,277,119,256,124,221"/>
+</map>

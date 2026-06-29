@@ -1,0 +1,5 @@
+<map id="Source/TactixDebug/Public/FTactixAgentProfiler.h" name="Source/TactixDebug/Public/FTactixAgentProfiler.h">
+<area shape="rect" id="Node000001" title="Per&#45;agent timing recorder for spotting which agents and which phases cost the most." alt="" coords="16,5,225,50"/>
+<area shape="rect" id="Node000002" href="$FTactixAgentProfiler_8cpp.html" title="Implements the timing profiler: cycle&#45;counter sampling, ring storage, and the aggregate queries." alt="" coords="5,98,236,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="122,64,123,99,118,97,119,68"/>
+</map>

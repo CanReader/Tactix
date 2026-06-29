@@ -1,0 +1,24 @@
+<map id="Source/TactixDebug/Private/FTactixInfluenceRenderer.cpp" name="Source/TactixDebug/Private/FTactixInfluenceRenderer.cpp">
+<area shape="rect" id="Node000001" title="Implements the influence heat renderer with debug boxes." alt="" coords="115,5,380,50"/>
+<area shape="rect" id="Node000002" href="$FTactixInfluenceRenderer_8h.html" title="Draws an influence&#45;map channel as a world&#45;space heat grid." alt="" coords="50,98,245,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="220,52,177,90,173,86,223,48"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="269,98,428,126"/>
+<area shape="poly" id="edge12_Node000001_Node000010" title=" " alt="" coords="274,48,323,87,318,88,274,53"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,182,122,210"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="133,129,89,173,85,170,135,124"/>
+<area shape="rect" id="Node000004" href="$FTactixInfluenceMap_8h.html" title="Multi&#45;channel 2D scalar field for spatial reasoning (danger, control, resource, ....." alt="" coords="146,174,320,218"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="161,124,202,162,197,163,161,129"/>
+<area shape="rect" id="Node000005" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="47,342,139,370"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="180,220,151,241,123,268,107,297,99,329,94,326,102,295,119,265,148,237,184,217"/>
+<area shape="rect" id="Node000006" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="143,266,323,294"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="234,217,235,252,230,250,231,221"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="182,342,244,370"/>
+<area shape="poly" id="edge9_Node000004_Node000007" title=" " alt="" coords="180,220,154,241,133,267,129,286,137,303,153,318,174,334,169,334,150,322,133,306,124,286,128,265,151,237,184,217"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="298,342,363,370"/>
+<area shape="poly" id="edge11_Node000004_Node000008" title=" " alt="" coords="284,216,315,237,338,265,343,281,345,297,341,329,337,326,340,297,338,282,333,268,311,241,284,221"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="398,266,468,294"/>
+<area shape="poly" id="edge10_Node000004_Node000009" title=" " alt="" coords="286,216,389,260,384,261,286,222"/>
+<area shape="poly" id="edge6_Node000006_Node000005" title=" " alt="" coords="210,294,132,337,130,332,205,295"/>
+<area shape="poly" id="edge7_Node000006_Node000007" title=" " alt="" coords="231,293,222,329,218,325,227,296"/>
+<area shape="poly" id="edge8_Node000006_Node000008" title=" " alt="" coords="251,292,304,333,298,333,249,297"/>
+</map>

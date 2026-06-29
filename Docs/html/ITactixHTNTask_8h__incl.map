@@ -1,0 +1,11 @@
+<map id="Source/TactixSystems/Public/HTN/ITactixHTNTask.h" name="Source/TactixSystems/Public/HTN/ITactixHTNTask.h">
+<area shape="rect" id="Node000001" title="Task hierarchy for the HTN planner: the common base, primitive (leaf) tasks, and compound tasks that ..." alt="" coords="63,5,274,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="5,174,98,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,53,88,73,64,99,54,128,52,159,46,157,49,127,60,97,85,69,119,49"/>
+<area shape="rect" id="Node000003" href="$FTactixWorldState_8h.html" title="Symbolic world state for the GOAP planner: 64 boolean facts plus a &quot;defined&quot; mask." alt="" coords="74,98,264,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="170,48,171,83,166,81,167,53"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="202,174,267,201"/>
+<area shape="poly" id="edge5_Node000001_Node000004" title=" " alt="" coords="223,48,254,69,278,97,282,114,279,132,260,164,256,160,274,130,277,115,273,99,251,73,223,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="150,126,86,168,83,163,145,127"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="182,124,215,162,210,162,179,129"/>
+</map>

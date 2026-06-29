@@ -1,0 +1,9 @@
+<map id="Source/TactixCore/Public/Foundation/TactixMath.h" name="Source/TactixCore/Public/Foundation/TactixMath.h">
+<area shape="rect" id="Node000001" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="61,5,245,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="5,98,98,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,50,81,90,78,86,124,51"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="122,98,184,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="155,48,155,84,150,81,151,52"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="208,98,274,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,48,218,87,213,87,175,53"/>
+</map>

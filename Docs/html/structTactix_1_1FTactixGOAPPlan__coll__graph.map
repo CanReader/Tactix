@@ -1,0 +1,5 @@
+<map id="Tactix::FTactixGOAPPlan" name="Tactix::FTactixGOAPPlan">
+<area shape="rect" id="Node000001" title="A computed plan: the ordered actions that get from start to goal." alt="" coords="10,106,187,134"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1ITactixGOAPAction.html" title="One operator the GOAP planner can chain to reach a goal." alt="" coords="5,5,192,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="101,47,101,106,96,105,96,50"/>
+</map>

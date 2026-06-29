@@ -1,0 +1,80 @@
+<map id="Source/TactixCore/Public/Foundation/TactixHandle.h" name="Source/TactixCore/Public/Foundation/TactixHandle.h">
+<area shape="rect" id="Node000001" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="1668,5,1866,50"/>
+<area shape="rect" id="Node000002" href="$FTactixAgentContext_8h.html" title="Read&#45;only, side&#45;effect&#45;free snapshot of one agent for a single decision." alt="" coords="610,191,823,235"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1650,39,1434,64,1307,80,1181,101,969,146,793,193,791,188,968,141,1180,95,1306,75,1433,58,1655,38"/>
+<area shape="rect" id="Node000016" href="$FTactixAgentScheduler_8h.html" title="Min&#45;heap tick distributor that spreads agent work across frames under a per&#45;frame CPU budget." alt="" coords="848,191,1073,235"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="1651,44,1507,69,1346,101,1171,147,1025,193,1024,188,1170,142,1345,95,1506,64,1656,43"/>
+<area shape="rect" id="Node000018" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="1460,98,1640,143"/>
+<area shape="poly" id="edge19_Node000001_Node000018" title=" " alt="" coords="1703,56,1603,100,1601,95,1698,57"/>
+<area shape="rect" id="Node000019" href="$ITactixPerceptionChannel_8h.html" title="Stimulus record and channel interface for the perception memory." alt="" coords="1097,191,1371,235"/>
+<area shape="poly" id="edge41_Node000001_Node000019" title=" " alt="" coords="1650,46,1552,69,1448,101,1398,122,1349,146,1268,193,1266,188,1346,141,1395,117,1446,95,1551,64,1655,45"/>
+<area shape="rect" id="Node000021" href="$FTactixAgentProfiler_8h.html" title="Per&#45;agent timing recorder for spotting which agents and which phases cost the most." alt="" coords="1446,191,1654,235"/>
+<area shape="poly" id="edge42_Node000001_Node000021" title=" " alt="" coords="1740,60,1700,103,1654,145,1586,193,1584,188,1651,141,1697,99,1736,63"/>
+<area shape="rect" id="Node000023" href="$FTactixDecisionRecorder_8h.html" title="Ring buffer of recent AI decisions for replay scrubbing and post&#45;mortems (&quot;why did it do that?..." alt="" coords="1679,191,1917,235"/>
+<area shape="poly" id="edge43_Node000001_Node000023" title=" " alt="" coords="1775,63,1797,192,1792,189,1772,67"/>
+<area shape="rect" id="Node000025" href="$FTactixCoverPoint_8h.html" title="A single piece of cover: where to stand, which way it faces, and who currently owns it." alt="" coords="2175,191,2413,235"/>
+<area shape="poly" id="edge44_Node000001_Node000025" title=" " alt="" coords="1844,53,2234,190,2229,190,1843,58"/>
+<area shape="rect" id="Node000026" href="$FTactixCoverSystem_8h.html" title="Registry of cover points with claim/release ownership and a &quot;best cover &#160;&#160;&#160;&#160;&#160;&#160;for this situation&quot; que..." alt="" coords="2316,283,2570,328"/>
+<area shape="poly" id="edge45_Node000001_Node000026" title=" " alt="" coords="1881,39,2027,61,2189,92,2266,112,2334,135,2389,160,2426,189,2440,211,2447,236,2448,285,2444,281,2442,237,2435,213,2423,192,2386,165,2332,140,2264,117,2188,97,2026,66,1881,45"/>
+<area shape="rect" id="Node000031" href="$FTactixSquad_8h.html" title="Fixed&#45;capacity squad: a roster of agent handles with roles, slots, a leader and a current tactic." alt="" coords="1941,191,2150,235"/>
+<area shape="poly" id="edge46_Node000001_Node000031" title=" " alt="" coords="1813,56,2016,190,2010,190,1812,61"/>
+<area shape="rect" id="Node000032" href="$TactixPool_8h.html" title="Fixed&#45;capacity pool allocator with per&#45;slot generation tracking." alt="" coords="2488,98,2668,143"/>
+<area shape="poly" id="edge39_Node000001_Node000032" title=" " alt="" coords="1881,34,2150,58,2310,75,2469,95,2490,101,2485,101,2468,101,2309,80,2150,63,1882,40"/>
+<area shape="rect" id="Node000003" href="$FTactixVisualDebugger_8h.html" title="Static helpers that draw per&#45;agent debug overlays in the world." alt="" coords="470,283,697,328"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="674,243,616,285,614,281,670,246"/>
+<area shape="rect" id="Node000005" href="$UTactixAgentComponent_8h.html" title="The component that makes a pawn a Tactix agent." alt="" coords="1285,283,1569,328"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="838,233,1058,258,1274,281,1287,285,1282,285,1274,286,1058,264,839,238"/>
+<area shape="rect" id="Node000014" href="$UTactixUtilityAsset_8h.html" title="Designer&#45;facing asset: a named set of scored actions for one decision context." alt="" coords="206,283,446,328"/>
+<area shape="poly" id="edge14_Node000002_Node000014" title=" " alt="" coords="606,241,421,285,419,280,611,238"/>
+<area shape="rect" id="Node000004" href="$FTactixVisualDebugger_8cpp.html" title="Implements the agent debug overlays with debug&#45;draw primitives." alt="" coords="517,384,766,429"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="605,339,632,385,627,383,602,344"/>
+<area shape="poly" id="edge6_Node000005_Node000004" title=" " alt="" coords="1266,329,1131,344,1023,352,915,361,780,379,736,387,735,381,779,373,915,355,1022,346,1131,339,1272,328"/>
+<area shape="rect" id="Node000006" href="$FTactixGameplayDebuggerCategory_8cpp.html" title="Implements the Gameplay Debugger category: collect agent state, then render it as text lines." alt="" coords="2011,376,2262,438"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="1585,326,1781,348,1973,373,2013,382,2008,382,1972,379,1780,354,1585,331"/>
+<area shape="rect" id="Node000007" href="$UTactixBTDecorator__InCover_8cpp.html" title="Implements the in&#45;cover decorator condition." alt="" coords="1612,376,1856,438"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="1509,331,1643,376,1637,375,1509,336"/>
+<area shape="rect" id="Node000008" href="$UTactixBTService__InfluenceQuery_8cpp.html" title="Implements the influence&#45;sampling BT service." alt="" coords="1779,486,2006,547"/>
+<area shape="poly" id="edge8_Node000005_Node000008" title=" " alt="" coords="1585,327,1771,355,1869,374,1887,399,1896,429,1899,458,1898,487,1894,483,1894,459,1891,430,1882,402,1866,378,1770,360,1584,332"/>
+<area shape="rect" id="Node000009" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="2030,486,2238,547"/>
+<area shape="poly" id="edge9_Node000005_Node000009" title=" " alt="" coords="1585,326,1786,354,1900,373,1930,387,1952,401,2001,435,2084,486,2079,485,1998,440,1949,406,1928,392,1898,379,1785,360,1585,331"/>
+<area shape="rect" id="Node000010" href="$UTactixBTTask__ExecutePlan_8cpp.html" title="Implements step&#45;by&#45;step plan execution for the BT task." alt="" coords="791,376,999,438"/>
+<area shape="poly" id="edge10_Node000005_Node000010" title=" " alt="" coords="1272,329,1012,379,1000,381,999,376,1011,373,1267,330"/>
+<area shape="rect" id="Node000011" href="$UTactixBTTask__RunUtility_8cpp.html" title="Implements the utility&#45;selection BT task: snapshot the agent, pick the best action,..." alt="" coords="284,376,493,438"/>
+<area shape="poly" id="edge11_Node000005_Node000011" title=" " alt="" coords="1266,329,1054,345,886,348,718,354,621,363,506,379,494,381,493,376,505,373,620,358,718,349,885,342,1054,340,1272,328"/>
+<area shape="rect" id="Node000012" href="$UTactixAgentComponent_8cpp.html" title="Implements the pawn&#45;to&#45;agent adapter: snapshotting UE state into a Tactix::FTactixAgentContext." alt="" coords="1023,384,1322,429"/>
+<area shape="poly" id="edge12_Node000005_Node000012" title=" " alt="" coords="1360,333,1229,387,1228,381,1355,335"/>
+<area shape="rect" id="Node000013" href="$ATactixAIController_8cpp.html" title="Implements the Tactix AIController: scratch arena ownership, handle assignment on possess,..." alt="" coords="1346,384,1588,429"/>
+<area shape="poly" id="edge13_Node000005_Node000013" title=" " alt="" coords="1443,340,1461,385,1456,383,1440,344"/>
+<area shape="poly" id="edge15_Node000014_Node000011" title=" " alt="" coords="348,339,372,376,367,375,347,344"/>
+<area shape="rect" id="Node000015" href="$UTactixUtilityAsset_8cpp.html" title="Implements utility scoring: input extraction, curve building, and the Lewis&#45;compensated action score." alt="" coords="5,384,260,429"/>
+<area shape="poly" id="edge16_Node000014_Node000015" title=" " alt="" coords="268,337,176,386,173,382,272,334"/>
+<area shape="rect" id="Node000017" href="$FTactixAgentScheduler_8cpp.html" title="Implements the min&#45;heap scheduler. Contracts live in the header; this file documents the few spots wh..." alt="" coords="720,283,961,328"/>
+<area shape="poly" id="edge18_Node000016_Node000017" title=" " alt="" coords="922,244,870,285,868,280,917,246"/>
+<area shape="poly" id="edge20_Node000018_Node000002" title=" " alt="" coords="1442,130,1169,156,837,193,824,195,823,190,836,188,1168,150,1447,129"/>
+<area shape="poly" id="edge38_Node000018_Node000005" title=" " alt="" coords="1480,149,1455,170,1436,192,1427,214,1423,238,1425,284,1421,281,1418,238,1422,213,1432,189,1451,166,1475,151"/>
+<area shape="poly" id="edge21_Node000018_Node000016" title=" " alt="" coords="1442,137,1085,193,1074,195,1073,190,1084,188,1447,136"/>
+<area shape="poly" id="edge22_Node000018_Node000019" title=" " alt="" coords="1462,147,1310,193,1309,188,1457,148"/>
+<area shape="poly" id="edge24_Node000018_Node000021" title=" " alt="" coords="1552,156,1552,192,1548,189,1548,160"/>
+<area shape="poly" id="edge26_Node000018_Node000023" title=" " alt="" coords="1624,146,1741,190,1736,190,1623,151"/>
+<area shape="poly" id="edge29_Node000018_Node000025" title=" " alt="" coords="1656,129,1889,154,2164,188,2177,192,2172,192,2163,193,1888,160,1656,135"/>
+<area shape="poly" id="edge37_Node000018_Node000031" title=" " alt="" coords="1655,138,1943,192,1938,193,1655,143"/>
+<area shape="rect" id="Node000020" href="$FTactixPerceptionMemory_8h.html" title="Per&#45;agent ring buffer of timestamped stimuli with on&#45;demand decay." alt="" coords="985,283,1261,328"/>
+<area shape="poly" id="edge23_Node000019_Node000020" title=" " alt="" coords="1198,244,1151,285,1148,280,1193,246"/>
+<area shape="rect" id="Node000022" href="$FTactixAgentProfiler_8cpp.html" title="Implements the timing profiler: cycle&#45;counter sampling, ring storage, and the aggregate queries." alt="" coords="1593,283,1824,328"/>
+<area shape="poly" id="edge25_Node000021_Node000022" title=" " alt="" coords="1601,241,1673,283,1668,283,1600,246"/>
+<area shape="poly" id="edge28_Node000023_Node000006" title=" " alt="" coords="1929,236,2055,262,2122,281,2136,303,2143,328,2143,377,2139,374,2138,329,2131,305,2119,285,2054,267,1929,241"/>
+<area shape="rect" id="Node000024" href="$FTactixDecisionRecorder_8cpp.html" title="Implements the decision ring buffer: recording, history/all queries, and the log dump." alt="" coords="1848,283,2108,328"/>
+<area shape="poly" id="edge27_Node000023_Node000024" title=" " alt="" coords="1855,240,1938,283,1932,283,1854,245"/>
+<area shape="poly" id="edge30_Node000025_Node000026" title=" " alt="" coords="2343,241,2410,283,2405,282,2342,246"/>
+<area shape="rect" id="Node000027" href="$UTactixWorldSubsystem_8h.html" title="Per&#45;world owner of the cover system and influence map shared by every agent in the level." alt="" coords="2293,384,2564,429"/>
+<area shape="poly" id="edge31_Node000026_Node000027" title=" " alt="" coords="2440,342,2434,386,2430,382,2436,345"/>
+<area shape="poly" id="edge32_Node000027_Node000008" title=" " alt="" coords="2303,432,2274,440,2018,488,2007,491,2006,485,2017,483,2273,435,2298,433"/>
+<area shape="poly" id="edge33_Node000027_Node000009" title=" " alt="" coords="2357,435,2217,488,2216,482,2352,435"/>
+<area shape="rect" id="Node000028" href="$UTactixEQSGenerator__Cover_8cpp.html" title="Implements the cover EQS generator: emit each registered cover point as a point item." alt="" coords="2262,486,2456,547"/>
+<area shape="poly" id="edge34_Node000027_Node000028" title=" " alt="" coords="2408,441,2380,487,2377,483,2404,444"/>
+<area shape="rect" id="Node000029" href="$UTactixEQSTest__Influence_8cpp.html" title="Implements the influence EQS test: sample the map per item and score it." alt="" coords="2480,494,2729,539"/>
+<area shape="poly" id="edge35_Node000027_Node000029" title=" " alt="" coords="2478,435,2572,494,2566,493,2476,440"/>
+<area shape="rect" id="Node000030" href="$UTactixWorldSubsystem_8cpp.html" title="Implements the world subsystem: the soft cover&#45;reservation layer." alt="" coords="2752,494,3038,539"/>
+<area shape="poly" id="edge36_Node000027_Node000030" title=" " alt="" coords="2538,431,2804,494,2798,493,2537,436"/>
+<area shape="poly" id="edge40_Node000032_Node000026" title=" " alt="" coords="2555,154,2460,285,2457,281,2551,156"/>
+</map>

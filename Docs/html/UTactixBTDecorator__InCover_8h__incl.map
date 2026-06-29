@@ -1,0 +1,9 @@
+<map id="Source/TactixUE/Public/BehaviorTree/UTactixBTDecorator_InCover.h" name="Source/TactixUE/Public/BehaviorTree/UTactixBTDecorator_InCover.h">
+<area shape="rect" id="Node000001" title="BT decorator that passes while the agent is in cover." alt="" coords="126,5,369,67"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,124,122,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="194,68,102,118,100,113,189,67"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="146,124,349,151"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="249,66,250,109,245,106,246,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="373,115,532,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="311,65,397,108,392,108,310,70"/>
+</map>

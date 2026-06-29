@@ -1,0 +1,19 @@
+<map id="Source/TactixSystems/Public/Spatial/FTactixInfluenceMap.h" name="Source/TactixSystems/Public/Spatial/FTactixInfluenceMap.h">
+<area shape="rect" id="Node000001" title="Multi&#45;channel 2D scalar field for spatial reasoning (danger, control, resource, ....." alt="" coords="396,5,618,67"/>
+<area shape="rect" id="Node000002" href="$FTactixInfluenceRenderer_8h.html" title="Draws an influence&#45;map channel as a world&#45;space heat grid." alt="" coords="131,115,373,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="413,74,309,117,307,112,417,72"/>
+<area shape="rect" id="Node000004" href="$UTactixWorldSubsystem_8h.html" title="Per&#45;world owner of the cover system and influence map shared by every agent in the level." alt="" coords="625,115,895,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="598,70,707,114,702,114,598,76"/>
+<area shape="rect" id="Node000003" href="$FTactixInfluenceRenderer_8cpp.html" title="Implements the influence heat renderer with debug boxes." alt="" coords="5,216,270,261"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="218,169,164,218,161,214,213,171"/>
+<area shape="rect" id="Node000005" href="$UTactixBTService__InfluenceQuery_8cpp.html" title="Implements the influence&#45;sampling BT service." alt="" coords="293,208,520,269"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="671,164,516,210,514,204,666,165"/>
+<area shape="rect" id="Node000006" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="544,208,752,269"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="727,169,683,210,681,205,722,171"/>
+<area shape="rect" id="Node000007" href="$UTactixEQSGenerator__Cover_8cpp.html" title="Implements the cover EQS generator: emit each registered cover point as a point item." alt="" coords="776,208,971,269"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="797,167,842,208,836,207,795,173"/>
+<area shape="rect" id="Node000008" href="$UTactixEQSTest__Influence_8cpp.html" title="Implements the influence EQS test: sample the map per item and score it." alt="" coords="995,216,1243,261"/>
+<area shape="poly" id="edge7_Node000004_Node000008" title=" " alt="" coords="854,162,1043,216,1038,216,853,167"/>
+<area shape="rect" id="Node000009" href="$UTactixWorldSubsystem_8cpp.html" title="Implements the world subsystem: the soft cover&#45;reservation layer." alt="" coords="1267,216,1552,261"/>
+<area shape="poly" id="edge8_Node000004_Node000009" title=" " alt="" coords="911,155,1255,205,1302,216,1297,215,1254,210,911,160"/>
+</map>

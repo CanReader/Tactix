@@ -1,0 +1,31 @@
+<map id="Source/TactixCore/Public/Agent/FTactixAgentContext.h" name="Source/TactixCore/Public/Agent/FTactixAgentContext.h">
+<area shape="rect" id="Node000001" title="Read&#45;only, side&#45;effect&#45;free snapshot of one agent for a single decision." alt="" coords="1069,5,1282,50"/>
+<area shape="rect" id="Node000002" href="$FTactixVisualDebugger_8h.html" title="Static helpers that draw per&#45;agent debug overlays in the world." alt="" coords="399,98,626,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="1051,46,627,106,627,101,1056,45"/>
+<area shape="rect" id="Node000004" href="$UTactixAgentComponent_8h.html" title="The component that makes a pawn a Tactix agent." alt="" coords="1033,98,1318,143"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="1177,64,1177,100,1173,96,1174,68"/>
+<area shape="rect" id="Node000013" href="$UTactixUtilityAsset_8h.html" title="Designer&#45;facing asset: a named set of scored actions for one decision context." alt="" coords="2109,98,2348,143"/>
+<area shape="poly" id="edge13_Node000001_Node000013" title=" " alt="" coords="1298,37,2111,108,2106,109,1297,42"/>
+<area shape="rect" id="Node000003" href="$FTactixVisualDebugger_8cpp.html" title="Implements the agent debug overlays with debug&#45;draw primitives." alt="" coords="5,199,255,244"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="412,148,214,201,213,196,417,146"/>
+<area shape="poly" id="edge5_Node000004_Node000003" title=" " alt="" coords="1015,127,672,150,469,168,266,193,222,201,221,196,266,188,468,163,672,145,1020,127"/>
+<area shape="rect" id="Node000005" href="$FTactixGameplayDebuggerCategory_8cpp.html" title="Implements the Gameplay Debugger category: collect agent state, then render it as text lines." alt="" coords="278,191,528,252"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="1015,135,792,160,541,193,529,195,529,190,540,188,791,154,1021,134"/>
+<area shape="rect" id="Node000006" href="$UTactixBTDecorator__InCover_8cpp.html" title="Implements the in&#45;cover decorator condition." alt="" coords="552,191,796,252"/>
+<area shape="poly" id="edge6_Node000004_Node000006" title=" " alt="" coords="1043,146,809,193,797,196,796,191,808,188,1038,146"/>
+<area shape="rect" id="Node000007" href="$UTactixBTService__InfluenceQuery_8cpp.html" title="Implements the influence&#45;sampling BT service." alt="" coords="820,191,1048,252"/>
+<area shape="poly" id="edge7_Node000004_Node000007" title=" " alt="" coords="1111,148,1009,193,1007,187,1106,149"/>
+<area shape="rect" id="Node000008" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="1071,191,1280,252"/>
+<area shape="poly" id="edge8_Node000004_Node000008" title=" " alt="" coords="1177,156,1177,192,1173,188,1173,160"/>
+<area shape="rect" id="Node000009" href="$UTactixBTTask__ExecutePlan_8cpp.html" title="Implements step&#45;by&#45;step plan execution for the BT task." alt="" coords="1303,191,1512,252"/>
+<area shape="poly" id="edge9_Node000004_Node000009" title=" " alt="" coords="1241,147,1339,190,1334,190,1239,152"/>
+<area shape="rect" id="Node000010" href="$UTactixBTTask__RunUtility_8cpp.html" title="Implements the utility&#45;selection BT task: snapshot the agent, pick the best action,..." alt="" coords="2124,191,2333,252"/>
+<area shape="poly" id="edge10_Node000004_Node000010" title=" " alt="" coords="1333,122,1496,129,1691,141,1903,160,2113,188,2127,193,2121,192,2112,193,1902,165,1691,146,1495,134,1333,128"/>
+<area shape="rect" id="Node000011" href="$UTactixAgentComponent_8cpp.html" title="Implements the pawn&#45;to&#45;agent adapter: snapshotting UE state into a Tactix::FTactixAgentContext." alt="" coords="1535,199,1834,244"/>
+<area shape="poly" id="edge11_Node000004_Node000011" title=" " alt="" coords="1302,143,1575,199,1570,198,1302,149"/>
+<area shape="rect" id="Node000012" href="$ATactixAIController_8cpp.html" title="Implements the Tactix AIController: scratch arena ownership, handle assignment on possess,..." alt="" coords="1858,199,2100,244"/>
+<area shape="poly" id="edge12_Node000004_Node000012" title=" " alt="" coords="1333,130,1575,153,1846,188,1891,199,1885,198,1846,193,1575,158,1333,135"/>
+<area shape="poly" id="edge14_Node000013_Node000010" title=" " alt="" coords="2231,156,2231,192,2227,188,2227,160"/>
+<area shape="rect" id="Node000014" href="$UTactixUtilityAsset_8cpp.html" title="Implements utility scoring: input extraction, curve building, and the Lewis&#45;compensated action score." alt="" coords="2358,199,2612,244"/>
+<area shape="poly" id="edge15_Node000013_Node000014" title=" " alt="" coords="2299,146,2431,199,2426,198,2298,151"/>
+</map>

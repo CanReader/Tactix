@@ -1,0 +1,13 @@
+<map id="Source/TactixSystems/Public/Utility/FTactixConsideration.h" name="Source/TactixSystems/Public/Utility/FTactixConsideration.h">
+<area shape="rect" id="Node000001" title="The standard consideration: pull one number out of the context, run it through a response curve." alt="" coords="5,5,265,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="89,174,181,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,53,48,67,26,84,16,104,16,113,20,124,44,150,77,168,72,171,41,154,15,127,10,114,10,102,22,81,45,63,75,48"/>
+<area shape="rect" id="Node000003" href="$TactixCurve_8h.html" title="Response curves that turn a raw input into a normalised utility score." alt="" coords="264,98,449,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="194,48,309,91,304,93,193,53"/>
+<area shape="rect" id="Node000005" href="$ITactixConsideration_8h.html" title="Interface for a single Utility AI consideration: one normalised factor in an action&#39;s overall score." alt="" coords="30,98,240,126"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="136,48,138,83,132,82,134,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="319,126,190,171,188,166,314,126"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="324,174,389,201"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="358,124,358,160,354,156,354,128"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="137,124,137,159,133,157,133,128"/>
+</map>

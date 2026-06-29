@@ -1,0 +1,7 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classTactix_1_1ITactixAgent.html" title="Interface every Tactix agent implements." alt="" coords="5,5,153,33"/>
+<area shape="rect" id="Node000001" href="$classUTactixAgentComponent.html" title="Adapts a UE pawn to Tactix::ITactixAgent and holds its AI state." alt="" coords="201,32,383,60"/>
+<area shape="poly" id="edge8_Node000000_Node000001" title=" " alt="" coords="168,28,203,34,198,35,169,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="9,57,149,85"/>
+<area shape="poly" id="edge9_Node000002_Node000001" title=" " alt="" coords="164,58,203,56,198,57,165,64"/>
+</map>

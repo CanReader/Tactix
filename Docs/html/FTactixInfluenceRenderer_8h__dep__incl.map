@@ -1,0 +1,5 @@
+<map id="Source/TactixDebug/Public/FTactixInfluenceRenderer.h" name="Source/TactixDebug/Public/FTactixInfluenceRenderer.h">
+<area shape="rect" id="Node000001" title="Draws an influence&#45;map channel as a world&#45;space heat grid." alt="" coords="16,5,259,50"/>
+<area shape="rect" id="Node000002" href="$FTactixInfluenceRenderer_8cpp.html" title="Implements the influence heat renderer with debug boxes." alt="" coords="5,98,270,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,64,140,99,135,97,136,68"/>
+</map>

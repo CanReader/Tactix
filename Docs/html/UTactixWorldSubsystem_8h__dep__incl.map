@@ -1,0 +1,13 @@
+<map id="Source/TactixUE/Public/Subsystem/UTactixWorldSubsystem.h" name="Source/TactixUE/Public/Subsystem/UTactixWorldSubsystem.h">
+<area shape="rect" id="Node000001" title="Per&#45;world owner of the cover system and influence map shared by every agent in the level." alt="" coords="450,5,721,50"/>
+<area shape="rect" id="Node000002" href="$UTactixBTService__InfluenceQuery_8cpp.html" title="Implements the influence&#45;sampling BT service." alt="" coords="5,98,233,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="457,55,245,101,234,103,232,98,244,95,462,52"/>
+<area shape="rect" id="Node000003" href="$UTactixBTTask__ClaimCover_8cpp.html" title="Implements the cover query/claim BT task: build the query from agent and blackboard state,..." alt="" coords="256,98,464,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="525,56,430,100,428,95,520,57"/>
+<area shape="rect" id="Node000004" href="$UTactixEQSGenerator__Cover_8cpp.html" title="Implements the cover EQS generator: emit each registered cover point as a point item." alt="" coords="488,98,683,160"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="588,64,588,99,584,96,584,67"/>
+<area shape="rect" id="Node000005" href="$UTactixEQSTest__Influence_8cpp.html" title="Implements the influence EQS test: sample the map per item and score it." alt="" coords="707,106,955,151"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="654,54,780,106,775,106,653,59"/>
+<area shape="rect" id="Node000006" href="$UTactixWorldSubsystem_8cpp.html" title="Implements the world subsystem: the soft cover&#45;reservation layer." alt="" coords="979,106,1264,151"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="722,51,967,95,1012,106,1006,106,967,101,721,56"/>
+</map>

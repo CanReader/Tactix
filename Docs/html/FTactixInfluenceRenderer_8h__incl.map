@@ -1,0 +1,20 @@
+<map id="Source/TactixDebug/Public/FTactixInfluenceRenderer.h" name="Source/TactixDebug/Public/FTactixInfluenceRenderer.h">
+<area shape="rect" id="Node000001" title="Draws an influence&#45;map channel as a world&#45;space heat grid." alt="" coords="26,5,269,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,106,122,134"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="126,53,88,96,84,93,129,48"/>
+<area shape="rect" id="Node000003" href="$FTactixInfluenceMap_8h.html" title="Multi&#45;channel 2D scalar field for spatial reasoning (danger, control, resource, ....." alt="" coords="146,98,320,143"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,48,205,86,200,87,167,53"/>
+<area shape="rect" id="Node000004" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="47,266,139,294"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="180,145,151,166,123,192,107,222,99,253,94,250,102,220,119,189,148,161,184,142"/>
+<area shape="rect" id="Node000005" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="143,191,323,218"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="234,141,235,176,230,174,231,145"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="182,266,244,294"/>
+<area shape="poly" id="edge8_Node000003_Node000006" title=" " alt="" coords="180,145,154,165,133,192,129,210,137,227,153,243,174,259,169,258,150,247,133,230,124,211,128,190,151,161,184,141"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="298,266,363,294"/>
+<area shape="poly" id="edge10_Node000003_Node000007" title=" " alt="" coords="284,140,315,161,338,189,343,205,345,221,341,253,337,250,340,221,338,206,333,192,311,165,284,146"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="398,191,468,218"/>
+<area shape="poly" id="edge9_Node000003_Node000008" title=" " alt="" coords="286,141,389,184,384,185,286,146"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="210,218,132,261,130,256,205,219"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="231,217,222,253,218,250,227,221"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="251,216,304,257,298,257,249,221"/>
+</map>

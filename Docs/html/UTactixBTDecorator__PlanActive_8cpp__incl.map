@@ -1,0 +1,51 @@
+<map id="Source/TactixUE/Private/BehaviorTree/UTactixBTDecorator_PlanActive.cpp" name="Source/TactixUE/Private/BehaviorTree/UTactixBTDecorator_PlanActive.cpp">
+<area shape="rect" id="Node000001" title="Implements the plan&#45;active decorator condition (valid plan with steps left)." alt="" coords="780,5,1023,67"/>
+<area shape="rect" id="Node000002" href="$UTactixBTDecorator__PlanActive_8h.html" title="BT decorator that passes while a plan of the chosen type is running." alt="" coords="563,115,802,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="837,67,745,111,743,106,832,69"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="846,216,956,244"/>
+<area shape="poly" id="edge9_Node000001_Node000009" title=" " alt="" coords="903,65,903,202,899,199,899,69"/>
+<area shape="rect" id="Node000010" href="$ATactixAIController_8h.html" title="Base AIController for Tactix&#45;aware pawns." alt="" coords="1012,124,1236,151"/>
+<area shape="poly" id="edge10_Node000001_Node000010" title=" " alt="" coords="969,65,1084,117,1078,117,969,70"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="751,300,867,328"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="729,157,760,179,786,206,804,246,810,286,806,283,798,247,782,209,757,183,728,163"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="367,216,569,244"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="634,159,514,212,512,207,629,161"/>
+<area shape="rect" id="Node000005" href="$UTactixBTTask__ExecutePlan_8h.html" title="BT task that walks the controller&#39;s active GOAP or HTN plan, one step per tick." alt="" coords="138,208,342,252"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="574,162,358,207,356,202,579,159"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="593,208,772,252"/>
+<area shape="poly" id="edge8_Node000002_Node000008" title=" " alt="" coords="684,158,685,194,680,191,681,162"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="342,248,355,250,562,279,738,304,733,304,561,285,354,255,343,253"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="5,300,208,328"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="202,255,142,294,139,290,207,251"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="232,300,515,328"/>
+<area shape="poly" id="edge7_Node000005_Node000007" title=" " alt="" coords="276,250,342,292,337,292,275,256"/>
+<area shape="poly" id="edge11_Node000010_Node000003" title=" " alt="" coords="1104,151,1020,210,996,233,969,255,920,279,871,298,870,293,918,274,966,250,992,229,1017,206,1099,153"/>
+<area shape="poly" id="edge12_Node000010_Node000009" title=" " alt="" coords="1094,151,948,213,947,207,1089,152"/>
+<area shape="rect" id="Node000011" href="$TactixArena_8h.html" title="Bump (linear) allocator for short&#45;lived scratch memory." alt="" coords="1395,300,1580,328"/>
+<area shape="poly" id="edge13_Node000010_Node000011" title=" " alt="" coords="1236,147,1302,156,1367,168,1423,185,1460,206,1474,223,1483,244,1490,287,1486,283,1478,246,1469,226,1457,210,1421,190,1366,174,1301,161,1236,152"/>
+<area shape="rect" id="Node000017" href="$FTactixGOAPPlanner_8h.html" title="A* planner over the GOAP world&#45;state graph." alt="" coords="1242,216,1446,244"/>
+<area shape="poly" id="edge19_Node000010_Node000017" title=" " alt="" coords="1156,149,1300,210,1295,210,1155,154"/>
+<area shape="rect" id="Node000019" href="$FTactixHTNPlanner_8h.html" title="Depth&#45;first HTN planner with method&#45;order fallback and backtracking." alt="" coords="1031,216,1217,244"/>
+<area shape="poly" id="edge25_Node000010_Node000019" title=" " alt="" coords="1126,150,1126,203,1122,199,1122,154"/>
+<area shape="rect" id="Node000020" title=" " alt="" coords="1522,216,1747,244"/>
+<area shape="poly" id="edge29_Node000010_Node000020" title=" " alt="" coords="1198,149,1548,213,1543,213,1198,154"/>
+<area shape="rect" id="Node000012" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="1231,376,1323,404"/>
+<area shape="poly" id="edge14_Node000011_Node000012" title=" " alt="" coords="1453,328,1330,373,1329,368,1448,329"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="1370,376,1440,404"/>
+<area shape="poly" id="edge15_Node000011_Node000013" title=" " alt="" coords="1476,328,1432,368,1430,363,1471,329"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1127,376,1192,404"/>
+<area shape="poly" id="edge16_Node000011_Node000014" title=" " alt="" coords="1431,328,1208,381,1207,375,1426,329"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1464,376,1512,404"/>
+<area shape="poly" id="edge17_Node000011_Node000015" title=" " alt="" coords="1490,327,1490,362,1486,358,1486,330"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1536,376,1595,404"/>
+<area shape="poly" id="edge18_Node000011_Node000016" title=" " alt="" coords="1503,326,1543,366,1538,364,1501,331"/>
+<area shape="poly" id="edge20_Node000017_Node000012" title=" " alt="" coords="1345,243,1341,283,1328,329,1302,366,1300,362,1323,327,1336,282,1341,246"/>
+<area shape="poly" id="edge24_Node000017_Node000014" title=" " alt="" coords="1331,243,1188,368,1185,363,1326,245"/>
+<area shape="rect" id="Node000018" href="$FTactixWorldState_8h.html" title="Symbolic world state for the GOAP planner: 64 boolean facts plus a &quot;defined&quot; mask." alt="" coords="1029,300,1219,328"/>
+<area shape="poly" id="edge21_Node000017_Node000018" title=" " alt="" coords="1311,244,1174,297,1173,292,1306,245"/>
+<area shape="poly" id="edge22_Node000018_Node000012" title=" " alt="" coords="1152,326,1239,370,1234,369,1151,331"/>
+<area shape="poly" id="edge23_Node000018_Node000014" title=" " alt="" coords="1132,326,1149,363,1144,361,1129,331"/>
+<area shape="poly" id="edge26_Node000019_Node000012" title=" " alt="" coords="1153,242,1193,266,1232,299,1254,329,1270,363,1265,361,1250,332,1229,302,1190,270,1151,247"/>
+<area shape="poly" id="edge28_Node000019_Node000014" title=" " alt="" coords="1091,244,1059,262,1031,281,1021,292,1015,303,1014,314,1019,327,1038,347,1061,362,1114,382,1109,382,1059,366,1034,351,1015,329,1009,315,1010,302,1017,289,1027,277,1056,257,1086,245"/>
+<area shape="poly" id="edge27_Node000019_Node000018" title=" " alt="" coords="1126,242,1126,287,1122,283,1122,246"/>
+</map>

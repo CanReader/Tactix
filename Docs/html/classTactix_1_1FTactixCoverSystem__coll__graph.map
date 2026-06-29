@@ -1,0 +1,7 @@
+<map id="Tactix::FTactixCoverSystem&lt; Capacity &gt;" name="Tactix::FTactixCoverSystem&lt; Capacity &gt;">
+<area shape="rect" id="Node000001" title="Holds the level&#39;s cover points and answers tactical queries over them." alt="" coords="7,258,206,302"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1FTactixPool.html" title=" " alt="" coords="5,123,208,185"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,198,109,258,104,256,105,202"/>
+<area shape="rect" id="Node000003" href="$structTactix_1_1FTactixPool_1_1Slot.html" title="One storage cell plus the bookkeeping that tracks its state." alt="" coords="28,5,185,50"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="107,63,109,123,104,122,106,68"/>
+</map>

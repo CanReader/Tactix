@@ -1,0 +1,5 @@
+<map id="Source/TactixCore/Public/Perception/ITactixPerceptionChannel.h" name="Source/TactixCore/Public/Perception/ITactixPerceptionChannel.h">
+<area shape="rect" id="Node000001" title="Stimulus record and channel interface for the perception memory." alt="" coords="6,5,281,50"/>
+<area shape="rect" id="Node000002" href="$FTactixPerceptionMemory_8h.html" title="Per&#45;agent ring buffer of timestamped stimuli with on&#45;demand decay." alt="" coords="5,98,282,143"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="145,64,146,99,141,97,142,68"/>
+</map>

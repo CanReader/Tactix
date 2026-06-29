@@ -1,0 +1,5 @@
+<map id="Tactix::FTactixBlackboardRef" name="Tactix::FTactixBlackboardRef">
+<area shape="rect" id="Node000001" title="Capacity&#45;independent interface to a blackboard." alt="" coords="5,5,213,33"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1FTactixBlackboard.html" title="Concrete fixed&#45;capacity blackboard backed by an open&#45;addressed table." alt="" coords="16,81,202,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,47,111,81,107,79,107,51"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="UTactixBTService_InfluenceQuery" name="UTactixBTService_InfluenceQuery">
+<area shape="rect" id="Node000001" title="Behavior Tree service: push an influence sample to the blackboard." alt="" coords="5,81,206,126"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="57,5,154,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="107,47,108,81,103,79,104,51"/>
+</map>

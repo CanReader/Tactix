@@ -1,0 +1,19 @@
+<map id="Source/TactixCore/Public/Foundation/TactixPool.h" name="Source/TactixCore/Public/Foundation/TactixPool.h">
+<area shape="rect" id="Node000001" title="Fixed&#45;capacity pool allocator with per&#45;slot generation tracking." alt="" coords="181,5,362,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="5,174,98,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,46,92,69,57,83,35,100,29,113,29,128,39,160,33,161,23,129,24,112,31,96,54,79,90,64,182,42"/>
+<area shape="rect" id="Node000003" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="45,98,162,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="225,52,146,93,143,88,229,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="144,174,210,201"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="258,49,227,99,192,162,188,158,223,97,254,52"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="237,98,306,126"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="273,48,274,84,269,81,270,53"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="330,98,378,126"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="294,48,333,87,327,87,292,53"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="402,98,461,126"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="314,48,395,90,390,91,314,53"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="486,98,577,126"/>
+<area shape="poly" id="edge9_Node000001_Node000008" title=" " alt="" coords="341,48,478,92,473,94,340,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="96,125,71,163,67,159,92,128"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="118,124,156,162,150,163,116,129"/>
+</map>

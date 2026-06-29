@@ -1,0 +1,5 @@
+<map id="Tactix::FTactixConsideration" name="Tactix::FTactixConsideration">
+<area shape="rect" id="Node000001" title="Concrete consideration = input selector + response curve." alt="" coords="5,81,208,109"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1ITactixConsideration.html" title="One scoring factor evaluated against an agent&#39;s current state." alt="" coords="7,5,206,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="108,47,109,82,104,79,105,51"/>
+</map>

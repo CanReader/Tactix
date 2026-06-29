@@ -1,0 +1,16 @@
+<map id="Source/TactixUE/Private/DataAssets/UTactixSquadConfigAsset.cpp" name="Source/TactixUE/Private/DataAssets/UTactixSquadConfigAsset.cpp">
+<area shape="rect" id="Node000001" title="Translation unit for the squad config asset. It&#39;s pure data, so there&#39;s no behaviour to implement her..." alt="" coords="93,5,325,67"/>
+<area shape="rect" id="Node000002" href="$UTactixSquadConfigAsset_8h.html" title="Designer&#45;facing asset describing a squad&#39;s roles, formation and tactic." alt="" coords="95,115,323,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="210,65,211,100,206,99,208,70"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="5,283,122,311"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="103,162,71,182,44,209,39,223,39,238,50,269,44,270,34,239,34,222,40,206,68,177,107,158"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="55,208,203,235"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="190,158,154,198,151,194,186,162"/>
+<area shape="rect" id="Node000005" href="$TactixUETypes_8h.html" title="Blueprint&#45;exposed mirrors of Tactix enums and config structs." alt="" coords="227,208,353,235"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="231,158,269,196,264,196,230,163"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="377,208,646,235"/>
+<area shape="poly" id="edge7_Node000002_Node000007" title=" " alt="" coords="289,158,451,202,446,204,289,163"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="251,238,119,281,117,276,249,233"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="192,283,388,311"/>
+<area shape="poly" id="edge6_Node000005_Node000006" title=" " alt="" coords="292,234,292,269,288,266,288,238"/>
+</map>

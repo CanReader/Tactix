@@ -1,0 +1,7 @@
+<map id="Tactix::FTactixHTNPlan" name="Tactix::FTactixHTNPlan">
+<area shape="rect" id="Node000001" title="A fully decomposed HTN plan: a flat, ordered list of primitives." alt="" coords="19,183,188,211"/>
+<area shape="rect" id="Node000002" href="$classTactix_1_1ITactixHTNPrimitive.html" title="A leaf task: directly executable, with planner&#45;visible effects." alt="" coords="5,82,202,110"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="106,124,106,183,101,182,101,127"/>
+<area shape="rect" id="Node000003" href="$classTactix_1_1ITactixHTNTask.html" title="Base for every HTN task; only distinguishes primitive from compound." alt="" coords="20,5,187,33"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="105,46,106,83,101,81,102,51"/>
+</map>

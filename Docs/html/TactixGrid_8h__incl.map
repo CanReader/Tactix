@@ -1,0 +1,18 @@
+<map id="Source/TactixCore/Public/Foundation/TactixGrid.h" name="Source/TactixCore/Public/Foundation/TactixGrid.h">
+<area shape="rect" id="Node000001" title="Engine&#45;agnostic 2D grid with world&lt;&#45;&gt;cell coordinate conversion." alt="" coords="145,5,326,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="5,174,98,201"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="143,45,98,66,76,81,59,100,52,113,48,128,49,159,43,158,43,127,47,111,55,96,73,77,95,61,147,41"/>
+<area shape="rect" id="Node000003" href="$TactixMath_8h.html" title="Small, engine&#45;agnostic vector and scalar math used across Tactix." alt="" coords="69,98,173,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="203,52,153,91,150,86,207,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="131,174,193,201"/>
+<area shape="poly" id="edge6_Node000001_Node000004" title=" " alt="" coords="228,49,177,161,173,158,223,51"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="223,174,288,201"/>
+<area shape="poly" id="edge8_Node000001_Node000005" title=" " alt="" coords="240,48,254,159,249,157,236,52"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="298,98,368,126"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="262,48,308,88,303,88,260,53"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="391,98,482,126"/>
+<area shape="poly" id="edge9_Node000001_Node000007" title=" " alt="" coords="289,48,393,91,388,92,289,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="111,125,76,164,72,160,106,127"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="130,124,150,160,145,160,127,129"/>
+<area shape="poly" id="edge5_Node000003_Node000005" title=" " alt="" coords="146,124,221,165,216,167,144,129"/>
+</map>

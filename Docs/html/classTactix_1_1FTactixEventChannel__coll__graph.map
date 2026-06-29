@@ -1,0 +1,5 @@
+<map id="Tactix::FTactixEventChannel&lt; EventT, MaxSubscribers &gt;" name="Tactix::FTactixEventChannel&lt; EventT, MaxSubscribers &gt;">
+<area shape="rect" id="Node000001" title="A single&#45;event publish/subscribe channel with fixed capacity." alt="" coords="5,140,213,185"/>
+<area shape="rect" id="Node000002" href="$structTactix_1_1FTactixEventChannel_1_1Subscription.html" title="One bound handler and the context it was bound with." alt="" coords="8,5,210,67"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,81,112,140,106,139,107,84"/>
+</map>

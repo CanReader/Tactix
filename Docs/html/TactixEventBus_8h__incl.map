@@ -1,0 +1,7 @@
+<map id="Source/TactixCore/Public/Foundation/TactixEventBus.h" name="Source/TactixCore/Public/Foundation/TactixEventBus.h">
+<area shape="rect" id="Node000001" title="Lightweight typed event channel with no heap traffic per publish." alt="" coords="5,5,218,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="13,98,106,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="100,49,78,86,74,83,96,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="130,98,200,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="127,48,151,85,145,84,124,53"/>
+</map>

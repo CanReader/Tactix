@@ -1,0 +1,16 @@
+<map id="Source/TactixDebug/Public/FTactixDecisionRecorder.h" name="Source/TactixDebug/Public/FTactixDecisionRecorder.h">
+<area shape="rect" id="Node000001" title="Ring buffer of recent AI decisions for replay scrubbing and post&#45;mortems (&quot;why did it do that?..." alt="" coords="40,5,279,50"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,98,122,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="133,53,93,89,89,86,136,48"/>
+<area shape="rect" id="Node000003" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="58,174,251,201"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="161,48,158,159,153,157,157,52"/>
+<area shape="rect" id="Node000006" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="206,98,361,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="192,48,254,89,249,90,192,53"/>
+<area shape="rect" id="Node000004" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="272,249,364,277"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="184,199,278,242,273,243,183,204"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="163,249,228,277"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="163,200,183,236,178,235,160,204"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="258,128,192,168,189,164,263,125"/>
+<area shape="poly" id="edge6_Node000006_Node000004" title=" " alt="" coords="291,124,310,173,319,235,314,233,305,174,289,129"/>
+<area shape="poly" id="edge8_Node000006_Node000005" title=" " alt="" coords="285,124,281,162,266,203,249,224,229,242,226,238,245,221,261,200,276,161,281,128"/>
+</map>

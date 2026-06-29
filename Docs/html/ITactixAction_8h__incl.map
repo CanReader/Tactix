@@ -1,0 +1,5 @@
+<map id="Source/TactixSystems/Public/Utility/ITactixAction.h" name="Source/TactixSystems/Public/Utility/ITactixAction.h">
+<area shape="rect" id="Node000001" title="Interface for a Utility AI action: a thing the agent can choose to do, with a score and an execution ..." alt="" coords="5,5,213,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="63,98,155,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="111,48,111,83,107,81,107,52"/>
+</map>

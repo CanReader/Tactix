@@ -1,0 +1,28 @@
+<map id="Source/TactixSystems/Private/HTN/FTactixHTNPlanner.cpp" name="Source/TactixSystems/Private/HTN/FTactixHTNPlanner.cpp">
+<area shape="rect" id="Node000001" title="Recursive decomposition for Tactix::FTactixHTNPlanner." alt="" coords="190,5,445,50"/>
+<area shape="rect" id="Node000002" href="$FTactixHTNPlanner_8h.html" title="Depth&#45;first HTN planner with method&#45;order fallback and backtracking." alt="" coords="25,98,211,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="263,53,165,94,162,89,267,49"/>
+<area shape="rect" id="Node000006" href="$ITactixHTNTask_8h.html" title="Task hierarchy for the HTN planner: the common base, primitive (leaf) tasks, and compound tasks that ..." alt="" coords="236,98,400,126"/>
+<area shape="poly" id="edge7_Node000001_Node000006" title=" " alt="" coords="319,48,320,84,315,81,316,53"/>
+<area shape="rect" id="Node000007" href="$TactixArena_8h.html" title="Bump (linear) allocator for short&#45;lived scratch memory." alt="" coords="389,174,574,201"/>
+<area shape="poly" id="edge11_Node000001_Node000007" title=" " alt="" coords="352,48,414,96,443,128,467,162,462,161,439,132,411,100,351,53"/>
+<area shape="rect" id="Node000003" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="114,249,207,277"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="77,128,50,142,24,159,9,179,9,189,13,200,30,219,52,233,101,252,97,255,49,238,27,223,9,203,3,190,4,177,20,155,47,137,80,124"/>
+<area shape="rect" id="Node000004" href="$FTactixWorldState_8h.html" title="Symbolic world state for the GOAP planner: 64 boolean facts plus a &quot;defined&quot; mask." alt="" coords="23,174,213,201"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="119,124,120,159,115,157,117,129"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="245,249,310,277"/>
+<area shape="poly" id="edge6_Node000002_Node000005" title=" " alt="" coords="150,123,189,144,226,172,251,203,269,236,264,235,246,206,223,176,186,148,150,129"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="127,200,148,236,143,236,124,204"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="147,199,238,242,233,244,146,204"/>
+<area shape="poly" id="edge8_Node000006_Node000003" title=" " alt="" coords="307,126,187,241,183,237,302,126"/>
+<area shape="poly" id="edge9_Node000006_Node000004" title=" " alt="" coords="280,128,169,170,166,166,284,125"/>
+<area shape="poly" id="edge10_Node000006_Node000005" title=" " alt="" coords="322,124,326,161,322,202,301,239,298,235,317,201,321,161,319,128"/>
+<area shape="poly" id="edge12_Node000007_Node000003" title=" " alt="" coords="426,203,222,251,221,245,421,201"/>
+<area shape="poly" id="edge14_Node000007_Node000005" title=" " alt="" coords="448,202,326,248,324,242,443,202"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="364,249,434,277"/>
+<area shape="poly" id="edge13_Node000007_Node000008" title=" " alt="" coords="469,201,426,241,424,237,464,203"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="458,249,506,277"/>
+<area shape="poly" id="edge15_Node000007_Node000009" title=" " alt="" coords="484,200,484,235,480,232,480,204"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="529,249,589,277"/>
+<area shape="poly" id="edge16_Node000007_Node000010" title=" " alt="" coords="497,199,537,239,532,238,495,204"/>
+</map>

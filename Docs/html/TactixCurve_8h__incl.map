@@ -1,0 +1,7 @@
+<map id="Source/TactixCore/Public/Foundation/TactixCurve.h" name="Source/TactixCore/Public/Foundation/TactixCurve.h">
+<area shape="rect" id="Node000001" title="Response curves that turn a raw input into a normalised utility score." alt="" coords="8,5,197,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="5,98,98,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="91,49,70,86,65,83,87,52"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="122,98,187,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="117,48,140,85,135,84,115,53"/>
+</map>

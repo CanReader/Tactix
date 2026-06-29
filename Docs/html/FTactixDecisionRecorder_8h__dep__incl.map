@@ -1,0 +1,7 @@
+<map id="Source/TactixDebug/Public/FTactixDecisionRecorder.h" name="Source/TactixDebug/Public/FTactixDecisionRecorder.h">
+<area shape="rect" id="Node000001" title="Ring buffer of recent AI decisions for replay scrubbing and post&#45;mortems (&quot;why did it do that?..." alt="" coords="156,5,395,50"/>
+<area shape="rect" id="Node000002" href="$FTactixDecisionRecorder_8cpp.html" title="Implements the decision ring buffer: recording, history/all queries, and the log dump." alt="" coords="5,106,266,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="235,58,168,108,165,104,230,60"/>
+<area shape="rect" id="Node000003" href="$FTactixGameplayDebuggerCategory_8cpp.html" title="Implements the Gameplay Debugger category: collect agent state, then render it as text lines." alt="" coords="290,98,541,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="319,57,375,98,370,97,318,62"/>
+</map>

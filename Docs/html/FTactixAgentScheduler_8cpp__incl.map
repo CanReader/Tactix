@@ -1,0 +1,24 @@
+<map id="Source/TactixCore/Private/Agent/FTactixAgentScheduler.cpp" name="Source/TactixCore/Private/Agent/FTactixAgentScheduler.cpp">
+<area shape="rect" id="Node000001" title="Implements the min&#45;heap scheduler. Contracts live in the header; this file documents the few spots wh..." alt="" coords="288,5,529,50"/>
+<area shape="rect" id="Node000002" href="$FTactixAgentScheduler_8h.html" title="Min&#45;heap tick distributor that spreads agent work across frames under a per&#45;frame CPU budget." alt="" coords="130,98,351,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="362,52,283,93,280,88,366,49"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="376,98,441,126"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="410,48,411,84,406,81,407,53"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="466,98,525,126"/>
+<area shape="poly" id="edge13_Node000001_Node000009" title=" " alt="" coords="432,48,473,87,468,87,431,53"/>
+<area shape="rect" id="Node000003" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="73,325,165,353"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="188,128,145,146,95,171,48,206,28,227,12,251,9,261,9,270,19,288,40,304,66,318,62,320,37,308,15,292,4,272,3,260,7,248,24,224,44,202,92,167,143,141,192,125"/>
+<area shape="rect" id="Node000004" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="23,249,216,277"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="210,128,182,148,153,175,137,205,127,236,122,233,132,203,149,172,179,144,214,124"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="272,325,337,353"/>
+<area shape="poly" id="edge11_Node000002_Node000005" title=" " alt="" coords="274,124,307,143,321,157,332,173,343,209,341,247,332,282,320,313,316,309,327,281,336,246,337,209,327,175,317,160,303,147,274,129"/>
+<area shape="rect" id="Node000006" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="163,174,318,201"/>
+<area shape="poly" id="edge6_Node000002_Node000006" title=" " alt="" coords="242,124,243,159,238,157,239,129"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="393,174,462,201"/>
+<area shape="poly" id="edge10_Node000002_Node000007" title=" " alt="" coords="274,124,383,167,378,169,274,129"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="121,276,122,310,117,308,117,280"/>
+<area shape="poly" id="edge5_Node000004_Node000005" title=" " alt="" coords="153,275,260,318,255,320,152,280"/>
+<area shape="poly" id="edge7_Node000006_Node000003" title=" " alt="" coords="244,199,244,238,240,259,231,279,207,303,177,321,175,316,203,299,226,275,235,257,239,237,241,204"/>
+<area shape="poly" id="edge8_Node000006_Node000004" title=" " alt="" coords="217,203,155,243,152,239,221,200"/>
+<area shape="poly" id="edge9_Node000006_Node000005" title=" " alt="" coords="249,199,275,248,298,311,293,310,270,250,247,204"/>
+</map>

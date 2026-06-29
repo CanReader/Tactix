@@ -1,0 +1,7 @@
+<map id="Source/TactixSystems/Public/Utility/ITactixConsideration.h" name="Source/TactixSystems/Public/Utility/ITactixConsideration.h">
+<area shape="rect" id="Node000001" title="Interface for a single Utility AI consideration: one normalised factor in an action&#39;s overall score." alt="" coords="132,5,388,50"/>
+<area shape="rect" id="Node000002" href="$FTactixConsideration_8h.html" title="The standard consideration: pull one number out of the context, run it through a response curve." alt="" coords="5,106,265,151"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="224,59,164,108,161,104,219,61"/>
+<area shape="rect" id="Node000003" href="$FTactixUtilitySelector_8h.html" title="Picks the highest&#45;scoring action, and computes a combined consideration score with compensation for t..." alt="" coords="288,98,486,160"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="301,57,351,98,346,97,299,62"/>
+</map>

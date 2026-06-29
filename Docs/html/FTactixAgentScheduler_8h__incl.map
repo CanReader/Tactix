@@ -1,0 +1,18 @@
+<map id="Source/TactixCore/Public/Agent/FTactixAgentScheduler.h" name="Source/TactixCore/Public/Agent/FTactixAgentScheduler.h">
+<area shape="rect" id="Node000001" title="Min&#45;heap tick distributor that spreads agent work across frames under a per&#45;frame CPU budget." alt="" coords="128,5,353,50"/>
+<area shape="rect" id="Node000002" href="$TactixApi_8h.html" title="Export macros, compiler attributes and version constants shared by every Tactix module." alt="" coords="73,249,165,277"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,52,131,72,85,99,44,133,12,175,9,185,9,194,19,212,40,228,66,242,62,244,37,232,15,216,4,196,3,184,7,172,40,129,82,95,128,68,175,49"/>
+<area shape="rect" id="Node000003" href="$TactixHandle_8h.html" title="Type&#45;safe generational handle: the only sanctioned way to reference a pooled object across frames." alt="" coords="23,174,216,201"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="202,53,178,74,153,100,137,129,127,160,123,157,132,127,149,96,174,70,205,49"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="272,249,337,277"/>
+<area shape="poly" id="edge10_Node000001_Node000004" title=" " alt="" coords="284,48,312,69,332,97,342,133,340,171,332,207,320,237,316,233,326,205,335,170,337,134,327,99,308,73,283,53"/>
+<area shape="rect" id="Node000005" href="$ITactixAgent_8h.html" title="The engine&#45;agnostic contract a &quot;thinking&quot; entity implements to take part in Tactix systems." alt="" coords="163,98,318,126"/>
+<area shape="poly" id="edge5_Node000001_Node000005" title=" " alt="" coords="242,48,243,83,238,81,239,53"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="393,98,462,126"/>
+<area shape="poly" id="edge9_Node000001_Node000006" title=" " alt="" coords="290,48,386,91,381,92,290,53"/>
+<area shape="poly" id="edge3_Node000003_Node000002" title=" " alt="" coords="121,200,122,235,117,233,117,204"/>
+<area shape="poly" id="edge4_Node000003_Node000004" title=" " alt="" coords="153,199,260,242,255,245,152,204"/>
+<area shape="poly" id="edge6_Node000005_Node000002" title=" " alt="" coords="244,124,244,162,240,183,231,203,207,227,177,245,175,240,203,223,226,200,235,182,239,162,241,128"/>
+<area shape="poly" id="edge7_Node000005_Node000003" title=" " alt="" coords="217,128,155,168,152,163,221,125"/>
+<area shape="poly" id="edge8_Node000005_Node000004" title=" " alt="" coords="249,123,275,173,298,236,293,234,270,175,247,128"/>
+</map>
