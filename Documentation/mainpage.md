@@ -5,6 +5,22 @@ Sleak Software. It bundles the decision-making systems a tactical shooter or
 squad game tends to need, built so the core reasoning compiles and unit-tests
 without any engine dependency.
 
+## Why use Tactix?
+
+Tactical game AI keeps needing the same systems: utility scoring, planners, cover
+reasoning, an influence map, perception memory, and squad logic. Unreal gives you
+the scaffolding to *run* AI (Behavior Trees, EQS, Perception, navmesh) but not
+those systems themselves, so teams build them again on every project, usually
+welded to engine types and impossible to unit-test.
+
+Tactix is that toolbox, built once. The decision-making core has zero engine
+dependency, so it's fast and testable; a thin layer wires it into Behavior Trees,
+EQS, and data assets so designers use it without writing C++. You get the brains
+and keep your Behavior Tree.
+
+For the full rationale, the gaps it fills, the architecture, and when *not* to use
+it, see @subpage why.
+
 ## What's inside
 
 - **Utility AI** — score-based action selection with response curves.

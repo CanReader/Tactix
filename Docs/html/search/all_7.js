@@ -54,7 +54,8 @@ var searchData=
   ['getwidth_51',['GetWidth',['../classTactix_1_1FTactixGrid.html#a253f94c9ca728b82402d8e4f6ff84e30',1,'Tactix::FTactixGrid::GetWidth()'],['../classTactix_1_1FTactixInfluenceMap.html#a8890266f642b6b4ace2f393330823c14',1,'Tactix::FTactixInfluenceMap::GetWidth()']]],
   ['getworstcase_52',['GetWorstCase',['../classFTactixAgentProfiler.html#af17414860e085fac0660eaac8acbdfc0',1,'FTactixAgentProfiler']]],
   ['goap_53',['GOAP',['../UTactixBTTask__ExecutePlan_8h.html#a144c87b5348d733dd8d441c3b8e96a53a2c1cc79352d428d91651277e80386e0f',1,'UTactixBTTask_ExecutePlan.h']]],
-  ['goapplan_54',['GOAPPlan',['../FTactixDecisionRecorder_8h.html#a2d08588087d6af4a8647a828503b9083add721fc04df85263535e0a9029f3aee4',1,'FTactixDecisionRecorder.h']]],
-  ['goapplanstep_55',['GOAPPlanStep',['../classATactixAIController.html#a0d91658a03d6c26c999ece377f74351e',1,'ATactixAIController']]],
-  ['grow_56',['Grow',['../classTactix_1_1FTactixAgentScheduler.html#a5f994616ece1d0f23ca1b6fa816bb3e7',1,'Tactix::FTactixAgentScheduler']]]
+  ['goap_20planner_54',['GOAP planner',['../why.html#autotoc_md9',1,'']]],
+  ['goapplan_55',['GOAPPlan',['../FTactixDecisionRecorder_8h.html#a2d08588087d6af4a8647a828503b9083add721fc04df85263535e0a9029f3aee4',1,'FTactixDecisionRecorder.h']]],
+  ['goapplanstep_56',['GOAPPlanStep',['../classATactixAIController.html#a0d91658a03d6c26c999ece377f74351e',1,'ATactixAIController']]],
+  ['grow_57',['Grow',['../classTactix_1_1FTactixAgentScheduler.html#a5f994616ece1d0f23ca1b6fa816bb3e7',1,'Tactix::FTactixAgentScheduler']]]
 ];

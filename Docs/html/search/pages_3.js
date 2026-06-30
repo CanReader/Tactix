@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['s_20inside_0',['What&apos;s inside',['../index.html#autotoc_md0',1,'']]],
-  ['start_20reading_1',['Where to start reading',['../index.html#autotoc_md2',1,'']]]
+  ['debugging_0',['For designers and for debugging',['../why.html#autotoc_md20',1,'']]],
+  ['designers_20and_20for_20debugging_1',['For designers and for debugging',['../why.html#autotoc_md20',1,'']]],
+  ['detail_2',['The problem, in more detail',['../why.html#autotoc_md5',1,'']]]
 ];

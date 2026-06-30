@@ -25,9 +25,33 @@
 var NAVTREE =
 [
   [ "Tactix", "index.html", [
-    [ "What's inside", "index.html#autotoc_md0", null ],
-    [ "Architecture", "index.html#autotoc_md1", null ],
-    [ "Where to start reading", "index.html#autotoc_md2", null ],
+    [ "Why use Tactix?", "index.html#autotoc_md0", null ],
+    [ "What's inside", "index.html#autotoc_md1", null ],
+    [ "Architecture", "index.html#autotoc_md2", null ],
+    [ "Where to start reading", "index.html#autotoc_md3", null ],
+    [ "Why Tactix?", "why.html", [
+      [ "The short version", "why.html#autotoc_md4", null ],
+      [ "The problem, in more detail", "why.html#autotoc_md5", null ],
+      [ "What Unreal already provides, and where it stops", "why.html#autotoc_md6", null ],
+      [ "What Tactix adds", "why.html#autotoc_md7", [
+        [ "Utility AI", "why.html#autotoc_md8", null ],
+        [ "GOAP planner", "why.html#autotoc_md9", null ],
+        [ "HTN planner", "why.html#autotoc_md10", null ],
+        [ "Cover system", "why.html#autotoc_md11", null ],
+        [ "Influence map", "why.html#autotoc_md12", null ],
+        [ "Perception memory", "why.html#autotoc_md13", null ],
+        [ "Squad and formation", "why.html#autotoc_md14", null ],
+        [ "The integration layer", "why.html#autotoc_md15", null ]
+      ] ],
+      [ "Why the architecture matters", "why.html#autotoc_md16", [
+        [ "It is testable", "why.html#autotoc_md17", null ],
+        [ "It is fast", "why.html#autotoc_md18", null ],
+        [ "It is reusable", "why.html#autotoc_md19", null ]
+      ] ],
+      [ "For designers and for debugging", "why.html#autotoc_md20", null ],
+      [ "Build it yourself, or use this?", "why.html#autotoc_md21", null ],
+      [ "Honest status", "why.html#autotoc_md22", null ]
+    ] ],
     [ "Topics", "topics.html", "topics" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],

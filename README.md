@@ -6,6 +6,34 @@ Built by Sleak Software.
 
 ---
 
+## Why use it?
+
+Tactical game AI keeps needing the same systems — utility scoring, planners,
+cover reasoning, an influence map, perception memory, squad logic. Unreal gives
+you the scaffolding to *run* AI (Behavior Trees, EQS, Perception, navmesh) but
+not those systems themselves, so teams rebuild them on every project, usually
+welded to engine types and impossible to unit-test.
+
+Tactix is that toolbox, built once. The decision-making core (`TactixCore` +
+`TactixSystems`) has zero engine dependency, so it's fast and testable; a thin
+layer wires it into Behavior Trees, EQS, and data assets so designers use it
+without writing C++. You get the brains and keep your Behavior Tree.
+
+- **Skip the reimplementation tax** — utility AI, GOAP, HTN, cover, influence,
+  perception, squads/formations are all here and share one design.
+- **Actually testable** — the reasoning runs under Google Test with no editor.
+- **Built for budget** — pooled/arena memory, no `UObject` in the hot path,
+  handle-based agent references, and a frame-budgeted scheduler.
+- **Designer- and debugger-friendly** — data-asset tuning, BT/EQS nodes, plus
+  overlays, a profiler, a decision recorder, and a Gameplay Debugger tab.
+
+Best fit for games where AI is a real feature (several enemy types, squads,
+cover, spatial tactics). For a single simple enemy, a hand-written state machine
+may be less overhead. Currently **v0.1.0**: a working, tested foundation, early
+rather than AAA-hardened.
+
+---
+
 ## What's in here
 
 Four modules with a strict layer ordering — each one only knows about the ones below it:

@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['tactix_0',['Tactix',['../index.html',1,'']]],
-  ['to_20start_20reading_1',['Where to start reading',['../index.html#autotoc_md2',1,'']]]
+  ['fast_0',['It is fast',['../why.html#autotoc_md18',1,'']]],
+  ['for_20debugging_1',['For designers and for debugging',['../why.html#autotoc_md20',1,'']]],
+  ['for_20designers_20and_20for_20debugging_2',['For designers and for debugging',['../why.html#autotoc_md20',1,'']]],
+  ['formation_3',['Squad and formation',['../why.html#autotoc_md14',1,'']]]
 ];

@@ -22,11 +22,12 @@ var searchData=
   ['buf_19',['Buf',['../classTactix_1_1FTactixPerceptionMemory.html#a5d74f01222d8de951a57c777ac9dd932',1,'Tactix::FTactixPerceptionMemory']]],
   ['buffer_20',['Buffer',['../classTactix_1_1FTactixArena.html#a15ff5da87f8666597279c27ed31f0deb',1,'Tactix::FTactixArena']]],
   ['build_21',['Build',['../classTactix_1_1FTactixFormation.html#a5ff18ee18676727e572151a711a8315b',1,'Tactix::FTactixFormation']]],
-  ['buildbox_22',['BuildBox',['../classTactix_1_1FTactixFormation.html#a341253d03156936c107a717f5c4a714e',1,'Tactix::FTactixFormation']]],
-  ['buildcolumn_23',['BuildColumn',['../classTactix_1_1FTactixFormation.html#a178920c15fc0c10e41f7aa16e14cdab0',1,'Tactix::FTactixFormation']]],
-  ['buildcontext_24',['BuildContext',['../classTactix_1_1ITactixAgent.html#a4ccc80eda6bef752830e73c36d547dba',1,'Tactix::ITactixAgent::BuildContext()'],['../classUTactixAgentComponent.html#a65e0f94056b7ee8600739ab83463fbff',1,'UTactixAgentComponent::BuildContext()']]],
-  ['builddiamond_25',['BuildDiamond',['../classTactix_1_1FTactixFormation.html#a4cd19534d961cb111970f4ba96566740',1,'Tactix::FTactixFormation']]],
-  ['buildline_26',['BuildLine',['../classTactix_1_1FTactixFormation.html#ad78f34f14b785cc2016abd20559aa745',1,'Tactix::FTactixFormation']]],
-  ['buildwedge_27',['BuildWedge',['../classTactix_1_1FTactixFormation.html#a909218c4df73c43cb4b27bb1c5c60b7c',1,'Tactix::FTactixFormation']]],
-  ['bvalid_28',['bValid',['../structTactix_1_1FTactixGOAPPlan.html#a8009846df59d8112c369e60b9cd6dcfa',1,'Tactix::FTactixGOAPPlan::bValid'],['../structTactix_1_1FTactixHTNPlan.html#af884d909ce57826bbab45111f42e99f8',1,'Tactix::FTactixHTNPlan::bValid']]]
+  ['build_20it_20yourself_20or_20use_20this_22',['Build it yourself, or use this?',['../why.html#autotoc_md21',1,'']]],
+  ['buildbox_23',['BuildBox',['../classTactix_1_1FTactixFormation.html#a341253d03156936c107a717f5c4a714e',1,'Tactix::FTactixFormation']]],
+  ['buildcolumn_24',['BuildColumn',['../classTactix_1_1FTactixFormation.html#a178920c15fc0c10e41f7aa16e14cdab0',1,'Tactix::FTactixFormation']]],
+  ['buildcontext_25',['BuildContext',['../classTactix_1_1ITactixAgent.html#a4ccc80eda6bef752830e73c36d547dba',1,'Tactix::ITactixAgent::BuildContext()'],['../classUTactixAgentComponent.html#a65e0f94056b7ee8600739ab83463fbff',1,'UTactixAgentComponent::BuildContext()']]],
+  ['builddiamond_26',['BuildDiamond',['../classTactix_1_1FTactixFormation.html#a4cd19534d961cb111970f4ba96566740',1,'Tactix::FTactixFormation']]],
+  ['buildline_27',['BuildLine',['../classTactix_1_1FTactixFormation.html#ad78f34f14b785cc2016abd20559aa745',1,'Tactix::FTactixFormation']]],
+  ['buildwedge_28',['BuildWedge',['../classTactix_1_1FTactixFormation.html#a909218c4df73c43cb4b27bb1c5c60b7c',1,'Tactix::FTactixFormation']]],
+  ['bvalid_29',['bValid',['../structTactix_1_1FTactixGOAPPlan.html#a8009846df59d8112c369e60b9cd6dcfa',1,'Tactix::FTactixGOAPPlan::bValid'],['../structTactix_1_1FTactixHTNPlan.html#af884d909ce57826bbab45111f42e99f8',1,'Tactix::FTactixHTNPlan::bValid']]]
 ];

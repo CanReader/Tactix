@@ -3043,8 +3043,8 @@ PROJECT_NAME           = "Tactix"
 PROJECT_NUMBER         = 0.1.0
 PROJECT_BRIEF          = "Production-grade modular Game AI for Unreal Engine 5"
 OUTPUT_DIRECTORY       = Docs
-INPUT                  = Docs/mainpage.md Source
-USE_MDFILE_AS_MAINPAGE = Docs/mainpage.md
+INPUT                  = Documentation/mainpage.md Documentation/why-tactix.md Source
+USE_MDFILE_AS_MAINPAGE = Documentation/mainpage.md
 RECURSIVE              = YES
 EXCLUDE_PATTERNS       = */Intermediate/* */Binaries/* */ThirdParty/*
 FILE_PATTERNS          = *.h *.hpp *.cpp
@@ -3103,5 +3103,5 @@ HTML_COLORSTYLE_GAMMA  = 95
 
 # Light layer of refinement on top of the native theme.
 HTML_HEADER            =
-HTML_EXTRA_STYLESHEET  = docs/tactix-extra.css
+HTML_EXTRA_STYLESHEET  = Documentation/tactix-extra.css
 HTML_EXTRA_FILES       =

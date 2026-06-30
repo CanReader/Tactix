@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['inside_0',['What&apos;s inside',['../index.html#autotoc_md0',1,'']]]
+  ['build_20it_20yourself_20or_20use_20this_0',['Build it yourself, or use this?',['../why.html#autotoc_md21',1,'']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['reading_0',['Where to start reading',['../index.html#autotoc_md2',1,'']]]
+  ['cover_20system_0',['Cover system',['../why.html#autotoc_md11',1,'']]]
 ];
